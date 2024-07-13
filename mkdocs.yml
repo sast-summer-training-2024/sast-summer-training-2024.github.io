@@ -92,3 +92,5 @@ nav:
     - 课前准备: linux_git/Pre-requisite.md
     - Linux: linux_git/Linux.md
     - Git: linux_git/Git.md
+  - AI:
+    - 神经网络: sast2024-neural-network/network.md

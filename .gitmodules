@@ -1,3 +1,6 @@
 [submodule "docs/linux_git"]
 	path = docs/linux_git
 	url = git@github.com:sast-summer-training-2024/sast-linux-git.git
+[submodule "docs/sast2024-neural-network"]
+	path = docs/sast2024-neural-network
+	url = git@github.com:sast-summer-training-2024/sast2024-neural-network.git
