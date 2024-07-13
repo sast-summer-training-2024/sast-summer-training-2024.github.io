@@ -1,0 +1,3 @@
+[submodule "docs/linux_git"]
+	path = docs/linux_git
+	url = git@github.com:sast-summer-training-2024/sast-linux-git.git

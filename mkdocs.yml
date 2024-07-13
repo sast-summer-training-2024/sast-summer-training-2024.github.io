@@ -88,3 +88,7 @@ nav:
   - 首页:
     - index.md
     - 资源链接: links.md
+  - Linux & Git:
+    - 课前准备: linux_git/Pre-requisite.md
+    - Linux: linux_git/Linux.md
+    - Git: linux_git/Git.md
