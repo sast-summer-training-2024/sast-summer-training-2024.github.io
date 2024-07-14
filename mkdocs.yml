@@ -88,9 +88,10 @@ nav:
   - 首页:
     - index.md
     - 资源链接: links.md
-  - Linux & Git:
-    - 课前准备: linux_git/Pre-requisite.md
-    - Linux: linux_git/Linux.md
-    - Git: linux_git/Git.md
+  - 基础:
+    - Linux & Git:
+      - 课前准备: basic/linux_git/Pre-requisite.md
+      - Linux: basic/linux_git/Linux.md
+      - Git: basic/linux_git/Git.md
   - AI:
-    - 神经网络: sast2024-neural-network/network.md
+    - 神经网络: ai/neural-network/network.md
