@@ -679,6 +679,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#git-lfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git LFS: 如何优雅管理大文件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Ignore: 不要把奇怪的文件上传到仓库
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       其它的学习方法
@@ -889,6 +907,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#git-lfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git LFS: 如何优雅管理大文件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Ignore: 不要把奇怪的文件上传到仓库
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       其它的学习方法
@@ -1035,10 +1071,20 @@
 <p><img alt="Accept Theirs" src="../git_conflict_accept_theirs.png" /></p>
 <p><img alt="Resolved" src="../git_conflict_resolved.png" /></p>
 <p>全部 Resolve 之后, <strong>务必确认程序按照预期运行</strong>, 然后运行可能的格式更正脚本 / 代码风格检查脚本, 最后再提交.</p>
+<h2 id="git-lfs">Git LFS: 如何优雅管理大文件<a class="headerlink" href="#git-lfs" title="Permanent link">&para;</a></h2>
+<p>Git 的逻辑是存储 <em>diff</em>. 但对于二进制大文件, 尤其是图片, 视频, 模型等, Git 无法给出正确的 diff, 从而会倾向于把整个文件删掉重新上传.</p>
+<p>那么: 如果你有一个模型, 这个模型有 100MB, 你每次微调了一点, 调了 10 次, 这时候你的 Git 仓库就有 1GB 了. 其他人在 Pull / 你在其它设备上 Pull 的时候就要下载完整的 1GB 数据 (即便你并不需要之前的 9 个版本). 对一个体量更大的项目, 这就会变得不可接受了. (你也不想为了一个 100M 的项目下载 10GB 的东西吧)</p>
+<p>因此, Git LFS (Large File Storage) 被开发出来以解决这一问题. LFS 的基本原理是把仓库里的文件换成一个指向 LFS 服务器的 "指针", 然后在需要的时候再下载这个文件.</p>
+<p>LFS 在 Linux 下一般是一个单独的包 <code>git-lfs</code>. 安装之后就可以用 <code>git lfs init</code> 初始化 LFS.</p>
+<p>此时 LFS 给 Git 挂了一些钩子, 使得所有被 <code>git lfs track</code> 的文件都会随着 Git 的 Push / Pull 被上传 / 下载到 LFS 服务器上.</p>
+<h2 id="git-ignore">Git Ignore: 不要把奇怪的文件上传到仓库<a class="headerlink" href="#git-ignore" title="Permanent link">&para;</a></h2>
+<p>在 Git 仓库中, 绝大多数时间里都会有一些并不需要上传的文件, 不管是训练模型的输出, 编译生成的程序, IDE 的配置, 测试数据库等等.</p>
+<p><strong>一定记得把这些文件加入到 <code>.gitignore</code> 文件中.</strong> 这个文件会告诉 Git 哪些文件不需要被上传.</p>
+<p><strong><code>man gitignore</code></strong></p>
 <h2 id="_4">其它的学习方法<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
 <li>使用 Help!</li>
-<li><a href="https://ohmygit.org/">https://ohmygit.org/</a> 这是个游戏 (?) 感觉还挺有趣的</li>
+<li><a href="https://ohmygit.org/">Oh My Git</a> 这是个游戏 (?) 感觉还挺有趣的</li>
 </ul>
 
 
@@ -1060,7 +1106,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年7月14日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年7月15日</span>
   </span>
 
     
