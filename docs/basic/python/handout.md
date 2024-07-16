@@ -687,6 +687,7 @@ Conda 的安装相对简单，请大家自行去 [Tuna](https://mirrors.tuna.tsi
 
 ## 十一、附录
 下面列出了一些 Python 的学习资源，供大家参考：
+
 - 2023年lyf学长的 Python 教程：[链接](https://summer23.net9.org/basic/python/)
 - 2022年zcy学长的 Python 教程：[链接](https://zhaochen20.notion.site/a5a8fc071a0c42b188cf2bec1be5149d)
 - 2021年ayf学长的 Python 教程：[链接](https://cloud.tsinghua.edu.cn/d/1f222c2869964fc99f33/?p=%2F07-19%20Python&mode=list)
