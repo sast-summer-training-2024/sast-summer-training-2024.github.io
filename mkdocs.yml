@@ -96,6 +96,9 @@ nav:
     - Python:
       - 课前准备: basic/python/Pre-requisite.md
       - 正文: basic/python/handout.md
+    - Web基础:
+      - 课前准备: 无
+      - 课件: basic/Web_basics/Web_basics.pdf
   - AI:
     - 神经网络: ai/neural-network/network.md
     - 数据处理可视化与pytorch: ai/dp-and-pytorch/readme.md
