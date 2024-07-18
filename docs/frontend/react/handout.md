@@ -559,8 +559,6 @@ Next.js 从 v13 起就使用了新的路由模式 —— App Router。从 v13.4 
 
 那么这两者到底有什么区别呢？为什么要选择更新到App Router呢？
 
-### Pages Router
-
 Pages Router 是 Next.js 最早的路由方案，它将 pages 目录下的所有文件都视作路由文件，并且文件名就是路由的路径。
 例如，我们有一个 pages 目录，其结构如下：
 
