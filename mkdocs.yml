@@ -108,3 +108,8 @@ nav:
     - React:
       - 课前准备: frontend/react/Pre-requisite.md
       - 讲义: frontend/react/handout.md
+  - 后端:
+    - Django:
+      - 课前准备: backend/django/prerequisites.md
+      - 后端架构: backend/django/backend.md
+      - Django: backend/django/django.md

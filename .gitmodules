@@ -4,3 +4,6 @@
 [submodule "docs/ai/neural-network"]
 	path = docs/ai/neural-network
 	url = git@github.com:sast-summer-training-2024/sast2024-neural-network.git
+[submodule "docs/backend/django"]
+	path = docs/backend/django
+	url = git@github.com:sast-summer-training-2024/sast2024-django.git
