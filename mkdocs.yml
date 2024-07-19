@@ -100,6 +100,7 @@ nav:
       - 课件: basic/Web_basics/Web_basics.pdf
     - 数据库 & SQL:
       - 课前准备: basic/sql/Pre-requisite.md
+      - 讲义: basic/sql/handout.md
   - AI:
     - 神经网络: ai/neural-network/network.md
     - 数据处理可视化与pytorch: ai/dp-and-pytorch/readme.md
