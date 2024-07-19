@@ -1,0 +1,3120 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Pre-requisite/">
+      
+      
+        <link rel="next" href="../../../ai/neural-network/network/">
+      
+      
+      <link rel="icon" href="../../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.29">
+    
+    
+      
+        <title>讲义 - 酒井科协暑培 2024</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.76a95c52.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sql" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="酒井科协暑培 2024" class="md-header__button md-logo" aria-label="酒井科协暑培 2024" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            酒井科协暑培 2024
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              讲义
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sast-summer-training-2024/sast-summer-training-2024.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SAST Summer Training 2024
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../linux_git/Pre-requisite/" class="md-tabs__link">
+          
+  
+    
+  
+  基础
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ai/neural-network/network/" class="md-tabs__link">
+          
+  
+    
+  
+  AI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../frontend/react/Pre-requisite/" class="md-tabs__link">
+          
+  
+    
+  
+  前端
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="酒井科协暑培 2024" class="md-nav__button md-logo" aria-label="酒井科协暑培 2024" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    酒井科协暑培 2024
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sast-summer-training-2024/sast-summer-training-2024.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SAST Summer Training 2024
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            首页
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    资源链接
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    基础
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            基础
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Linux & Git
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Linux & Git
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux_git/Pre-requisite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    课前准备
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux_git/Linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux_git/Git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/Pre-requisite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    课前准备
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/handout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    讲义
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Web基础
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Web基础
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Web_basics/Web_basics.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    课件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数据库 & SQL
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            数据库 & SQL
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pre-requisite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    课前准备
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    讲义
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    讲义
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、关系型数据库
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、关系型数据库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 什么是数据库？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 什么是关系型数据库？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 关系型数据库中的关系
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、 SQL 入门
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、 SQL 入门">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. SQL 是什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 数据类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 数据库的约束与优化
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 数据库的约束与优化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 主键
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 外键
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 其他约束
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 索引
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 数据库与数据表操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 数据库与数据表操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 CREATE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-alter" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 ALTER
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-drop" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 DROP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-crud" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. CRUD
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. CRUD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 INSERT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-select" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 SELECT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 SELECT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.1 基本操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-where" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2 WHERE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2.2 WHERE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5221-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2.1 IN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5222-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2.2 LIKE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5223-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2.3 NULL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5224-and-or-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2.4 AND, OR, NOT
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#523-count-max-min-sum-avg" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.3 COUNT, MAX, MIN, SUM, AVG
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#524-group-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.4 GROUP BY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#525-having" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.5 HAVING
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#526-distinct" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.6 DISTINCT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#527-order-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.7 ORDER BY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#528-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.8 LIMIT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#529-sub-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.9 Sub Query
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5210-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.10 JOIN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5211-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.11 Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2.11 Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#52111-substring" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.11.1 SUBSTRING
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52112-char_length" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.11.2 CHAR_LENGTH
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52113-replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.11.3 REPLACE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 UPDATE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 DELETE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-explain" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. EXPLAIN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-orm" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. ORM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. SQL 注入攻击
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. SQL 注入攻击">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 基本原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 预防措施
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-mycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. mycli
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、 参考资料
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai/neural-network/network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai/dp-and-pytorch/readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据处理可视化与pytorch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    前端
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            前端
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    React
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            React
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frontend/react/Pre-requisite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    课前准备
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frontend/react/handout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    讲义
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、关系型数据库
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、关系型数据库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 什么是数据库？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 什么是关系型数据库？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 关系型数据库中的关系
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、 SQL 入门
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、 SQL 入门">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. SQL 是什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 数据类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 数据库的约束与优化
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 数据库的约束与优化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 主键
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 外键
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 其他约束
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 索引
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 数据库与数据表操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 数据库与数据表操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 CREATE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-alter" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 ALTER
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-drop" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 DROP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-crud" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. CRUD
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. CRUD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 INSERT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-select" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 SELECT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 SELECT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.1 基本操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-where" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2 WHERE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2.2 WHERE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5221-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2.1 IN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5222-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2.2 LIKE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5223-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2.3 NULL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5224-and-or-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2.4 AND, OR, NOT
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#523-count-max-min-sum-avg" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.3 COUNT, MAX, MIN, SUM, AVG
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#524-group-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.4 GROUP BY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#525-having" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.5 HAVING
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#526-distinct" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.6 DISTINCT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#527-order-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.7 ORDER BY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#528-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.8 LIMIT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#529-sub-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.9 Sub Query
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5210-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.10 JOIN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5211-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.11 Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2.11 Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#52111-substring" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.11.1 SUBSTRING
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52112-char_length" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.11.2 CHAR_LENGTH
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52113-replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.11.3 REPLACE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 UPDATE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 DELETE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-explain" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. EXPLAIN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-orm" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. ORM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. SQL 注入攻击
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. SQL 注入攻击">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 基本原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 预防措施
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-mycli" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. mycli
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、 参考资料
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+    
+                  
+
+  
+  
+
+
+<h1 id="sql">【数据库 &amp; SQL】课程讲义<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h1>
+<h2 id="_1">一、关系型数据库<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 什么是数据库？<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>所谓“数据库”是以一定方式储存在一起、能予多个用户共享、具有尽可能小的冗余度、与应用程序彼此独立的数据集合。应用程序只需调用数据库软件提供的 API 接口便可以实现数据的读写，而无需在意数据在文件中如何存储以及如何索引。同学们可在“数据库系统概论”课程深入学习数据的存储方式与检索方式。</p>
+<p>根据数据模型进行分类，可以将数据库分为：</p>
+<ul>
+<li><strong>关系型数据库</strong>，包括 <a href="https://www.mysql.com/">MySQL</a>、<a href="https://www.postgresql.org">PostgreSQL</a>、<a href="https://www.sqlite.org/">SQLite</a>、<a href="https://www.oracle.com/database/">Oracle</a> 等；</li>
+<li><strong>非关系型数据库（NoSQL）</strong>，包括 <a href="https://www.mongodb.com/">MongoDB</a>、<a href="https://redis.io/">Redis</a>、<a href="https://cassandra.apache.org/">Apache Cassandra</a> 等。</li>
+</ul>
+<h3 id="2">2. 什么是关系型数据库？<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>提到数据存储，我们很容易想到 Excel 表格。Excel 表格使用列表示属性、行表示不同的实例，这种方式确实能够很好地遍历和管理数据。而关系型数据库是一种建立在关系模型基础上的数据库，使用表（Table）来存储数据。关系型数据库中的表与 Excel 表格相似，由行和列组成，其中：</p>
+<ul>
+<li>每一行代表一条<strong>记录（Record）</strong>，也就是一条完整的数据；</li>
+<li>每一列代表一个<strong>字段（Field）</strong>，代表一条记录的某个属性。</li>
+</ul>
+<p>与 Excel 不同的是，关系型数据库通过关系（Relations）将不同表中的数据连接起来，使得用户可以更方便地进行数据查询和操作。</p>
+<h3 id="3">3. 关系型数据库中的关系<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p>关系型数据库中的“关系”是指表与表之间的连接或关联。这种关系通过特定的键（Key）来实现，主要包括以下几种类型：</p>
+<ul>
+<li>
+<p><strong>一对一关系（One-to-One Relationship）</strong>：每一行数据在一个表中与另一表中的一行数据相对应。例如，某公司的人事信息表与员工详细信息表，可能每个员工都有一个唯一的记录与其对应的详细信息。</p>
+</li>
+<li>
+<p><strong>一对多关系（One-to-Many Relationship）</strong>：一个表中的一行数据可以与另一表中的多行数据相关联。这是最常见的关系类型。例如，一个部门表和员工表，一个部门可以有多个员工，但一个员工只能属于一个部门。</p>
+</li>
+<li>
+<p><strong>多对多关系（Many-to-Many Relationship）</strong>：一个表中的多行数据可以与另一表中的多行数据相对应。例如，学生表和课程表，一个学生可以选修多门课程，一门课程也可以有多名学生选修。多对多关系通常通过一个中间表（关联表）来实现。</p>
+</li>
+</ul>
+<p>我们以学生和课程的关系为例：</p>
+<ul>
+<li>每位同学拥有 <code>[sid, name, major]</code> 三个属性；</li>
+<li>每个课程拥有 <code>[cid, title, credit, time]</code> 四个属性，对于每个同学都有 <code>grade</code> 属性。</li>
+</ul>
+<p>倘若用一张 Excel 表格来存储，假设有 10 个学生，每个学生均选择了 10 门相同的课程，那么 Excel 表格的数据存储量约为 <span class="arithmatex"><span class="MathJax_Preview">(3 + 5) \times 10 \times 10 = 800</span><script type="math/tex">(3 + 5) \times 10 \times 10 = 800</script></span>，其中存在大量冗余。而在关系型数据库中，我们可以设计三张数据表（现阶段我们只需考虑 Field 与 Type 两列，每个 Field 表示一个字段：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">DESC</span><span class="w"> </span><span class="n">Students</span><span class="p">;</span>
+<span class="o">+-------+--------------+------+-----+---------+----------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">Field</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">Type</span><span class="w">         </span><span class="o">|</span><span class="w"> </span><span class="no">Null</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">Key</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">Default</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Extra</span><span class="w">          </span><span class="o">|</span>
+<span class="o">+-------+--------------+------+-----+---------+----------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="kt">int</span><span class="w">          </span><span class="o">|</span><span class="w"> </span><span class="k">NO</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="n">PRI</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="k">auto_increment</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="n">sid</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="kt">char</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="k">NO</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="n">UNI</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w">                </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="k">name</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">NO</span><span class="w">   </span><span class="o">|</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w">                </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="n">major</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">NO</span><span class="w">   </span><span class="o">|</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w">                </span><span class="o">|</span>
+<span class="o">+-------+--------------+------+-----+---------+----------------+</span>
+<span class="mi">4</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="p">(</span><span class="mf">0.00</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">DESC</span><span class="w"> </span><span class="n">Courses</span><span class="p">;</span>
+<span class="o">+--------+--------------+------+-----+---------+----------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">Field</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="k">Type</span><span class="w">         </span><span class="o">|</span><span class="w"> </span><span class="no">Null</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">Key</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">Default</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Extra</span><span class="w">          </span><span class="o">|</span>
+<span class="o">+--------+--------------+------+-----+---------+----------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="kt">int</span><span class="w">          </span><span class="o">|</span><span class="w"> </span><span class="k">NO</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="n">PRI</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="k">auto_increment</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="n">cid</span><span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="k">NO</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="n">UNI</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w">                </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="n">title</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">NO</span><span class="w">   </span><span class="o">|</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w">                </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="n">credit</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kt">int</span><span class="w">          </span><span class="o">|</span><span class="w"> </span><span class="k">NO</span><span class="w">   </span><span class="o">|</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w">                </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="kt">time</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">YES</span><span class="w">  </span><span class="o">|</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w">                </span><span class="o">|</span>
+<span class="o">+--------+--------------+------+-----+---------+----------------+</span>
+<span class="mi">5</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="p">(</span><span class="mf">0.00</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">DESC</span><span class="w"> </span><span class="n">Association</span><span class="p">;</span>
+<span class="o">+------------+---------+------+-----+---------+----------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">Field</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="k">Type</span><span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="no">Null</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">Key</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">Default</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Extra</span><span class="w">          </span><span class="o">|</span>
+<span class="o">+------------+---------+------+-----+---------+----------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">id</span><span class="w">         </span><span class="o">|</span><span class="w"> </span><span class="kt">int</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="k">NO</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="n">PRI</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="k">auto_increment</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="n">student_id</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kt">int</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="n">YES</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="n">MUL</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w">                </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="n">course_id</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="kt">int</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="n">YES</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="n">MUL</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w">                </span><span class="o">|</span>
+<span class="o">|</span><span class="w"> </span><span class="n">grade</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="kt">char</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">YES</span><span class="w">  </span><span class="o">|</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="no">NULL</span><span class="w">    </span><span class="o">|</span><span class="w">                </span><span class="o">|</span>
+<span class="o">+------------+---------+------+-----+---------+----------------+</span>
+<span class="mi">4</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="p">(</span><span class="mf">0.00</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>此时我们只需为每名同学和每个课程建立一行信息，并在 Association 中添加其关系即可。这里的  Association 就是中间表，用于存储同学与课程的选课关系，此时数据存储量约为 <span class="arithmatex"><span class="MathJax_Preview">4 \times 10 + 5 \times 10 + 4 \times 10 \times 10 = 490</span><script type="math/tex">4 \times 10 + 5 \times 10 + 4 \times 10 \times 10 = 490</script></span>，相比使用 Excel 减少了很多。以上就是一个多对多关系的数据库设计的简单示例，接下来我们将学习如何在这些数据表上进行所需操作。</p>
+<h2 id="sql_1">二、 SQL 入门<a class="headerlink" href="#sql_1" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>本节中所讲授的 SQL 语言及其实现基于 MySQL 数据库管理系统。MySQL 是一种流行的开源关系型数据库管理系统（RDBMS），广泛应用于各种应用场景。 在本节中，所有的示例代码和说明均适用于 MySQL。如果你使用的是其他数据库管理系统（如 PostgreSQL、SQL Server 或 Oracle），请注意其中可能存在的差异。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>如果想要更多地了解 SQL 命令的使用方法和作用，除了在<a href="https://dev.mysql.com/doc/refman/8.0/en/">官方文档</a>中查看，你也可以在 MySQL 的交互式命令行界面使用 <code>help</code> 来获取相关信息，如下</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">help</span><span class="w"> </span><span class="k">USE</span><span class="p">;</span>
+<span class="k">Name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;USE&#39;</span>
+<span class="k">Description</span><span class="o">:</span>
+<span class="n">Syntax</span><span class="o">:</span>
+<span class="k">USE</span><span class="w"> </span><span class="n">db_name</span>
+
+<span class="n">The</span><span class="w"> </span><span class="k">USE</span><span class="w"> </span><span class="n">statement</span><span class="w"> </span><span class="n">tells</span><span class="w"> </span><span class="n">MySQL</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">use</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">named</span><span class="w"> </span><span class="k">database</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">default</span>
+<span class="p">(</span><span class="k">current</span><span class="p">)</span><span class="w"> </span><span class="k">database</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">subsequent</span><span class="w"> </span><span class="n">statements</span><span class="p">.</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">statement</span><span class="w"> </span><span class="n">requires</span>
+<span class="k">some</span><span class="w"> </span><span class="n">privilege</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">database</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="k">some</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">within</span><span class="w"> </span><span class="n">it</span><span class="p">.</span>
+
+<span class="n">The</span><span class="w"> </span><span class="n">named</span><span class="w"> </span><span class="k">database</span><span class="w"> </span><span class="n">remains</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="k">until</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">session</span><span class="w"> </span><span class="k">or</span>
+<span class="n">another</span><span class="w"> </span><span class="k">USE</span><span class="w"> </span><span class="n">statement</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">issued</span><span class="o">:</span>
+
+<span class="k">USE</span><span class="w"> </span><span class="n">db1</span><span class="p">;</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">mytable</span><span class="p">;</span><span class="w">   </span><span class="c1"># selects from db1.mytable</span>
+<span class="k">USE</span><span class="w"> </span><span class="n">db2</span><span class="p">;</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">mytable</span><span class="p">;</span><span class="w">   </span><span class="c1"># selects from db2.mytable</span>
+
+<span class="n">The</span><span class="w"> </span><span class="k">database</span><span class="w"> </span><span class="k">name</span><span class="w"> </span><span class="n">must</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">specified</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">single</span><span class="w"> </span><span class="n">line</span><span class="p">.</span><span class="w"> </span><span class="n">Newlines</span><span class="w"> </span><span class="k">in</span>
+<span class="k">database</span><span class="w"> </span><span class="k">names</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="n">supported</span><span class="p">.</span>
+
+<span class="n">URL</span><span class="o">:</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">dev</span><span class="p">.</span><span class="n">mysql</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">refman</span><span class="o">/</span><span class="mf">8.0</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="k">use</span><span class="p">.</span><span class="n">html</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<h3 id="1-sql">1. SQL 是什么？<a class="headerlink" href="#1-sql" title="Permanent link">&para;</a></h3>
+<p><img src="/images/sql/sql.jpg" style="zoom:67%;" /></p>
+<p>SQL 有如下语言特性：</p>
+<ul>
+<li>脚本语言（类似 Python）：可以交互执行也可以事先写好后一次性执行；</li>
+<li>弱类型，如：</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="o">+---------+</span>
+<span class="o">|</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">|</span>
+<span class="o">+---------+</span>
+<span class="o">|</span><span class="w">       </span><span class="mi">2</span><span class="w"> </span><span class="o">|</span>
+<span class="o">+---------+</span>
+<span class="mi">1</span><span class="w"> </span><span class="k">row</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="p">(</span><span class="mf">0.00</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>关键字不区分大小写；而数据库名，表名，字段名等区分大小写。如：</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">CrEaTe</span><span class="w"> </span><span class="k">DaTaBaSe</span><span class="w"> </span><span class="n">CaseInsensitive</span><span class="p">;</span>
+<span class="k">Query</span><span class="w"> </span><span class="n">OK</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">row</span><span class="w"> </span><span class="n">affected</span><span class="w"> </span><span class="p">(</span><span class="mf">0.00</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">cReAtE</span><span class="w"> </span><span class="k">dAtAbAsE</span><span class="w"> </span><span class="n">caseInsensitive</span><span class="p">;</span>
+<span class="k">Query</span><span class="w"> </span><span class="n">OK</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">row</span><span class="w"> </span><span class="n">affected</span><span class="w"> </span><span class="p">(</span><span class="mf">0.01</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>这样分别创建了 <code>CaseInsensitive</code> 和 <code>caseInsensitive</code> 两个数据库而没有出现冲突。</p>
+<p>当出现数据库名，表名，字段名与关键字重复时，需要使用反引号 ` 将其包裹。为了美观与可读性，建议关键字统一使用大写表示。</p>
+<h3 id="2_1">2. 数据类型<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<p>由于数据库的核心便是“数据”，不同的数据类型会影响数据的存储方式与检索方式，因此为每张表的字段选择最合适的数据类型是十分有必要的。MySQL 支持的类型大致可以分为数值、日期/时间和字符串三类，在此仅列举常用的类型：</p>
+<ul>
+<li>INT：4 字节，取值范围为 <span class="arithmatex"><span class="MathJax_Preview">[-2^{31}, 2^{31} - 1]</span><script type="math/tex">[-2^{31}, 2^{31} - 1]</script></span></li>
+<li>BIGINT：8 字节，取值范围为 <span class="arithmatex"><span class="MathJax_Preview">[-2^{63}, 2^{63} - 1]</span><script type="math/tex">[-2^{63}, 2^{63} - 1]</script></span></li>
+<li>FLOAT：4 字节</li>
+<li>DOUBLE：8 字节</li>
+<li>可使用 <code>UNSIGEND</code> 关键字来表示无符号类型，以表示更大的范围，例如：</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">your_table</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">your_column</span><span class="w"> </span><span class="kt">INT</span><span class="w"> </span><span class="k">UNSIGNED</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>CHAR：定长字符串，256 字节，长度取值范围为 <span class="arithmatex"><span class="MathJax_Preview">[0,255]</span><script type="math/tex">[0,255]</script></span> 个字符；</li>
+<li>
+<p>VARCHAR：变长字符串，长度取值范围为 <span class="arithmatex"><span class="MathJax_Preview">[0,65535]</span><script type="math/tex">[0,65535]</script></span> 个字符；</p>
+</li>
+<li>
+<p>TIMESTAMP：时间戳，形式为 <code>YYYY-MM-DD hh:mm:ss</code>，4 字节，范围为 <span class="arithmatex"><span class="MathJax_Preview">[1970−01−01\ 00:00:01\  \mathrm{UTC},2038−01−19\ 03:14:07\ \mathrm{UTC}]</span><script type="math/tex">[1970−01−01\ 00:00:01\  \mathrm{UTC},2038−01−19\ 03:14:07\ \mathrm{UTC}]</script></span>，常见的写法有：</p>
+</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">your_table</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="c1"># ...</span>
+<span class="w">    </span><span class="n">event_time</span><span class="w"> </span><span class="kt">TIMESTAMP</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span><span class="w">  </span><span class="c1"># 插入记录时默认为该条记录插入的时间，更新记录时自动更新为该条记录更新的时间</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>特别的，<code>NULL</code> 表示空值（与 <code>0</code> 和 <code>''</code> 作区分）。但字段在设置时应尽量“避免允许为 <code>NULL</code>”，这样可以简化查询条件，加快查询速度，也利于应用程序读取数据后无需判断其是否为 <code>NULL</code>。</p>
+<h3 id="3_1">3. 数据库的约束与优化<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<h4 id="31">3.1 主键<a class="headerlink" href="#31" title="Permanent link">&para;</a></h4>
+<p>主键（Primary Key）是关系型数据库表中的一个或多个字段，这些字段具有以下特性：</p>
+<ul>
+<li>
+<p><strong>唯一性</strong>：主键的值必须是唯一的，即每一行的主键值都不相同。</p>
+</li>
+<li>
+<p><strong>非空性</strong>：主键字段不能包含 <code>NULL</code> 值，每一行必须有一个有效的主键值。</p>
+</li>
+</ul>
+<p>主键用于唯一标识表中的每一行记录，是数据库设计中确保数据完整性和唯一性的关键部分。常见的可以用作主键字段的类型有：</p>
+<ul>
+<li>自增整数类型（使用 <code>AUTO_INCREMENT</code> 来声明自增）；</li>
+<li>全局唯一 GUID 类型：使用 GUID 算法生成一个全局唯一的字符串。</li>
+</ul>
+<p>注意，尽管只要我们保证某一字段不重复，便可以将其作为主键，但我们不推荐将业务相关的字段作为主键，这主要时防止当其需要变更时出现关系上的错误。</p>
+<p>例如，若我们将课程的课程号 <code>cid</code> 作为主键，尽管其是唯一的，但假如课程的课程号发生改变，或者其位数需要增加，那么在修改时我们还必须同时修改 <code>Association</code> 表中的内容，并且要确保没有重复的值或者确保在迁移数据时处理了重复值的情况。</p>
+<p>我们可以如下声明一个主键：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="kt">INT</span><span class="w"> </span><span class="k">AUTO_INCREMENT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+<span class="w">    </span><span class="c1"># ...</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>除去将单一字段作为主键外，我们还可以使用<strong>联合主键</strong>，即用多个字段同时唯一确定某一条记录，联合主键满足<strong>复合唯一性</strong>：这些字段可以出现重复值，但这些字段的组合必须是唯一的。我们可以如下声明联合主键：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="kt">INT</span><span class="n">，</span>
+<span class="w">    </span><span class="n">sid</span><span class="w"> </span><span class="kt">INT</span><span class="p">,</span>
+<span class="w">    </span><span class="c1"># ...</span>
+<span class="w">    </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">sid</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="32">3.2 外键<a class="headerlink" href="#32" title="Permanent link">&para;</a></h4>
+<p>外键（Foreign Key）是在关系型数据库中用于建立和强化表之间的联系的一种约束。它是一列或多列，这些列中的值必须匹配另一张表中的主键或唯一键。外键的主要作用是确保数据的一致性和参照完整性。在 <code>Association</code> 数据表中，<code>student_id</code> 和 <code>course_id</code> 分别外链到 <code>Students</code> 和 <code>Courses</code> 两张数据表中的 <code>id</code> 属性。通过定义外键约束，关系型数据库可以保证无法插入无效的数据，即无法插入在 <code>Students</code> 表或 <code>Courses</code> 表中不存在的 <code>id</code>号。</p>
+<p>外键除了能够约束不同表之间的数据关系，还可以配置级联更新和删除操作（使用 <code>CASCADE</code> 声明）。例如，如果在 <code>Students</code> 表中删除了一个同学的记录，可以自动删除所有关联的 <code>Association</code> 记录（级联删除），或者更新其中的 <code>student_id</code> 为新的值（级联更新）。</p>
+<p>然而，外键约束会降低数据库的性能，所以在应用程序可以保证逻辑正确性的前提下，我们可以不设置外键约束。此时 <code>student_id</code> 和 <code>course_id</code> 只是两个普通的字段，但是其在使用逻辑上起到了外键的作用。</p>
+<p>我们可以如下声明一个外键：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">student_id</span><span class="w"> </span><span class="kt">INT</span><span class="p">,</span>
+<span class="w">    </span><span class="c1"># ...</span>
+<span class="w">    </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">fk_student_id</span><span class="w"> </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">student_id</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Students</span><span class="p">(</span><span class="n">id</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="33">3.3 其他约束<a class="headerlink" href="#33" title="Permanent link">&para;</a></h4>
+<p>SQL 中的约束（Constraint）是用来限定表中的数据，以保证数据的准确性和完整性，上面提到的主键和外键都属于约束。约束可以在表级别或列级别定义，除了主键和外键以外，常见的约束有：</p>
+<ul>
+<li><code>UNIQUE</code>：唯一约束用于确保一列或多列的值在表中唯一，除了 NULL 值。</li>
+<li><code>NOT NULL</code>：非空约束用于确保列不能有 NULL 值。</li>
+<li><code>CHECK</code>：检查约束用于确保列中的值满足指定的条件。需要注意的是，MySQL 对 CHECK 约束的支持有限，在 8.0.16 之前的版本可能不完全支持。以下是 <code>CHECK</code> 约束的一个例子：</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="c1"># ...</span>
+<span class="w">    </span><span class="n">grade</span><span class="w"> </span><span class="kt">CHAR</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
+<span class="w">    </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">check_grade</span><span class="w"> </span><span class="k">CHECK</span><span class="p">(</span><span class="n">grade</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;A+&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;A-&#39;</span><span class="p">))</span><span class="w">    </span><span class="c1"># 确保 grade 字段是三者之一</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li><code>DEFAULT</code>：默认约束用于为列设置默认值，如果插入数据时没有指定该列的值，则使用默认值。</li>
+</ul>
+<h4 id="34">3.4 索引<a class="headerlink" href="#34" title="Permanent link">&para;</a></h4>
+<p>在汉语词典中，我们可以按照拼音、笔画、偏旁部首等方式进行索引，通过这些方式进行索引通常可以获得更快的检索速度。</p>
+<p>“索引”这一概念对于数据表也是这样。倘若我们为某一个字段建立了索引（为某种方式在词典中建立了目录），那么在通过这一字段进行检索时便通常可以获得更快的查询速度。关系型数据库会自动为主键建立索引，由于主键会保证绝对唯一，因此采用主键索引往往是效率最高的。对于其他字段，当其重复项不多且常常依赖其进行查询时，我们也可以考虑为其创建索引，例如 <code>Studens</code> 表中的 <code>sid</code> 和 <code>Courses</code> 表中的 <code>cid</code>。</p>
+<p>我们可以如下为一个字段建立索引：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">sid</span><span class="w"> </span><span class="kt">CHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="no">NULL</span><span class="w"> </span><span class="k">UNIQUE</span><span class="p">,</span>
+<span class="w">    </span><span class="c1"># ...</span>
+<span class="w">    </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_sid</span><span class="w"> </span><span class="p">(</span><span class="n">sid</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>也可以在数据表创建完成后再为某个字段建立索引：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_sid</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="p">(</span><span class="n">sid</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>然而，由于在插入、更新和删除记录时，需要同时修改索引，因此索引会减慢插入、更新和删除记录的速度。</p>
+<h3 id="4">4. 数据库与数据表操作<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<h4 id="41-create">4.1 CREATE<a class="headerlink" href="#41-create" title="Permanent link">&para;</a></h4>
+<p>如下创建新的数据库，然后通过 <code>USE</code> 命令来一个数据库作为当前会话的默认数据库。</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">summer24</span><span class="p">;</span>
+
+<span class="k">USE</span><span class="w"> </span><span class="n">summer24</span><span class="p">;</span><span class="w">   </span><span class="c1"># 执行这个命令后，所有后续的数据库操作都会在 summer24 上进行，直到会话结束或者你选择另一个数据库。</span>
+</code></pre></div></td></tr></table></div>
+<p>然后创建上面提到的三个数据表 <code>Students</code>、<code>Courses</code>、<code>Association</code>：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="kt">INT</span><span class="w"> </span><span class="k">AUTO_INCREMENT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+<span class="w">    </span><span class="n">sid</span><span class="w"> </span><span class="kt">CHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="no">NULL</span><span class="w"> </span><span class="k">UNIQUE</span><span class="p">,</span>
+<span class="w">    </span><span class="k">name</span><span class="w"> </span><span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="no">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="n">major</span><span class="w"> </span><span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="no">NULL</span><span class="p">,</span>
+<span class="p">);</span>
+
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Courses</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="kt">INT</span><span class="w"> </span><span class="k">AUTO_INCREMENT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+<span class="w">    </span><span class="n">cid</span><span class="w"> </span><span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="no">NULL</span><span class="w"> </span><span class="k">UNIQUE</span><span class="p">,</span>
+<span class="w">    </span><span class="n">title</span><span class="w"> </span><span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="no">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="n">credit</span><span class="w"> </span><span class="kt">INT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="no">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">time</span><span class="w"> </span><span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="kt">INT</span><span class="w"> </span><span class="k">AUTO_INCREMENT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+<span class="w">    </span><span class="n">student_id</span><span class="w"> </span><span class="kt">INT</span><span class="p">,</span>
+<span class="w">    </span><span class="n">course_id</span><span class="w"> </span><span class="kt">INT</span><span class="p">,</span>
+<span class="w">    </span><span class="n">grade</span><span class="w"> </span><span class="kt">CHAR</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
+<span class="w">    </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">fk_student_id</span><span class="w"> </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">student_id</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Students</span><span class="p">(</span><span class="n">id</span><span class="p">),</span>
+<span class="w">    </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">fk_course_id</span><span class="w"> </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">course_id</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">Courses</span><span class="p">(</span><span class="n">id</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>你可以使用以下命令分别列出所有的数据库和当前会话的默认数据库中的所有数据表：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SHOW</span><span class="w"> </span><span class="k">DATABASES</span><span class="p">;</span>
+
+<span class="k">SHOW</span><span class="w"> </span><span class="k">TABLES</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>你可以使用 <code>DESC</code>（Describe）来查看表的字段情况：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">DESC</span><span class="w"> </span><span class="n">Association</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="42-alter">4.2 ALTER<a class="headerlink" href="#42-alter" title="Permanent link">&para;</a></h4>
+<p><code>ALTER</code> 用于给数据表添加、删除字段，修改字段的类型或属性，例如：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Students</span>
+<span class="k">ADD</span><span class="w"> </span><span class="n">gender</span><span class="w"> </span><span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"> </span><span class="c1">-- 添加字段</span>
+
+<span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Students</span>
+<span class="k">DROP</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">gender</span><span class="p">;</span><span class="w"> </span><span class="c1">-- 删除字段</span>
+
+<span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Students</span>
+<span class="k">MODIFY</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">sid</span><span class="w"> </span><span class="kt">CHAR</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span><span class="w"> </span><span class="c1">-- 修改字段</span>
+
+<span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Students</span>
+<span class="k">ADD</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_sid</span><span class="w"> </span><span class="p">(</span><span class="n">sid</span><span class="p">);</span><span class="w"> </span><span class="c1">-- 建立索引</span>
+
+<span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Association</span>
+<span class="k">DROP</span><span class="w"> </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">fk_student_id</span><span class="p">;</span><span class="w"> </span><span class="c1">-- 删除外键</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="43-drop">4.3 DROP<a class="headerlink" href="#43-drop" title="Permanent link">&para;</a></h4>
+<p><code>DROP</code> 可以用来删除数据库或数据库，如下：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Students</span><span class="p">;</span>
+
+<span class="k">DROP</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">summer24</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="5-crud">5. CRUD<a class="headerlink" href="#5-crud" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>In computer programming, <strong>create, read, update, and delete</strong> (<strong>CRUD</strong>) are the four basic operations of <a href="https://en.wikipedia.org/wiki/Persistent_storage">persistent storage</a>.</p>
+</blockquote>
+<p>每个字母代表一个操作：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">CRUD</th>
+<th style="text-align: center;">SQL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Create</td>
+<td style="text-align: center;">INSERT</td>
+</tr>
+<tr>
+<td style="text-align: center;">Read</td>
+<td style="text-align: center;">SELECT</td>
+</tr>
+<tr>
+<td style="text-align: center;">Update</td>
+<td style="text-align: center;">UPDATE</td>
+</tr>
+<tr>
+<td style="text-align: center;">Delete</td>
+<td style="text-align: center;">DELETE</td>
+</tr>
+</tbody>
+</table>
+<h4 id="51-insert">5.1 INSERT<a class="headerlink" href="#51-insert" title="Permanent link">&para;</a></h4>
+<p><code>INSERT</code> 用来向数据表中插入新记录，一个简单的用法示例如下：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2024000000&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CS&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>我们也能够指定字段来进行赋值，若某个字段没有被赋值，那么它会被赋予默认值（若 <code>DEFAULT</code> 未被声明，则为 NULL）：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="p">(</span><span class="n">sid</span><span class="p">,</span><span class="w"> </span><span class="k">name</span><span class="p">,</span><span class="w"> </span><span class="n">major</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span>
+<span class="p">(</span><span class="s1">&#39;2024000000&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CS&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>一次插入也可以插入多条记录：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="p">(</span><span class="n">sid</span><span class="p">,</span><span class="w"> </span><span class="k">name</span><span class="p">,</span><span class="w"> </span><span class="n">major</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span>
+<span class="p">(</span><span class="s1">&#39;2024000000&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;CS&#39;</span><span class="p">),</span>
+<span class="p">(</span><span class="s1">&#39;2024000001&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;EE&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>为了方便起见，我们预先插入一些数据</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://cloud.tsinghua.edu.cn/f/c707b25259ab4676b000/<span class="se">\?</span>dl<span class="se">\=</span><span class="m">1</span><span class="w"> </span>-o<span class="w"> </span>summer.sql
+</code></pre></div></td></tr></table></div>
+<p>然后在 MySQL 内执行该 SQL 脚本：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">source</span><span class="w"> </span><span class="o">&lt;</span><span class="k">file</span><span class="w"> </span><span class="k">path</span><span class="o">&gt;/</span><span class="n">summer</span><span class="p">.</span><span class="k">sql</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>若执行</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="p">;</span>
+<span class="o">+----------+</span>
+<span class="o">|</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">|</span>
+<span class="o">+----------+</span>
+<span class="o">|</span><span class="w">      </span><span class="mi">151</span><span class="w"> </span><span class="o">|</span>
+<span class="o">+----------+</span>
+<span class="mi">1</span><span class="w"> </span><span class="k">row</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="p">(</span><span class="mf">0.00</span><span class="w"> </span><span class="n">sec</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>则说明导入成功。</p>
+<h4 id="52-select">5.2 SELECT<a class="headerlink" href="#52-select" title="Permanent link">&para;</a></h4>
+<p><code>SELECT</code> 用来在数据库中查询记录，是 MySQL 中的核心操作，本节将就重要的查询选项来讲解。</p>
+<h5 id="521">5.2.1 基本操作<a class="headerlink" href="#521" title="Permanent link">&para;</a></h5>
+<p>暴力地取出整张表：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>在生产环境中使用该操作应谨慎，因为若记录特别多或某个字段特别长，这将消耗大量的网络传输和内存消耗，且可能出现数据暴露等问题。</p>
+<p>我们也可以查看指定的列：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">sid</span><span class="p">,</span><span class="w"> </span><span class="k">name</span><span class="p">,</span><span class="w"> </span><span class="n">major</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h5 id="522-where">5.2.2 WHERE<a class="headerlink" href="#522-where" title="Permanent link">&para;</a></h5>
+<p><code>WHERE</code> 可以用来筛选查询的记录，例如查找所有学号在 2024500000 之后的学生：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">sid</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2024500000</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p><code>WHERE</code> 后的式子被称为条件表达式，除了如上面这个例子那样简单的写法，还有其他不同的写法。</p>
+<h6 id="5221-in">5.2.2.1 IN<a class="headerlink" href="#5221-in" title="Permanent link">&para;</a></h6>
+<p>在使用 <code>WHERE</code> 进行过滤时我们可以指定范围，如我们只想查询专业为物理或生物的学生：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">major</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;Physics&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Biology&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h6 id="5222-like">5.2.2.2 LIKE<a class="headerlink" href="#5222-like" title="Permanent link">&para;</a></h6>
+<p>可以使用 <code>LIKE</code> 进行模糊匹配，例如查找所有姓名以 A 开头的学生：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;A%&#39;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>更多例子可以参见 <a href="https://www.w3schools.com/sql/sql_like.asp">SQL LIKE Operator (w3schools.com)</a>, <a href="https://www.w3schools.com/sql/sql_wildcards.asp">SQL Wildcard Characters (w3schools.com)</a></p>
+<h6 id="5223-null">5.2.2.3 NULL<a class="headerlink" href="#5223-null" title="Permanent link">&para;</a></h6>
+<p>由前所述，没有被分配值且没有默认值得字段在插入时会被分配 <code>NULL</code> 这个空值来表示记录中的某个字段没有数据，可以使用 <code>ISNULL</code> 来进行判断。如找出所有没有登记分数得选课记录：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="nf">ISNULL</span><span class="p">(</span><span class="n">grade</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>注意不能使用 <code>grade = NULL</code> 来判断是否为 <code>NULL</code>：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">NULL</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>判断非空可以使用 <code>NOT ISNULL(&lt;column_name&gt;)</code>，如</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="nf">ISNULL</span><span class="p">(</span><span class="n">grade</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>而不是</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="no">NULL</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h6 id="5224-and-or-not">5.2.2.4 AND, OR, NOT<a class="headerlink" href="#5224-and-or-not" title="Permanent link">&para;</a></h6>
+<p>我们可以使用 <code>AND</code>、<code>OR</code>、<code>NOT</code> 来组合不同的逻辑表达式形成符合我们要求的条件表达式，例如筛选出所有姓名以 D 开头且专业不是计算机科学或者数学的学生：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;D%&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="n">major</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;Computer Science&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mathematics&#39;</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h5 id="523-count-max-min-sum-avg">5.2.3 COUNT, MAX, MIN, SUM, AVG<a class="headerlink" href="#523-count-max-min-sum-avg" title="Permanent link">&para;</a></h5>
+<p>除了直接展示我们查询出来的数据，我们也能通过这些聚合函数对数据进行简单地进一步处理，如查看学生中最小的学号：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="nf">MIN</span><span class="p">(</span><span class="n">sid</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>其他的几个函数：计数、最大值、求和、平均值，也可以像上面这个例子一样使用。</p>
+<h5 id="524-group-by">5.2.4 GROUP BY<a class="headerlink" href="#524-group-by" title="Permanent link">&para;</a></h5>
+<p>我们想看看在所有学生中不同的专业分别有多少人：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">major</span><span class="p">,</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">major</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>在查询中，我们可以给字段、表、和查询赋予一个临时的，仅在这次查询中使用的名称。</p>
+<p>例如对于上面的查询，我们给 <code>COUNT(*)</code> 一个临时名称 <code>student_count</code>：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">major</span><span class="p">,</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">student_count</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">major</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>在 <code>GROUP BY</code> 时，你通常不能选择没有受到 <code>GROUP BY</code> 修饰的字段，例如如下查询：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">sid</span><span class="p">,</span><span class="w"> </span><span class="n">major</span><span class="p">,</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">student_count</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">major</span><span class="p">;</span>
+<span class="k">ERROR</span><span class="w"> </span><span class="mi">1055</span><span class="w"> </span><span class="p">(</span><span class="mi">42000</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">Expression</span><span class="w"> </span><span class="c1">#1 of SELECT list is not in GROUP BY clause and contains nonaggregated column &#39;summer24.Students.sid&#39; which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by</span>
+</code></pre></div></td></tr></table></div>
+<p>这是因为同一个 <code>major</code> 可能包括多个 <code>sid</code>，因此其定义不良好。</p>
+<p>当我们希望选择其他列时，可以考虑使用后面将要讲到的 <code>JOIN</code> 选项。</p>
+<h5 id="525-having">5.2.5 HAVING<a class="headerlink" href="#525-having" title="Permanent link">&para;</a></h5>
+<p>可能想要对聚合算子的结果进行过滤，比如试图选出人数大于 10 个的专业：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">mysql</span><span class="o">&gt;</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">major</span><span class="p">,</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">major</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="k">ERROR</span><span class="w"> </span><span class="mi">1111</span><span class="w"> </span><span class="p">(</span><span class="n">HY000</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">Invalid</span><span class="w"> </span><span class="k">use</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">function</span>
+</code></pre></div></td></tr></table></div>
+<p>此时我们可以用 <code>HAVING</code> 来过滤聚合算子的结果：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">major</span><span class="p">,</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">major</span><span class="w"> </span><span class="k">HAVING</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h5 id="526-distinct">5.2.6 DISTINCT<a class="headerlink" href="#526-distinct" title="Permanent link">&para;</a></h5>
+<p>当我们希望查询的结果中没有重复值时，可以使用 <code>DISDINCT</code>，例如专业的种类：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">major</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h5 id="527-order-by">5.2.7 ORDER BY<a class="headerlink" href="#527-order-by" title="Permanent link">&para;</a></h5>
+<p>当我们希望对查询结果排序时，可以使用 <code>ORDER BY</code>，例如对课程的学分进行排序：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">credit</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Courses</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">credit</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>默认结果为升序，我们也可以规定降序：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">credit</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Courses</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">credit</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>我们也可以对多个字段排序，如优先按照学分降序，再按照课程名升序：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">credit</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Courses</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">credit</span><span class="w"> </span><span class="k">DESC</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="k">ASC</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>也可以对 <code>GROUP BY</code> 的结果排序，例如按照获得某等级的学生个数排升序：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">grade</span><span class="p">,</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">student_count</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">grade</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">student_count</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h5 id="528-limit">5.2.8 LIMIT<a class="headerlink" href="#528-limit" title="Permanent link">&para;</a></h5>
+<p><code>LIMIT</code> 可以对结果指定偏移与范围，比如我们查找学号最小的 10 位学生：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">sid</span><span class="p">,</span><span class="w"> </span><span class="k">name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">sid</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>假如这样的查询是要分给一个后端，每页10个，我们想要去查第 4 页的结果：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">sid</span><span class="p">,</span><span class="w"> </span><span class="k">name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">sid</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>表示从第 30 位学生开始，查询 10 条记录。</p>
+<h5 id="529-sub-query">5.2.9 Sub Query<a class="headerlink" href="#529-sub-query" title="Permanent link">&para;</a></h5>
+<p>对于每次查询得到的结果集合，我们可以将其视为一个临时的数据表，可以（必须）对他起一个临时名称（别名）后继续进行 <code>SELECT</code> 等操作。而这样嵌套在查询中的查询称为 <code>Sub Query</code>，具有很强的表达能力，而且十分符合人类的思维直觉。</p>
+<p>例如我们希望查询选课超过了平均值的学生的选课记录，可以将查询分为 3 步：</p>
+<ol>
+<li>查询学生选课的数量：</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">cnt</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">student_id</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>对这些数量求平均：</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">q1</span><span class="p">.</span><span class="n">cnt</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">cnt</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">student_id</span>
+<span class="p">)</span><span class="w"> </span><span class="n">q1</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>其中 <code>q1</code> 是对第一个子查询的别名</p>
+<ol>
+<li>从 <code>Association</code> 表中筛选出相应的记录：</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">student_id</span><span class="p">,</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">cnt</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">student_id</span><span class="w"> </span><span class="k">HAVING</span><span class="w"> </span><span class="n">cnt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">q1</span><span class="p">.</span><span class="n">cnt</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="k">SELECT</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">cnt</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">student_id</span>
+<span class="w">    </span><span class="p">)</span><span class="w"> </span><span class="n">q1</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>子查询也可以用在 <code>WHERE</code> 语句中，例如希望查询选课数量排前 10 名学生的全部信息，可以将查询分为 3 步：</p>
+<ol>
+<li>从 <code>Association</code> 表中查出选课数量排前 10 名的学生的 <code>id</code>：</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">student_id</span><span class="p">,</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">cnt</span>
+<span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span>
+<span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">student_id</span>
+<span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">cnt</span><span class="w"> </span><span class="k">DESC</span>
+<span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>从中选出 <code>id</code>：</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">student_id</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">student_id</span><span class="p">,</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">cnt</span>
+<span class="w">        </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span>
+<span class="w">        </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">student_id</span>
+<span class="w">        </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">cnt</span><span class="w"> </span><span class="k">DESC</span>
+<span class="w">        </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span>
+<span class="p">)</span><span class="w"> </span><span class="n">top_s</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>从 <code>Students</code> 表中查出这些同学的信息：</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="p">(</span>
+<span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">top_s</span><span class="p">.</span><span class="n">student_id</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="k">SELECT</span><span class="w"> </span><span class="n">student_id</span><span class="p">,</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">cnt</span>
+<span class="w">            </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span>
+<span class="w">            </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">student_id</span>
+<span class="w">            </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">cnt</span><span class="w"> </span><span class="k">DESC</span>
+<span class="w">            </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span>
+<span class="w">    </span><span class="p">)</span><span class="w"> </span><span class="n">top_s</span>
+<span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h5 id="5210-join">5.2.10 JOIN<a class="headerlink" href="#5210-join" title="Permanent link">&para;</a></h5>
+<p>JOIN 是我们可以对多个表的结果按照某些列的约束关系进行拼接，常见的模式有：</p>
+<p><img src="/images/sql/join.png" style="zoom:75%;" /></p>
+<p>例如我们希望查看在选课记录中查看成绩的同时显示学生的名字：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">Students</span><span class="p">.</span><span class="k">name</span><span class="p">,</span><span class="w"> </span><span class="n">course_id</span><span class="p">,</span><span class="w"> </span><span class="n">grade</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span>
+<span class="w">    </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Association</span>
+<span class="w">    </span><span class="k">ON</span><span class="w"> </span><span class="n">Students</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">student_id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="nf">ISNULL</span><span class="p">(</span><span class="n">grade</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>利用 <code>Sub Query</code> 同时显示课程名和学分，并按学生姓名排序：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">StuWithCouseID</span><span class="p">.</span><span class="k">name</span><span class="w"> </span><span class="n">student</span><span class="p">,</span><span class="w"> </span><span class="n">Courses</span><span class="p">.</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">Courses</span><span class="p">.</span><span class="n">credit</span><span class="p">,</span><span class="w"> </span><span class="n">StuWithCouseID</span><span class="p">.</span><span class="n">grade</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">Courses</span>
+<span class="w">    </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="k">SELECT</span><span class="w"> </span><span class="n">Students</span><span class="p">.</span><span class="k">name</span><span class="p">,</span><span class="w"> </span><span class="n">course_id</span><span class="p">,</span><span class="w"> </span><span class="n">grade</span>
+<span class="w">            </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span>
+<span class="w">            </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Association</span>
+<span class="w">            </span><span class="k">ON</span><span class="w"> </span><span class="n">Students</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">student_id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="nf">ISNULL</span><span class="p">(</span><span class="n">grade</span><span class="p">)</span>
+<span class="w">    </span><span class="p">)</span><span class="w"> </span><span class="n">StuWithCouseID</span>
+<span class="w">    </span><span class="k">ON</span><span class="w"> </span><span class="n">Courses</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">StuWithCouseID</span><span class="p">.</span><span class="n">course_id</span>
+<span class="w">    </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">student</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p><code>INNER JOIN</code> 给出了两张表在指定字段交集上的笛卡尔积，用某些关键字将表衔接起来，你可以认为 <code>INNER JOIN</code> 等价于：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">record1</span> <span class="ow">in</span> <span class="n">TABLE1</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">record2</span> <span class="ow">in</span> <span class="n">TABLE2</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">P</span><span class="p">(</span><span class="n">record1</span><span class="p">,</span> <span class="n">record2</span><span class="p">):</span>
+            <span class="n">results</span> <span class="o">+=</span> <span class="p">[</span><span class="n">record1</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">record2</span><span class="p">)]</span>
+<span class="k">return</span> <span class="n">result</span>
+</code></pre></div></td></tr></table></div>
+<p>也就是选出两张表笛卡尔积中符合谓词 <code>P</code> 的记录集合，数据库在执行时并不是这样实现的。</p>
+<p>因此上面的 <code>INNER JOIN</code> 可以隐式表达为：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">Students</span><span class="p">.</span><span class="k">name</span><span class="p">,</span><span class="w"> </span><span class="n">course_id</span><span class="p">,</span><span class="w"> </span><span class="n">grade</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="p">,</span><span class="w"> </span><span class="n">Association</span>
+<span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">Students</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Association</span><span class="p">.</span><span class="n">student_id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="nf">ISNULL</span><span class="p">(</span><span class="n">Association</span><span class="p">.</span><span class="n">grade</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">Students</span><span class="p">.</span><span class="k">name</span><span class="w"> </span><span class="n">student</span><span class="p">,</span><span class="w"> </span><span class="n">Courses</span><span class="p">.</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">Courses</span><span class="p">.</span><span class="n">credit</span><span class="p">,</span><span class="w"> </span><span class="n">Association</span><span class="p">.</span><span class="n">grade</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="p">,</span><span class="w"> </span><span class="n">Courses</span><span class="p">,</span><span class="w"> </span><span class="n">Association</span>
+<span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">Students</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Association</span><span class="p">.</span><span class="n">student_id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">Courses</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Association</span><span class="p">.</span><span class="n">course_id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="nf">ISNULL</span><span class="p">(</span><span class="n">Association</span><span class="p">.</span><span class="n">grade</span><span class="p">)</span>
+<span class="w">    </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">student</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>对于 <code>INNER JOIN</code>，我们可以认为其与 <code>WHERE =</code> 获得的结果一样，但实现原理却并不相同，<code>JOIN</code> 时使用 <code>hashtable</code> 进行比较，而 <code>WHERE =</code> 则是取笛卡尔积再过滤（即上述 <code>Python</code> 表示的代码）。因此前者效率为 <span class="arithmatex"><span class="MathJax_Preview">\mathrm{O}(\log \mathrm{N})</span><script type="math/tex">\mathrm{O}(\log \mathrm{N})</script></span>，后者的效率为 <span class="arithmatex"><span class="MathJax_Preview">\mathrm{O}(N^2)</span><script type="math/tex">\mathrm{O}(N^2)</script></span></p>
+<h5 id="5211-functions">5.2.11 Functions<a class="headerlink" href="#5211-functions" title="Permanent link">&para;</a></h5>
+<p>作为一门（编程）语言，MySQL 提供了<a href="https://dev.mysql.com/doc/refman/8.0/en/functions.html">极为丰富的函数库</a>，下面举几个字符串函数的例子。</p>
+<h6 id="52111-substring">5.2.11.1 SUBSTRING<a class="headerlink" href="#52111-substring" title="Permanent link">&para;</a></h6>
+<p>查看姓名从第 1 个字符开始的 3 个字符：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="nf">SUBSTRING</span><span class="p">(</span><span class="k">name</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h6 id="52112-char_length">5.2.11.2 CHAR_LENGTH<a class="headerlink" href="#52112-char_length" title="Permanent link">&para;</a></h6>
+<p>看看谁的名字比较长：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="nf">CHAR_LENGTH</span><span class="p">(</span><span class="k">name</span><span class="p">)</span><span class="w"> </span><span class="n">name_len</span><span class="p">,</span><span class="w"> </span><span class="k">name</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span>
+<span class="w">    </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">name_len</span><span class="w"> </span><span class="k">DESC</span>
+<span class="w">    </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h6 id="52113-replace">5.2.11.3 REPLACE<a class="headerlink" href="#52113-replace" title="Permanent link">&para;</a></h6>
+<p>对字符串进行替换，比如我认为 <code>S</code> 是敏感词，在查询时将其替换为 <code>*</code>：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">cid</span><span class="p">,</span><span class="w"> </span><span class="k">REPLACE</span><span class="p">(</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;S&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;*&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Courses</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="53-update">5.3 UPDATE<a class="headerlink" href="#53-update" title="Permanent link">&para;</a></h4>
+<p>例如我要更新软件工程课程的学分：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">UPDATE</span><span class="w"> </span><span class="n">Courses</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">credit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;SE&#39;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p><code>UPDATE</code> 过程中可以直接使用表中的值：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">UPDATE</span><span class="w"> </span><span class="n">Courses</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">credit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">credit</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;SE&#39;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="54-delete">5.4 DELETE<a class="headerlink" href="#54-delete" title="Permanent link">&para;</a></h4>
+<p>删除软件工程课程的选课记录：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">DELETE</span><span class="w"> </span><span class="n">Association</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="p">,</span><span class="w"> </span><span class="n">Courses</span>
+<span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">Association</span><span class="p">.</span><span class="n">course_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Courses</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">Courses</span><span class="p">.</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;SE&#39;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>在多表删除中，只有 <code>DELETE</code> 和 <code>FROM</code> 之间列举的表中的记录会被删除，<code>FROM</code> 后出现但是不在 <code>DELETE</code> 和 <code>FROM</code> 之间的表仅用作查询的参考。</p>
+<p>值得注意的是删除并不会立即释放磁盘空间：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SHOW</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">STATUS</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;Association&#39;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>其中 <code>Data_length</code> 为数据文件的大小（以字节为单位），<code>Index_length</code> 为索引文件的大小（以字节为单位），<code>Data_length + Index_length</code> 表示表的总大小。</p>
+<p>我们删除一些数据：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Association</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>在此查询，发现即使 <code>Association</code> 空了，但是表的大小没有发生变化，为了释放空间，我们可以使用：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">OPTIMIZE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Association</span><span class="p">;</span>
+<span class="c1"># or</span>
+<span class="k">ANALYZE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">Association</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="6-explain">6. EXPLAIN<a class="headerlink" href="#6-explain" title="Permanent link">&para;</a></h3>
+<p>你可能关心查询是如何被数据库执行的，这是可以使用 <code>EXPLAIN ANALYZE</code>，让 MySQL 打印执行计划，例如：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">EXPLAIN</span><span class="w"> </span><span class="k">ANALYZE</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">Students</span><span class="p">.</span><span class="n">sid</span><span class="p">,</span><span class="w"> </span><span class="nf">COUNT</span><span class="p">(</span><span class="n">Association</span><span class="p">.</span><span class="n">student_id</span><span class="p">)</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">Students</span>
+<span class="w">    </span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Association</span>
+<span class="w">    </span><span class="k">ON</span><span class="w"> </span><span class="n">Students</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Association</span><span class="p">.</span><span class="n">student_id</span>
+<span class="w">    </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">Students</span><span class="p">.</span><span class="n">id</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="7-orm">7. ORM<a class="headerlink" href="#7-orm" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>本节内容在暑培 Django 课程会讲到 <del>（应该吧）</del>，这里只做简单的介绍</p>
+</blockquote>
+<p>在我们实际开发中，通常会直接使用成熟的后端框架来操作数据库，例如 Django 等，在这些框架中，你无需手写 SQL 语句，而可以直接使用它的 ORM 框架（或者其他框架）。</p>
+<p>ORM 全称为 Objected Relational Mapping，其构造了数据库对象与 Python 对象中的如下映射：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>TABLE -&gt; Class
+Record -&gt; Instance（实例）
+Column -&gt; Attribute（属性）
+</code></pre></div></td></tr></table></div>
+<p>实际上，ORM 在执行操作时依然会将对应的操作转换成数据库原生语句，但是其拥有如下优点：</p>
+<p><img src="/images/sql/orm.png" style="zoom:80%;" /></p>
+<p>除了 Django 提供的 ORM 框架外，不同编程语言也有其他的 ORM 框架：</p>
+<ul>
+<li>Python：<a href="https://www.sqlalchemy.org/">SQLAlchemy</a></li>
+<li>Rust：<a href="https://diesel.rs/">Diesel</a>、<a href="https://www.sea-ql.org/SeaORM/">SeaORM</a></li>
+<li>Node.js：<a href="https://sequelize.org/">Sequelize</a>、<a href="https://typeorm.io/">TypeORM</a>；</li>
+<li>Java：<a href="https://hibernate.org/">Hibernate</a>；</li>
+<li>Go：<a href="https://gorm.io/">GORM</a>。</li>
+</ul>
+<h3 id="8-sql">8. SQL 注入攻击<a class="headerlink" href="#8-sql" title="Permanent link">&para;</a></h3>
+<p>SQL 注入攻击（SQL Injection）是一种网络攻击手段，攻击者通过在输入字段中插入恶意的 SQL 代码来操纵数据库，从而访问、修改或删除数据。攻击的目标通常是那些没有对用户输入进行适当验证和过滤的Web应用程序。</p>
+<h4 id="71">7.1 基本原理<a class="headerlink" href="#71" title="Permanent link">&para;</a></h4>
+<p>当一个 Web 应用程序直接将用户输入拼接到 SQL 查询中并执行时，攻击者可以通过特意构造的输入来改变 SQL 查询的语义。例如，假设有一个登录功能，其 SQL 查询如下：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;user&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;pass&#39;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>如果用户输入的 <code>username</code> 为 <code>' OR '1'='1</code>，则生成的SQL查询变为：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="o">=</span><span class="s1">&#39;1&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;pass&#39;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>由于 <code>'1'='1'</code> 总是为真，这个查询将绕过验证，导致攻击者可以登录系统。</p>
+<h4 id="72">7.2 预防措施<a class="headerlink" href="#72" title="Permanent link">&para;</a></h4>
+<ul>
+<li>对数据进行转义，永远不要信任用户的输入，要对用户的输入进行校验，可以通过正则表达式，或限制长度，对单引号和双”-“进行转换等；</li>
+<li>永远不要使用动态拼装 SQL，可以使用参数化的 SQL 或者直接使用存储过程进行数据查询存取；</li>
+<li>不要把机密信息明文存放，请加密或者 hash 掉密码和敏感的信息；</li>
+<li>使用 ORM（对象关系映射）。</li>
+</ul>
+<h3 id="9-mycli">9. mycli<a class="headerlink" href="#9-mycli" title="Permanent link">&para;</a></h3>
+<p>在使用 MySQL 的交互命令行的过程中，我们可以发现，它并不支持现代 IDE 拥有的功能：语法高亮和自动补全。mycli 是一个用于 MySQL 的增强型命令行客户端，它集成了语法高亮、自动补全以及其他便利功能（比如进行破坏性行为需要进行确认），使得在命令行环境中操作 MySQL 更加高效和方便。</p>
+<p>mycli 的效果图如下，详情可以在 <a href="https://github.com/dbcli/mycli">dbcli/mycli: A Terminal Client for MySQL with AutoCompletion and Syntax Highlighting</a> 中查看。</p>
+<p><img src="/images/sql/mycli.png" style="zoom:80%;" /></p>
+<h2 id="_2">三、 参考资料<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>2023 年酒井科协暑培刘铠铭学长的<a href="https://summer23.net9.org/basic/sql/">讲义</a>；</li>
+<li><a href="https://jkfhto.github.io/2019-10-19/Web%E5%89%8D%E5%90%8E%E7%AB%AF%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%E4%B8%8E%E9%98%B2%E5%BE%A1/Web%E5%AE%89%E5%85%A8-SQL%E6%B3%A8%E5%85%A5%E6%94%BB%E5%87%BB/">Web安全-SQL注入攻击</a>；</li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%BA%93">数据库 - 维基百科</a>。</li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年7月19日</span>
+  </span>
+
+    
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="贡献者">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:m18965691135@163.com">Andonade</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+
+<h2 id="__comments">评论</h2>
+<!-- Insert generated snippet here -->
+<script src="https://giscus.app/client.js" data-repo="sast-summer-training-2024/sast-summer-training-2024.github.io"
+    data-repo-id="R_kgDOMQXCRQ" data-category="Announcements" data-category-id="DIC_kwDOMQXCRc4CggEk"
+    data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0"
+    data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="zh-CN" crossorigin="anonymous" async>
+    </script>
+
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate" ? "dark" : "light"
+        giscus.setAttribute("data-theme", theme)
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function () {
+        var ref = document.querySelector("[data-md-component=palette]")
+        ref.addEventListener("change", function () {
+            var palette = __md_get("__palette")
+            if (palette && typeof palette.color === "object") {
+                var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+                /* Instruct Giscus to change theme */
+                var frame = document.querySelector(".giscus-frame")
+                frame.contentWindow.postMessage(
+                    { giscus: { setConfig: { theme } } },
+                    "https://giscus.app"
+                )
+            }
+        })
+    })
+</script>
+                
+    
+        <div class="md-source-date">
+            <small>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:m18965691135@163.com'>Andonade</a></span>
+            </small>
+        </div>
+    
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.top", "navigation.tabs", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>

@@ -676,7 +676,7 @@
         
   
   <span class="md-ellipsis">
-    正文
+    讲义
   </span>
   
 
@@ -776,6 +776,8 @@
       
         
       
+        
+      
     
     
       
@@ -819,6 +821,27 @@
   
   <span class="md-ellipsis">
     课前准备
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basic/sql/handout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    讲义
   </span>
   
 
@@ -1916,7 +1939,7 @@
 <p>我们“惊讶地”发现，结果是1而非3！</p>
 <p>实际上，也许 state 变量看起来和一般的可读写的 TypeScript 变量类似。但 state 在其表现出的特性上更像是一张快照。设置它不会更改你已有的 state 变量，但会触发重新渲染。实际上渲染就意味着 React 调用你的组件——一个函数。你从该函数返回的 JSX 就像是在某个时间点上 UI 的快照。它的 props、事件处理函数和内部变量都是 根据当前渲染时的 state 被计算出来的。</p>
 <p>作为一个组件的记忆，state 不同于在你的函数返回之后就会消失的普通变量。state 实际上“活”在 React 本身中——就像被摆在一个架子上！——位于你的函数之外。当 React 调用你的组件时，它会为特定的那一次渲染提供一张 state 快照。你的组件会在其 JSX 中返回一张包含一整套新的 props 和事件处理函数的 UI 快照 ，其中所有的值都是 根据那一次渲染中 state 的值 被计算出来的！</p>
-<p><img alt="img" src="../../../images/update_state.png" /></p>
+<p><img alt="img" src="/images/react/update_state.png" /></p>
 <p>在了解这些原理后，我们再来分析上述的例子，在按下按钮后，发生了三次 setNumber() ，当前快照 number 为 0 ，生成一张新快照，这三次 setNumber 分别做了这样的事情：
 1. setNumber(number + 1)：number 是 0 所以 setNumber(0 + 1)。React 准备在下一次渲染时将 number 更改为 1。
 2. setNumber(number + 1)：number 是 0 所以 setNumber(0 + 1)。React 准备在下一次渲染时将 number 更改为 1。
@@ -2335,11 +2358,12 @@
   <span class="md-source-file__fact">
     <span class="md-icon" title="贡献者">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.536 5.536 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13v-1.75M0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20H0m24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9V20Z"/></svg>
       
     </span>
     <nav>
       
+        <a href="mailto:m18965691135@163.com">Andonade</a>, 
         <a href="mailto:15774169531@163.com">ljr</a>
     </nav>
   </span>
@@ -2392,7 +2416,7 @@
     
         <div class="md-source-date">
             <small>
-                作者: <span class='git-page-authors git-authors'><a href='mailto:15774169531@163.com'>ljr</a></span>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:m18965691135@163.com'>Andonade</a> (0.16%), <a href='mailto:15774169531@163.com'>ljr</a> (99.84%)</span>
             </small>
         </div>
     
