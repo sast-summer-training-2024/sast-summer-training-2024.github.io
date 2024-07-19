@@ -362,7 +362,7 @@ export default function Counter() {
 
 作为一个组件的记忆，state 不同于在你的函数返回之后就会消失的普通变量。state 实际上“活”在 React 本身中——就像被摆在一个架子上！——位于你的函数之外。当 React 调用你的组件时，它会为特定的那一次渲染提供一张 state 快照。你的组件会在其 JSX 中返回一张包含一整套新的 props 和事件处理函数的 UI 快照 ，其中所有的值都是 根据那一次渲染中 state 的值 被计算出来的！
 
-![img](../../images/update_state.png)
+![img](/images/react/update_state.png)
 
 在了解这些原理后，我们再来分析上述的例子，在按下按钮后，发生了三次 setNumber() ，当前快照 number 为 0 ，生成一张新快照，这三次 setNumber 分别做了这样的事情：
 1. setNumber(number + 1)：number 是 0 所以 setNumber(0 + 1)。React 准备在下一次渲染时将 number 更改为 1。
