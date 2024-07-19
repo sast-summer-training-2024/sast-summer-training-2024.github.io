@@ -95,7 +95,7 @@ nav:
       - Git: basic/linux_git/Git.md
     - Python:
       - 课前准备: basic/python/Pre-requisite.md
-      - 正文: basic/python/handout.md
+      - 讲义: basic/python/handout.md
     - Web基础:
       - 课件: basic/Web_basics/Web_basics.pdf
     - 数据库 & SQL:
