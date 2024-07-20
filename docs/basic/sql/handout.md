@@ -555,7 +555,7 @@ SELECT major, COUNT(*) FROM Students GROUP BY major HAVING COUNT(*) > 10;
 
 ##### 5.2.6 DISTINCT
 
-当我们希望查询的结果中没有重复值时，可以使用 `DISDINCT`，例如专业的种类：
+当我们希望查询的结果中没有重复值时，可以使用 `DISTINCT`，例如专业的种类：
 
 ```mysql
 SELECT DISTINCT major FROM Students;
