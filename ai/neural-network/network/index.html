@@ -2349,14 +2349,16 @@ $$
 <p>比如，在图像分类任务中，<span class="arithmatex"><span class="MathJax_Preview">\mathcal{L}(M,E)</span><script type="math/tex">\mathcal{L}(M,E)</script></span> 可以为在某一组标注好类别图像数据上，模型在预测这组图像类别时的错误率。</p>
 <h4 id="_12">训练集与测试集<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
 <p>在神经网络的评估中，一个重要的指标是其泛化能力，即对于在经验E没有涉及的、同时位于任务T的样本空间范围内的点的估计效果。通常我们会从训练数据中单独分出一小部分，在训练时不作为样本对模型进行训练，并评估模型在这些样本上的性能。</p>
-<p>我们称 <strong>在训练时作为样本对模型进行训练的数据集合为数据集，分出来的那一小部分为测试集</strong>。通常，为了得知模型在训练过程中的性能变化趋势，我们还会从测试集中分出一小部分作为<strong>验证集</strong>，在训练中途多次在验证集上测试模型的性能表现。</p>
+<p>我们称<strong>在训练时作为样本对模型进行训练的数据集合为数据集，分出来的那一小部分为测试集</strong>。通常，为了得知模型在训练过程中的性能变化趋势，我们还会从测试集中分出一小部分作为<strong>验证集</strong>，在训练中途多次在验证集上测试模型的性能表现。</p>
 <h2 id="_13">神经网络的构成<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
 <p>我们在第一节强调了神经网络构成的两个部分：带参数或不带参数的简单结构，以及它们的连接。在本节中将详细说明这两部分。</p>
 <h3 id="_14">感知机<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
 <p>线性感知机算法（PLA）1957 年由 Frank Rosenblatt 提出。感知机是二分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取值为 <span class="arithmatex"><span class="MathJax_Preview">+1</span><script type="math/tex">+1</script></span> 和 <span class="arithmatex"><span class="MathJax_Preview">-1</span><script type="math/tex">-1</script></span>。</p>
 <blockquote>
 <p>perceptron: 
-$ f(\vec{x}) = sign(\vec{w}^T \vec{x} + b) $，where <span class="arithmatex"><span class="MathJax_Preview">w，x \in \mathbb{R}^n，b \in \mathbb{R}</span><script type="math/tex">w，x \in \mathbb{R}^n，b \in \mathbb{R}</script></span></p>
+$$
+ f(\vec{x}) = sign(\vec{w}^T \vec{x} + b) 
+$$，where <span class="arithmatex"><span class="MathJax_Preview">w，x \in \mathbb{R}^n，b \in \mathbb{R}</span><script type="math/tex">w，x \in \mathbb{R}^n，b \in \mathbb{R}</script></span></p>
 </blockquote>
 <p>显然，这是一个含参数<span class="arithmatex"><span class="MathJax_Preview">w</span><script type="math/tex">w</script></span>的，且能够将输入根据参数<span class="arithmatex"><span class="MathJax_Preview">w</span><script type="math/tex">w</script></span>唯一映射到输出的简单结构。</p>
 <p>感知机是神经网络中最常使用、最简单的含参结构。虽然感知机只能进行简单的线性可分分类问题，但通过连接大量感知机，以及更换符号函数为其他非线性函数，我们可以构造出复杂的结构。</p>
@@ -2375,11 +2377,15 @@ $$ f(\vec{x}) = f_N \circ \dots \circ f_0 $$ $$ f_i(\vec{x}) = \sigma_i(W \vec{x
 <h3 id="_16">神经网络的优化<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <p>在第二节我们探讨了学习任务，并定义了神经网络中的性能量度——损失函数。在上一节，我们获得了一个典型的神经网络模型。在这一章，我们自然需要讨论如何通过使用经验E，即数据，使得神经网络在损失函数意义下获得性能提升。</p>
 <h3 id="_17">最小化损失函数<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
-<p>注意到损失函数的定义，我们假定了模型性能越差，损失函数越大。也就是说，<strong>我们只需要反过来通过调整M，在经验E上最小化损失函数，就能达到提高模型M在任务T上表现的目的。</strong>于是，神经网络的优化任务可以如下形式化定义：</p>
+<p>注意到损失函数的定义，我们假定了模型性能越差，损失函数越大。也就是说，<strong>我们只需要反过来通过调整M，在经验E上最小化损失函数，就能达到提高模型M在任务T上表现的目的。</strong> 于是，神经网络的优化任务可以如下形式化定义：</p>
 <blockquote>
 <div class="arithmatex">
-<div class="MathJax_Preview"> \theta^* = \arg \min_\theta \cal{L}(M_\theta，E) </div>
-<script type="math/tex; mode=display"> \theta^* = \arg \min_\theta \cal{L}(M_\theta，E) </script>
+<div class="MathJax_Preview">
+ \theta^* = \arg \min_\theta \cal{L}(M_\theta，E) 
+</div>
+<script type="math/tex; mode=display">
+ \theta^* = \arg \min_\theta \cal{L}(M_\theta，E) 
+</script>
 </div>
 </blockquote>
 <p>其中<span class="arithmatex"><span class="MathJax_Preview">\theta</span><script type="math/tex">\theta</script></span><strong>所有的可调整参数</strong>。通过损失函数，我们成功将主观的性能评估和改进问题，转化为了计算和优化损失函数的问题，进而可以通过数值方法解决。可以认为，通过设计损失函数，我们将主观性转移至了损失函数中。</p>
@@ -2389,18 +2395,27 @@ $$ f(\vec{x}) = f_N \circ \dots \circ f_0 $$ $$ f_i(\vec{x}) = \sigma_i(W \vec{x
 <p>基于梯度的优化方法中最易理解的是梯度下降算法：</p>
 <blockquote>
 <p>令
-<span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">\theta_{n+1} = \theta_n - \eta \frac{\partial \cal{L}(M_{\theta_n}，E)}{\partial \theta_n}</span><script type="math/tex">\theta_{n+1} = \theta_n - \eta \frac{\partial \cal{L}(M_{\theta_n}，E)}{\partial \theta_n}</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">\theta_{n+1} = \theta_n - \eta \frac{\partial \cal{L}(M_{\theta_n}，E)}{\partial \theta_n}</span><script type="math/tex">\theta_{n+1} = \theta_n - \eta \frac{\partial \cal{L}(M_{\theta_n}，E)}{\partial \theta_n}</script></span></script></span>
+$$
+\theta_{n+1} = \theta_n - \eta \frac{\partial \cal{L}(M_{\theta_n}，E)}{\partial \theta_n}
+$$
 则对于一类性质较好的<span class="arithmatex"><span class="MathJax_Preview">\cal{L}</span><script type="math/tex">\cal{L}</script></span>和<span class="arithmatex"><span class="MathJax_Preview">M_\theta</span><script type="math/tex">M_\theta</script></span>，我们有
-$$ \lim_{\eta \rightarrow 0，n \rightarrow \infty}\theta_n = \theta^* $$</p>
+$$
+\lim_{\eta \rightarrow 0，n \rightarrow \infty}\theta_n = \theta^*
+$$</p>
 </blockquote>
 <p>我们知道梯度的反向是该点邻域中函数值下降最快的方向，因此当函数不太差时，沿梯度的反向进行参数的更新都有机会达到函数的最小值。</p>
 <p>然而梯度下降算法有两个缺点。首先，该方法对于函数的性质有要求，否则对于参数的初值较为敏感，容易陷入局部极小值。(考虑有两个谷的函数)。其次，该方法需要在全部样本上计算出梯度，并求平均。这极大的降低了梯度下降的效率。</p>
 <h3 id="sgd">随机梯度下降算法(SGD)<a class="headerlink" href="#sgd" title="Permanent link">&para;</a></h3>
 <p>随机梯度下降算法是目前几乎所有神经网络的学习算法。目前已知的绝大多数算法都是基于这个方法的优化或微调。或者说，今天我们所讲的神经网络就是指能够使用随机梯度下降算法进行训练的神经网络。</p>
 <blockquote>
-<p>令$$ \theta_{n+1} = \theta_{n} - \eta \frac{\partial\cal{L}(M_{\theta_n}，{X_i} \subset E)}{\partial \theta_n} $$
-则对于大多数<span class="arithmatex"><span class="MathJax_Preview">\cal(L)</span><script type="math/tex">\cal(L)</script></span>和<span class="arithmatex"><span class="MathJax_Preview">M_\theta</span><script type="math/tex">M_\theta</script></span>，我们有
-$$ \lim_{\eta \rightarrow 0，n \rightarrow \infty}\theta_n = \theta^* $$</p>
+<p>令
+$$
+\theta_{n+1} = \theta_{n} - \eta \frac{\partial\cal{L}(M_{\theta_n}，{X_i} \subset E)}{\partial \theta_n}
+$$
+则对于大多数<span class="arithmatex"><span class="MathJax_Preview">\cal{L}</span><script type="math/tex">\cal{L}</script></span>和<span class="arithmatex"><span class="MathJax_Preview">M_{\theta}</span><script type="math/tex">M_{\theta}</script></span>，我们有
+$$
+\lim_{\eta \rightarrow 0，n \rightarrow \infty}\theta_n = \theta^*
+$$</p>
 </blockquote>
 <p>这个算法的证明设计到一些统计知识，在此暂且不证明。(如有兴趣，可以考虑: 1.梯度在样本分布下的无偏估计是什么? 2.考虑使用部分样本进行梯度计算时引入的噪声<span class="arithmatex"><span class="MathJax_Preview">\epsilon</span><script type="math/tex">\epsilon</script></span>。这对于处于局部极小值的参数的梯度计算有什么影响?)</p>
 <p>随机梯度下降法使得神经网络能够通过每次选取部分数据计算梯度，即可根据<strong>学习率<span class="arithmatex"><span class="MathJax_Preview">\eta</span><script type="math/tex">\eta</script></span></strong> 更新网络参数</p>
@@ -2408,9 +2423,16 @@ $$ \lim_{\eta \rightarrow 0，n \rightarrow \infty}\theta_n = \theta^* $$</p>
 <p>理论上，给定任何确定的网络结构，我们都可以写出梯度的解析表达。然而当网络规模增大时，这显然是不可实现的。因此我们需要寻找数值方法计算参数的梯度。</p>
 <p>1.数值微分法</p>
 <blockquote>
-<p>$$ \hat{\theta}<em n_i="n,i">{n+1,i} = \hat{\theta}</em>} - \eta\frac{\cal{L}(M_{\hat{\theta<em _hat_theta="\hat{\theta">{n,i} + \epsilon}，{X_i}) - \cal{L}(M</em> $$
-该方法的时间复杂度是}_{n,i} - \epsilon}，{X_i})}{2\epsilon<span class="arithmatex"><span class="MathJax_Preview">\cal{O}(N) \times \cal{O}(forward)</span><script type="math/tex">\cal{O}(N) \times \cal{O}(forward)</script></span>，<span class="arithmatex"><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span>是参数规模。通常来说，<span class="arithmatex"><span class="MathJax_Preview">\cal{O}(forward)</span><script type="math/tex">\cal{O}(forward)</script></span> 与参数量成近似线性关系，因此总的复杂度为<span class="arithmatex"><span class="MathJax_Preview">\cal{O}(N^2)</span><script type="math/tex">\cal{O}(N^2)</script></span>。这个复杂度在参数量很大(现代深度神经网络的参数量通常在千万到百亿级别)时是不可接受的。</p>
+<div class="arithmatex">
+<div class="MathJax_Preview">
+\hat{\theta}_{n+1,i} = \hat{\theta}_{n,i} - \eta\frac{\cal{L}(M_{\hat{\theta}_{n,i} + \epsilon}，{X_i}) - \cal{L}(M_{\hat{\theta}_{n,i} - \epsilon}，{X_i})}{2\epsilon}
+</div>
+<script type="math/tex; mode=display">
+\hat{\theta}_{n+1,i} = \hat{\theta}_{n,i} - \eta\frac{\cal{L}(M_{\hat{\theta}_{n,i} + \epsilon}，{X_i}) - \cal{L}(M_{\hat{\theta}_{n,i} - \epsilon}，{X_i})}{2\epsilon}
+</script>
+</div>
 </blockquote>
+<p>该方法的时间复杂度是<span class="arithmatex"><span class="MathJax_Preview">\cal{O}(N) \times \cal{O}(forward)</span><script type="math/tex">\cal{O}(N) \times \cal{O}(forward)</script></span>，<span class="arithmatex"><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span>是参数规模。通常来说，<span class="arithmatex"><span class="MathJax_Preview">\cal{O}(forward)</span><script type="math/tex">\cal{O}(forward)</script></span> 与参数量成近似线性关系，因此总的复杂度为<span class="arithmatex"><span class="MathJax_Preview">\cal{O}(N^2)</span><script type="math/tex">\cal{O}(N^2)</script></span>。这个复杂度在参数量很大(现代深度神经网络的参数量通常在千万到百亿级别)时是不可接受的。</p>
 <p>我们注意到，在进行网络中靠近输出部分的参数的梯度计算时，两次正向传播中有大量的重复计算。因此我们希望寻找一种能够复用计算结果的方法来降低重复计算的开销。</p>
 <p>2.反向传播
 反向传播法是现有的神经网络计算梯度的最优方法。现代深度神经网络训练框架全部使用反向传播进行梯度计算。</p>
@@ -2418,8 +2440,18 @@ $$ \lim_{\eta \rightarrow 0，n \rightarrow \infty}\theta_n = \theta^* $$</p>
 <li>链式法则
 回顾微积分中的链式法则。<blockquote>
 <p>令
-<span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">f: \mathbb{R}^a \rightarrow \mathbb{R}^b ，g: \mathbb{R}^b \rightarrow \mathbb{R}^c ，c \in \mathbb{R}^a</span><script type="math/tex">f: \mathbb{R}^a \rightarrow \mathbb{R}^b ，g: \mathbb{R}^b \rightarrow \mathbb{R}^c ，c \in \mathbb{R}^a</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">f: \mathbb{R}^a \rightarrow \mathbb{R}^b ，g: \mathbb{R}^b \rightarrow \mathbb{R}^c ，c \in \mathbb{R}^a</span><script type="math/tex">f: \mathbb{R}^a \rightarrow \mathbb{R}^b ，g: \mathbb{R}^b \rightarrow \mathbb{R}^c ，c \in \mathbb{R}^a</script></span></script></span>，则有
-$$ \frac{\partial(g^{(i)}(\vec{f}(\vec{x}))}{\partial x^{(j)}} = \sum_{t = 1}^b \frac{\partial g<sup _1_="(1)">{(i)}(f</sup> $$}(\vec{x})，\dots，f^{(b)}(\vec{x}))}{\partial f^{(t)}(\vec{x}))}  \frac{\partial f^{(t)}(\vec{x})}{\partial x^{(j)}</p>
+$$
+f: \mathbb{R}^a \rightarrow \mathbb{R}^b ，g: \mathbb{R}^b \rightarrow \mathbb{R}^c ，c \in \mathbb{R}^a
+$$
+，则有</p>
+<div class="arithmatex">
+<div class="MathJax_Preview">
+\frac{\partial g^i \circ \vec{f}}{\partial x^j} = \sum_{t = 1}^{b} \frac{\partial g^i(f^1，...，f^b)}{\partial f^t} \times \frac{\partial f^t}{\partial x^j}
+</div>
+<script type="math/tex; mode=display">
+\frac{\partial g^i \circ \vec{f}}{\partial x^j} = \sum_{t = 1}^{b} \frac{\partial g^i(f^1，...，f^b)}{\partial f^t} \times \frac{\partial f^t}{\partial x^j}
+</script>
+</div>
 </blockquote>
 </li>
 </ul>
@@ -2541,8 +2573,12 @@ $$ \frac{\partial(g^{(i)}(\vec{f}(\vec{x}))}{\partial x^{(j)}} = \sum_{t = 1}^b 
 <p>为了理解神经网络结构设计的目的，我们首先引入表述MLP表达能力的一个定理：</p>
 <blockquote>
 <div class="arithmatex">
-<div class="MathJax_Preview"> \forall f \in L(\mathbb{R}^n), \forall \epsilon&gt;0, \exists F_\theta \in MLP, \forall x \in \mathbb{R}^n , s.t. |F_\theta (x)-f(x)|&lt;\epsilon </div>
-<script type="math/tex; mode=display"> \forall f \in L(\mathbb{R}^n), \forall \epsilon>0, \exists F_\theta \in MLP, \forall x \in \mathbb{R}^n , s.t. |F_\theta (x)-f(x)|<\epsilon </script>
+<div class="MathJax_Preview">
+\forall f \in L(\mathbb{R}^n), \forall \epsilon&gt;0, \exists F_\theta \in MLP, \forall x \in \mathbb{R}^n , s.t. |F_\theta (x)-f(x)|&lt;\epsilon
+</div>
+<script type="math/tex; mode=display">
+\forall f \in L(\mathbb{R}^n), \forall \epsilon>0, \exists F_\theta \in MLP, \forall x \in \mathbb{R}^n , s.t. |F_\theta (x)-f(x)|<\epsilon
+</script>
 </div>
 </blockquote>
 <p>这表明参数量足够大的MLP可以以任意精度逼近任何可测函数。这是否意味着我们对于任何学习任务都可以直接选取一个足够大的MLP在训练集上进行训练呢？答案显然是否定的。机器学习任务是这样的，模型只需要表达能力足够强就可以了，而我们让模型进行学习需要考虑的就很多了，梯度下降能不能找到最优解，在训练集上训练后是否会过拟合，都需要深思熟虑。例如，严格来说，如果我们能够完全拟合训练集分布，那么我们会得到一个多点离散分布。这是离散化采样带来的必然结果。但这个估计显然是不合理的，例如我们如果在图像生成任务上完全拟合训练集，那么使用训练后的模型生成图片就变成了从训练集中随机挑选一张图片。基于这一点再次强调，<strong>机器学习问题和优化问题的根本区别在于，除了希望训练误差很低，我们也希望泛化误差很低</strong>。</p>
@@ -2558,7 +2594,9 @@ $$ \frac{\partial(g^{(i)}(\vec{f}(\vec{x}))}{\partial x^{(j)}} = \sum_{t = 1}^b 
 <p>为了解决平移不变性问题，<strong>卷积神经网络（Convolutional Neural Network, CNN）</strong> 被广泛应用。CNN通过使用一组特定的的卷积核在输入上进行卷积操作，使得网络能够提取平移不变的特征。</p>
 <p>卷积操作是CNN的核心，通过在输入上应用卷积核来提取局部特征。每个卷积核扫描整个输入，生成一个特征张量。这些特征张量能够捕捉不同层次的特征，如边缘、纹理、形状等。卷积操作可以表示为如下形式：</p>
 <blockquote>
-<p>$$ h_(i \dots j) = \sum_m \dots \sum_n x_{i+m, \dots, j+n} w_{m \dots n}$$其中h为输出的特征，x是输入，w是卷积核。</p>
+<p>$$
+h_(i \dots j) = \sum_m \dots \sum_n x_{i+m, \dots, j+n} w_{m \dots n} 
+$$其中h为输出的特征，x是输入，w是卷积核。</p>
 </blockquote>
 <p>一个二维卷积的过程可以可视化为下图：</p>
 <p><img alt="" src="../imgs/convolution.png" /></p>
@@ -2574,11 +2612,14 @@ $$ \frac{\partial(g^{(i)}(\vec{f}(\vec{x}))}{\partial x^{(j)}} = \sum_{t = 1}^b 
 <p><strong>自回归编码器（Autoencoder, AE）</strong>是一种用于无监督学习的数据降维和特征提取的神经网络模型。这种结构的设计利用了特征空间不变性。</p>
 <p>自回归编码器实际上是一种生成模型。它由两个主要部分组成：编码器（Encoder）和解码器（Decoder）。编码器将高维输入数据映射到低维特征空间，而解码器则从低维特征空间中重构出原始数据。</p>
 <blockquote>
-<p>编码器：<span class="arithmatex"><span class="MathJax_Preview">z = f(x)</span><script type="math/tex">z = f(x)</script></span> ，解码器：<span class="arithmatex"><span class="MathJax_Preview">hat(x) = g(z)</span><script type="math/tex">hat(x) = g(z)</script></span>，其中<span class="arithmatex"><span class="MathJax_Preview">x \in \cal{X}, z \in \mathbb{R}^d</span><script type="math/tex">x \in \cal{X}, z \in \mathbb{R}^d</script></span></p>
+<p>编码器：<span class="arithmatex"><span class="MathJax_Preview">z = f(x)</span><script type="math/tex">z = f(x)</script></span> ，解码器：<span class="arithmatex"><span class="MathJax_Preview">\hat{x} = g(z)</span><script type="math/tex">\hat{x} = g(z)</script></span>，其中<span class="arithmatex"><span class="MathJax_Preview">x \in \cal{X}, z \in \mathbb{R}^d</span><script type="math/tex">x \in \cal{X}, z \in \mathbb{R}^d</script></span></p>
 </blockquote>
 <p>特征空间不变性要求编码器将原始数据映射到特征空间中时，能够保留数据的关键特征和结构。自回归编码器通过保证能够仅通过特征空间中的编码向量还原原始数据来保证特征空间不变性。</p>
 <p>自回归编码器通过最小化重构误差来确保特征空间中的点能够有效地表示原始数据。重构误差通常通过均方误差来衡量：</p>
-<p>$ cal(L)(x, hat(x)) = |x - hat(x)|^2 $</p>
+<div class="arithmatex">
+<div class="MathJax_Preview"> \cal{L}(x, \hat{x}) = |x - \hat{x}|^2 </div>
+<script type="math/tex; mode=display"> \cal{L}(x, \hat{x}) = |x - \hat{x}|^2 </script>
+</div>
 <p>通过最小化重构误差，我们能够让编码器在学习到从原空间到低维流形的映射的同时使解码器学习到从低维流形到原空间的映射。编码器和解码器通常具有对称的结构，以确保特征空间中点的表示和原始数据之间的映射关系保持一致。</p>
 <p>“嵌入”在现代神经网络设计中具有极为重要的地位。实际上，嵌入就是数据在特征空间中的表示。这使得嵌入具有结构和表示上的极为优良的性质。例如，词向量的“可加性”正是来源于特征空间的不变性。<a href="https://spaces.ac.cn/archives/4671">关于词向量可加性的描述可以参考该blog</a></p>
 <h3 id="_29">转移概率不变性与循环神经网络<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
@@ -2586,14 +2627,27 @@ $$ \frac{\partial(g^{(i)}(\vec{f}(\vec{x}))}{\partial x^{(j)}} = \sum_{t = 1}^b 
 <p>在序列处理问题中，转移概率不变性是一个重要的概念。<strong>它指的是在序列的不同时间步之间，状态转移的概率保持不变</strong>。换句话说，模型在每个时间步的状态转移规则是一致的，不依赖于时间步的具体位置。这一性质确保了模型能够一致地处理整个序列中的数据，无论序列的长度或位置如何。我们可以形式化地表述这一点：</p>
 <blockquote>
 <p>设<span class="arithmatex"><span class="MathJax_Preview">h_t \in \mathbb{R}^d</span><script type="math/tex">h_t \in \mathbb{R}^d</script></span>表示时间步<span class="arithmatex"><span class="MathJax_Preview">t</span><script type="math/tex">t</script></span>的隐藏状态(<span class="arithmatex"><span class="MathJax_Preview">h</span><script type="math/tex">h</script></span>是特征空间中的向量)，<span class="arithmatex"><span class="MathJax_Preview">x_t</span><script type="math/tex">x_t</script></span>表示时间步<span class="arithmatex"><span class="MathJax_Preview">t</span><script type="math/tex">t</script></span>的输入数据，那么隐藏状态的更新规则可以表示为：
-<span class="arithmatex"><span class="MathJax_Preview"><span class="arithmatex"><span class="MathJax_Preview">h_t = f(h_{t-1}, x_t, t)</span><script type="math/tex">h_t = f(h_{t-1}, x_t, t)</script></span></span><script type="math/tex"><span class="arithmatex"><span class="MathJax_Preview">h_t = f(h_{t-1}, x_t, t)</span><script type="math/tex">h_t = f(h_{t-1}, x_t, t)</script></span></script></span>其中<span class="arithmatex"><span class="MathJax_Preview">f</span><script type="math/tex">f</script></span>是状态转移函数。</p>
+$$
+h_t = f(h_{t-1}, x_t, t)
+$$
+其中<span class="arithmatex"><span class="MathJax_Preview">f</span><script type="math/tex">f</script></span>是状态转移函数。</p>
 </blockquote>
 <p>这意味着，对于所有的<span class="arithmatex"><span class="MathJax_Preview">t</span><script type="math/tex">t</script></span>，状态转移函数<span class="arithmatex"><span class="MathJax_Preview">f</span><script type="math/tex">f</script></span>的形式和参数都不变。</p>
 <p>递归神经网络（Recurrent Neural Network, RNN）是一类适合处理序列数据的神经网络模型。RNN的设计基于特征空间不变性和转移概率不变性，能够有效捕捉序列数据的动态特征和时间依赖性。</p>
 <p>RNN由一系列递归单元组成，每个单元在每个时间步接收当前输入和前一个时间步的隐藏状态，并输出新的隐藏状态。这种结构可以如下形式化表示：</p>
 <blockquote>
-<p><span class="arithmatex"><span class="MathJax_Preview">h_t = \sigma(W_h h_{t-1} + W_x x_t + W_t t + b_h)</span><script type="math/tex">h_t = \sigma(W_h h_{t-1} + W_x x_t + W_t t + b_h)</script></span>
-<span class="arithmatex"><span class="MathJax_Preview">y_t = \sigma(W_y h_t + b_y)</span><script type="math/tex">y_t = \sigma(W_y h_t + b_y)</script></span></p>
+<div class="arithmatex">
+<div class="MathJax_Preview">
+h_t = \sigma(W_h h_{t-1} + W_x x_t + W_t t + b_h) $$ 
+$$
+y_t = \sigma(W_y h_t + b_y)
+</div>
+<script type="math/tex; mode=display">
+h_t = \sigma(W_h h_{t-1} + W_x x_t + W_t t + b_h) $$ 
+$$
+y_t = \sigma(W_y h_t + b_y)
+</script>
+</div>
 </blockquote>
 <p><img alt="" src="../imgs/rnn.png" /></p>
 <p>在RNN中，特征空间不变性通过两处设计来实现。首先是<strong>共享权重</strong>：RNN在每个时间步使用相同的权重，确保所有时间步的输入和隐藏状态都在相同的特征空间中处理。其二是<strong>隐藏状态的连续性</strong>：隐藏状态在时间序列中连续传递，确保每个时间步的特征表示与前后时间步的特征表示之间的关系保持一致。</p>
