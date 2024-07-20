@@ -227,12 +227,15 @@
         if "affiliations" in author {
           super(author.affiliations)
         }
+        linebreak()
+        text(11pt, author.email)
         if "orcid" in author {
           link("https://orcid.org/" + author.orcid)[#box(height: 1.1em, baseline: 13.5%)[#image.decode(orcidSvg)]]
         }
       }).join(", ", last: ", and ")
     })
   }
+  linebreak()
   if affiliations.len() > 0 {
     box(inset: (bottom: 10pt), {
       affiliations.map(affiliation => {
