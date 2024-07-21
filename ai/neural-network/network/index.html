@@ -593,10 +593,10 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_21">
 <span class="md-ellipsis">
-      机器学习算法与神经网络的结构
+      神经网络的泛化性问题
     </span>
 </a>
-<nav aria-label="机器学习算法与神经网络的结构" class="md-nav">
+<nav aria-label="神经网络的泛化性问题" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_22">
@@ -1036,10 +1036,10 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_21">
 <span class="md-ellipsis">
-      机器学习算法与神经网络的结构
+      神经网络的泛化性问题
     </span>
 </a>
-<nav aria-label="机器学习算法与神经网络的结构" class="md-nav">
+<nav aria-label="神经网络的泛化性问题" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_22">
@@ -1198,7 +1198,7 @@ $$
 <p>在神经网络的评估中，一个重要的指标是其泛化能力，即对于在经验E没有涉及的、同时位于任务T的样本空间范围内的点的估计效果。通常我们会从训练数据中单独分出一小部分，在训练时不作为样本对模型进行训练，并评估模型在这些样本上的性能。</p>
 <p>我们称<strong>在训练时作为样本对模型进行训练的数据集合为数据集，分出来的那一小部分为测试集</strong>。通常，为了得知模型在训练过程中的性能变化趋势，我们还会从测试集中分出一小部分作为<strong>验证集</strong>，在训练中途多次在验证集上测试模型的性能表现。</p>
 <h2 id="_13">神经网络的构成<a class="headerlink" href="#_13" title="Permanent link">¶</a></h2>
-<p>我们在第一节强调了神经网络构成的两个部分：带参数或不带参数的简单结构，以及它们的连接。在本节中将详细说明这两部分。</p>
+<p>我们在第一节强调了神经网络构成的两个部分：带参数或不带参数的简单结构，以及它们的连接。在本节中将使用感知机的例子详细说明这两部分。</p>
 <h3 id="_14">感知机<a class="headerlink" href="#_14" title="Permanent link">¶</a></h3>
 <p>线性感知机算法（PLA）1957 年由 Frank Rosenblatt 提出。感知机是二分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取值为 <span class="arithmatex"><span class="MathJax_Preview">+1</span><script type="math/tex">+1</script></span> 和 <span class="arithmatex"><span class="MathJax_Preview">-1</span><script type="math/tex">-1</script></span>。</p>
 <blockquote>
@@ -1409,7 +1409,7 @@ $$
     <span class="n">parameter</span> <span class="o">-=</span> <span class="n">lr</span> <span class="o">*</span> <span class="n">d_parameter</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">parameter</span><span class="p">,</span> <span class="n">loss</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div></p>
-<h2 id="_21">机器学习算法与神经网络的结构<a class="headerlink" href="#_21" title="Permanent link">¶</a></h2>
+<h2 id="_21">神经网络的泛化性问题<a class="headerlink" href="#_21" title="Permanent link">¶</a></h2>
 <h3 id="_22">决定机器学习算法效果的评价指标<a class="headerlink" href="#_22" title="Permanent link">¶</a></h3>
 <h4 id="_23">机器学习模型的泛化问题<a class="headerlink" href="#_23" title="Permanent link">¶</a></h4>
 <p>在训练过程中，我们通过假设损失函数能够完全反映模型性能来对模型进行改进。然而在实际情况中并不如此。首先，损失函数<strong>并不一定能完全反映模型性能</strong>，例如在生成模型中很难找到一个合适的完全反映生成质量的损失函数。其次，在神经网络学习任务中，我们通过最小化训练集上的误差（通常被称为训练误差）来训练模型。而<strong>机器学习问题和优化问题的不同在于，我们也希望泛化误差（也被称为测试误差）很低</strong>。</p>
