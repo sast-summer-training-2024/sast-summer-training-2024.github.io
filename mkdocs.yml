@@ -119,6 +119,10 @@ nav:
       - 课前准备: frontend/react/Pre-requisite.md
       - 讲义: frontend/react/handout.md
   - 后端:
+    - 爬虫入门:
+      - 讲义: backend/crawler/slide.pdf
+      - 代码: https://github.com/UbeCc/sast-2024-crawler
+      - 课程回放: https://www.bilibili.com/video/BV1cb421J7u9/
     - Django:
       - 课前准备: backend/django/prerequisites.md
       - 后端架构: backend/django/backend.md
