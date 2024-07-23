@@ -135,4 +135,3 @@ nav:
   - AI:
     - 神经网络: ai/neural-network/network.md
     - 数据处理可视化与pytorch: ai/dp-and-pytorch/readme.md
-  - 算法:
