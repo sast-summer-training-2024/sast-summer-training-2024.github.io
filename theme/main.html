@@ -1,4 +1,15 @@
 {% extends "base.html" %}
+
+{%- block site_nav %}
+    {{ super() }}
+    <script type="text/javascript">
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            link.setAttribute('referrerpolicy', 'no-referrer');
+            link.setAttribute('target', '_blank');
+        });
+    </script>
+{%- endblock %}
+
 {% block content %}
     {{ super() }}
     {% if git_page_authors %}
