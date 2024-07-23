@@ -118,6 +118,10 @@ nav:
     - React:
       - 课前准备: frontend/react/Pre-requisite.md
       - 讲义: frontend/react/handout.md
+    - Java:
+      - 课前准备: frontend/java/prerequisites.md
+      - 讲义: frontend/java/handout.md
+      - 课后作业: frontend/java/homework.md
   - 后端:
     - 爬虫入门:
       - 讲义: backend/crawler/slide.pdf
