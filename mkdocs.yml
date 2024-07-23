@@ -133,3 +133,4 @@ nav:
       - 课前准备: backend/django/prerequisites.md
       - 后端架构: backend/django/backend.md
       - Django: backend/django/django.md
+      - 作业 (也是课件): https://github.com/sast-summer-training-2024/sast2024-django-hw
