@@ -96,18 +96,19 @@ nav:
       - 课前准备: basic/linux_git/Pre-requisite.md
       - Linux: basic/linux_git/Linux.md
       - Git: basic/linux_git/Git.md
-      - 课程回放: https://www.bilibili.com/video/BV1bM4m127DE/
+      - 课程回放: https://www.bilibili.com/video/BV1bM4m127DE/?share_source=copy_web&vd_source=49053b7356a25d7661b5d45f37afd1fb
     - Python:
       - 课前准备: basic/python/Pre-requisite.md
       - 讲义: basic/python/handout.md
-      - 课程回放: https://www.bilibili.com/video/BV1Ny411B7Ex/
+      - 课程回放: https://www.bilibili.com/video/BV1Ny411B7Ex/?share_source=copy_web&vd_source=a80492aa87f464b5346dca18c3a9e9b3
     - Web基础:
       - 课件: basic/Web_basics/Web_basics.pdf
-      - 课程回放: https://www.bilibili.com/video/BV1pb421J7cR/
+      - 课程回放: https://www.bilibili.com/video/BV1pb421J7cR/?share_source=copy_web&vd_source=a80492aa87f464b5346dca18c3a9e9b3
       - 作业: basic/Web_basics/hw.pdf
     - 数据库 & SQL:
       - 课前准备: basic/sql/Pre-requisite.md
       - 讲义: basic/sql/handout.md
+      - 课程回放: https://www.bilibili.com/video/BV1PS42197ve/?share_source=copy_web&vd_source=a80492aa87f464b5346dca18c3a9e9b3
   - AI:
     - 神经网络: ai/neural-network/network.md
     - 数据处理可视化与pytorch: ai/dp-and-pytorch/readme.md
@@ -115,6 +116,7 @@ nav:
     - JSTS:
       - 课前准备: frontend/JSTS/Pre-requisite.md
       - 讲义: frontend/JSTS/handout.md
+      - 课程回放: https://www.bilibili.com/video/BV1R4421U7Sn/?share_source=copy_web&vd_source=a80492aa87f464b5346dca18c3a9e9b3
     - React:
       - 课前准备: frontend/react/Pre-requisite.md
       - 讲义: frontend/react/handout.md
@@ -126,7 +128,7 @@ nav:
     - 爬虫入门:
       - 讲义: backend/crawler/slide.pdf
       - 代码: https://github.com/UbeCc/sast-2024-crawler
-      - 课程回放: https://www.bilibili.com/video/BV1cb421J7u9/
+      - 课程回放: https://www.bilibili.com/video/BV1cb421J7u9/?share_source=copy_web&vd_source=a80492aa87f464b5346dca18c3a9e9b3
     - Django:
       - 课前准备: backend/django/prerequisites.md
       - 后端架构: backend/django/backend.md
