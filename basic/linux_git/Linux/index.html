@@ -919,6 +919,12 @@
 </div>
 </div>
 </div>
+<script type="text/javascript">
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            link.setAttribute('referrerpolicy', 'no-referrer');
+            link.setAttribute('target', '_blank');
+        });
+    </script>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">¶</a></h1>
