@@ -92,6 +92,7 @@ nav:
     - index.md
     - 资源链接: links.md
   - 基础:
+    - index_basic.md
     - Linux & Git:
       - 课前准备: basic/linux_git/Pre-requisite.md
       - Linux: basic/linux_git/Linux.md
