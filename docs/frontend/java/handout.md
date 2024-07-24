@@ -256,14 +256,17 @@ public class ControlFlow {
 
 Java 将异常分为两大类：
 
-1. **受检异常（Checked Exceptions）**：
-   - 编译器会检查这些异常是否被处理或声明抛出。
-   - 如果方法可能抛出受检异常，调用者必须要么捕获该异常，要么在方法签名中声明抛出该异常。
-   - 常见的受检异常有 `IOException`、`SQLException`、`ClassNotFoundException` 等。
-2. **非受检异常（Unchecked Exceptions）**：
-   - 这些异常不会被编译器检查。
-   - 包括 `RuntimeException` 及其子类，如 `NullPointerException`、`ArrayIndexOutOfBoundsException`、`IllegalArgumentException` 等。
-   - 非受检异常可以不被显式捕获，也可以在方法签名中不声明抛出。
+**受检异常（Checked Exceptions）**：
+
+ - 编译器会检查这些异常是否被处理或声明抛出。
+ - 如果方法可能抛出受检异常，调用者必须要么捕获该异常，要么在方法签名中声明抛出该异常。
+ - 常见的受检异常有 `IOException`、`SQLException`、`ClassNotFoundException` 等。
+
+**非受检异常（Unchecked Exceptions）**：
+
+ - 这些异常不会被编译器检查。
+ - 包括 `RuntimeException` 及其子类，如 `NullPointerException`、`ArrayIndexOutOfBoundsException`、`IllegalArgumentException` 等。
+ - 非受检异常可以不被显式捕获，也可以在方法签名中不声明抛出。
 
 对于非受检异常，Java 并不要求开发者必须显式捕获或声明抛出。这是因为非受检异常通常是由于程序逻辑错误或输入数据错误导致的，应该在代码设计和编写时就尽量避免这类异常的发生。
 
