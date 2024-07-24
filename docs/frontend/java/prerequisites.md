@@ -70,7 +70,7 @@ java YourProgram.java   # 编译 & 运行
 
 IDEA 会自动生成一个 demo 代码，代码内容如下：
 
-```java Main.java
+```java title="Main.java"
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
