@@ -91,6 +91,9 @@ nav:
   - 首页:
     - index.md
     - 资源链接: links.md
+    - 基础 Track: basic/index_basic.md
+    - 前端 Track: frontend/index_frontend.md
+    - 后端 Track: backend/index_backend.md
   - 基础:
     - basic/index_basic.md
     - Linux & Git:
