@@ -36,7 +36,7 @@
 [爬虫](https://summer24.net9.org/backend/crawler/slide.pdf)
 
 ### 课程代码
-
+[爬虫代码](https://github.com/UbeCc/sast-2024-crawler)
 
 ### 课程回放
 [爬虫 课程回放](https://www.bilibili.com/video/BV1cb421J7u9/?share_source=copy_web&vd_source=a80492aa87f464b5346dca18c3a9e9b3)
