@@ -138,5 +138,6 @@ nav:
       - Django: backend/django/django.md
       - 作业 (也是课件): https://github.com/sast-summer-training-2024/sast2024-django-hw
   - AI:
+    - ai/index.md
     - 神经网络: ai/neural-network/network.md
     - 数据处理可视化与pytorch: ai/dp-and-pytorch/readme.md
