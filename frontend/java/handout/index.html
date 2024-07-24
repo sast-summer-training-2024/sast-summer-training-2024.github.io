@@ -22,6 +22,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          跳转至
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -527,11 +530,380 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    讲义
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     讲义
   </span>
 </a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      基础语法
+    </span>
+</a>
+<nav aria-label="基础语法" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      输入输出
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      变量
+    </span>
+</a>
+<nav aria-label="变量" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#byteshortint-long">
+<span class="md-ellipsis">
+      整型数：byte、short、int 和 long
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#boolean">
+<span class="md-ellipsis">
+      布尔型变量：boolean
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#char">
+<span class="md-ellipsis">
+      字符：char
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      数组
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      代码示例
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      运算符
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      控制流语句
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      异常处理
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      标准库
+    </span>
+</a>
+<nav aria-label="标准库" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#biginteger-bigdecimal">
+<span class="md-ellipsis">
+      BigInteger 和 BigDecimal
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stringstringbuffer-stringbuilder">
+<span class="md-ellipsis">
+      String、StringBuffer 和 StringBuilder
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#arrays-arraylist">
+<span class="md-ellipsis">
+      Arrays 和 ArrayList
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linkedlist">
+<span class="md-ellipsis">
+      LinkedList
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hashset">
+<span class="md-ellipsis">
+      HashSet
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hashmap">
+<span class="md-ellipsis">
+      HashMap
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      面向对象程序设计
+    </span>
+</a>
+<nav aria-label="面向对象程序设计" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#package">
+<span class="md-ellipsis">
+      Package
+    </span>
+</a>
+<nav aria-label="Package" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
+<span class="md-ellipsis">
+      析构函数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#static">
+<span class="md-ellipsis">
+      static
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+<span class="md-ellipsis">
+      实例初始化块
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#final">
+<span class="md-ellipsis">
+      final
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+<span class="md-ellipsis">
+      组合与继承
+    </span>
+</a>
+<nav aria-label="组合与继承" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_14">
+<span class="md-ellipsis">
+      组合
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_15">
+<span class="md-ellipsis">
+      继承
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_16">
+<span class="md-ellipsis">
+      抽象类
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_17">
+<span class="md-ellipsis">
+      多重继承与接口
+    </span>
+</a>
+<nav aria-label="多重继承与接口" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_18">
+<span class="md-ellipsis">
+      多重继承
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_19">
+<span class="md-ellipsis">
+      接口
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#javalangobject">
+<span class="md-ellipsis">
+      java.lang.Object
+    </span>
+</a>
+<nav aria-label="java.lang.Object" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tostring">
+<span class="md-ellipsis">
+      对象的字符串描述：toString()
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#equals">
+<span class="md-ellipsis">
+      比较二者是否相等：equals()
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hashcode">
+<span class="md-ellipsis">
+      哈希码：hashCode()
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_20">
+<span class="md-ellipsis">
+      代码示例
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_21">
+<span class="md-ellipsis">
+      包装类
+    </span>
+</a>
+<nav aria-label="包装类" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#integer">
+<span class="md-ellipsis">
+      举例：Integer 类
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_22">
+<span class="md-ellipsis">
+      其他包装类
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_23">
+<span class="md-ellipsis">
+      自动装箱和拆箱
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_24">
+<span class="md-ellipsis">
+      枚举类
+    </span>
+</a>
+<nav aria-label="枚举类" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_25">
+<span class="md-ellipsis">
+      常见方法
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_26">
+<span class="md-ellipsis">
+      特点
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_27">
+<span class="md-ellipsis">
+      代码示例
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_28">
+<span class="md-ellipsis">
+      参考资料
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../homework/">
@@ -700,6 +1072,367 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      基础语法
+    </span>
+</a>
+<nav aria-label="基础语法" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      输入输出
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      变量
+    </span>
+</a>
+<nav aria-label="变量" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#byteshortint-long">
+<span class="md-ellipsis">
+      整型数：byte、short、int 和 long
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#boolean">
+<span class="md-ellipsis">
+      布尔型变量：boolean
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#char">
+<span class="md-ellipsis">
+      字符：char
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      数组
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      代码示例
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      运算符
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      控制流语句
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      异常处理
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      标准库
+    </span>
+</a>
+<nav aria-label="标准库" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#biginteger-bigdecimal">
+<span class="md-ellipsis">
+      BigInteger 和 BigDecimal
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stringstringbuffer-stringbuilder">
+<span class="md-ellipsis">
+      String、StringBuffer 和 StringBuilder
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#arrays-arraylist">
+<span class="md-ellipsis">
+      Arrays 和 ArrayList
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linkedlist">
+<span class="md-ellipsis">
+      LinkedList
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hashset">
+<span class="md-ellipsis">
+      HashSet
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hashmap">
+<span class="md-ellipsis">
+      HashMap
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      面向对象程序设计
+    </span>
+</a>
+<nav aria-label="面向对象程序设计" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#package">
+<span class="md-ellipsis">
+      Package
+    </span>
+</a>
+<nav aria-label="Package" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
+<span class="md-ellipsis">
+      析构函数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#static">
+<span class="md-ellipsis">
+      static
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+<span class="md-ellipsis">
+      实例初始化块
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#final">
+<span class="md-ellipsis">
+      final
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+<span class="md-ellipsis">
+      组合与继承
+    </span>
+</a>
+<nav aria-label="组合与继承" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_14">
+<span class="md-ellipsis">
+      组合
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_15">
+<span class="md-ellipsis">
+      继承
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_16">
+<span class="md-ellipsis">
+      抽象类
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_17">
+<span class="md-ellipsis">
+      多重继承与接口
+    </span>
+</a>
+<nav aria-label="多重继承与接口" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_18">
+<span class="md-ellipsis">
+      多重继承
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_19">
+<span class="md-ellipsis">
+      接口
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#javalangobject">
+<span class="md-ellipsis">
+      java.lang.Object
+    </span>
+</a>
+<nav aria-label="java.lang.Object" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tostring">
+<span class="md-ellipsis">
+      对象的字符串描述：toString()
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#equals">
+<span class="md-ellipsis">
+      比较二者是否相等：equals()
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hashcode">
+<span class="md-ellipsis">
+      哈希码：hashCode()
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_20">
+<span class="md-ellipsis">
+      代码示例
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_21">
+<span class="md-ellipsis">
+      包装类
+    </span>
+</a>
+<nav aria-label="包装类" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#integer">
+<span class="md-ellipsis">
+      举例：Integer 类
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_22">
+<span class="md-ellipsis">
+      其他包装类
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_23">
+<span class="md-ellipsis">
+      自动装箱和拆箱
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_24">
+<span class="md-ellipsis">
+      枚举类
+    </span>
+</a>
+<nav aria-label="枚举类" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_25">
+<span class="md-ellipsis">
+      常见方法
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_26">
+<span class="md-ellipsis">
+      特点
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_27">
+<span class="md-ellipsis">
+      代码示例
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_28">
+<span class="md-ellipsis">
+      参考资料
+    </span>
+</a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -707,18 +1440,1781 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1>讲义</h1>
+<h2 id="_1">基础语法<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>Java 的基础语法与 C++ 较为类似。以下代码均包含于 <code>src/main/java/examples/introduction</code> 中。</p>
+<h3 id="_2">输入输出<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<p>```java IOExample.java
+package examples.introduction;</p>
+<p>import java.util.Scanner;</p>
+<p>public class IO {
+    public static void main(String[] args) {
+        // Console Output
+        System.out.println("This is an output with a new line.");
+        System.out.print("This is an output without a new line.");
+        System.out.println("So this sentence will appear right after the last one.");</p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>    // Console Input
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter your name: ");
+    String name = input.nextLine();
+    System.out.print("Enter your age: ");
+    int age = input.nextInt();
+    System.out.println("Hello " + name + ", you are " + age + " years old!");
+}
+</code></pre></div></td></tr></table></div>
+<p>}
+```
+
+这个程序中展现了 Java 中基础的输入输出方式。相较于 C++ 而言，输入输出所用函数名较长，但也并不繁琐。
+</p>
+<h3 id="_3">变量<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>Java 中的变量类型和 C++ 类似，但也有细微的差别。
+</p>
+<h4 id="byteshortint-long">整型数：<code>byte</code>、<code>short</code>、<code>int</code> 和 <code>long</code><a class="headerlink" href="#byteshortint-long" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">类型</th>
+<th style="text-align: center;">大小</th>
+<th style="text-align: center;">最小值</th>
+<th style="text-align: center;">最大值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>byte</code></td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span> 字节</td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">-2^7 = -128</span><script type="math/tex">-2^7 = -128</script></span></td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">2^7-1 = 127</span><script type="math/tex">2^7-1 = 127</script></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>short</code></td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">2</span><script type="math/tex">2</script></span> 字节</td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">-2^{15}=-32768</span><script type="math/tex">-2^{15}=-32768</script></span></td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">2^{15}-1=32767</span><script type="math/tex">2^{15}-1=32767</script></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>int</code></td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">4</span><script type="math/tex">4</script></span> 字节</td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">-2^{31} = -2147483648</span><script type="math/tex">-2^{31} = -2147483648</script></span></td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">2^{31}-1=2147483647</span><script type="math/tex">2^{31}-1=2147483647</script></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>long</code></td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">8</span><script type="math/tex">8</script></span> 字节</td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">-2^{63}</span><script type="math/tex">-2^{63}</script></span></td>
+<td style="text-align: center;"><span class="arithmatex"><span class="MathJax_Preview">2^{63}-1</span><script type="math/tex">2^{63}-1</script></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">#### 浮点数：<code>float</code> 和 <code>double</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">在 Java 中，浮点数字面量可以写为 <code>123.45</code>、<code>.5</code>，或 <code>321.4f</code> 等。其中以 <code>f</code> 结尾的浮点数字面量是 <code>float</code> 类型，其余均为 <code>double</code> 类型。因此，以下的语句是不合法的：</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">```java</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">float doubleVariable = 3.1415;</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">```</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="boolean">布尔型变量：<code>boolean</code><a class="headerlink" href="#boolean" title="Permanent link">¶</a></h4>
+<p>在 Java 中，布尔型变量用 <code>boolean</code> 来定义，而非像 C++ 一样使用关键字 <code>bool</code>。</p>
+<h4 id="char">字符：<code>char</code><a class="headerlink" href="#char" title="Permanent link">¶</a></h4>
+<p>在 Java 中，<code>char</code> 类型用于表示 Unicode 字符，而不是 ASCII。每个 <code>char</code> 类型的变量可以存储一个 Unicode 码点，其数值范围从 <span class="arithmatex"><span class="MathJax_Preview">0</span><script type="math/tex">0</script></span> 到 <span class="arithmatex"><span class="MathJax_Preview">65535</span><script type="math/tex">65535</script></span>（即 <span class="arithmatex"><span class="MathJax_Preview">\text{0xFFFF}</span><script type="math/tex">\text{0xFFFF}</script></span>）。这意味着 Java 的 <code>char</code> 类型甚至能够表示汉字。</p>
+<h4 id="_4">数组<a class="headerlink" href="#_4" title="Permanent link">¶</a></h4>
+<p>在 Java 中，推荐将数组的定义（<code>[]</code>）写在类型后面，例如 <code>int[] arr</code>、<code>String[][] array_2d</code> 等，而非 <code>double xs[]</code>。</p>
+<h4 id="_5">代码示例<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
+<p>```java VariablesExample.java
+package examples.introduction;</p>
+<p>public class Variables {
+    public static void main(String[] args) {
+        // Integers
+        byte byteVariable = 123;
+        short shortVariable = 12345;
+        int intVariable = 1234567890;
+        long longVariable = 1234567890123456789L;</p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code>    // Floating-point Numbers
+    float floatVariable = 3.14f;
+    double doubleVariable = 3.14159265358979;
+
+    // Character
+    char charVariable = 'A';
+
+    // Boolean
+    boolean booleanVariable = true;
+
+    // Printing the values
+    System.out.println("byte: " + byteVariable);
+    System.out.println("short: " + shortVariable);
+    System.out.println("int: " + intVariable);
+    System.out.println("long: " + longVariable);
+    System.out.println("float: " + floatVariable);
+    System.out.println("double: " + doubleVariable);
+    System.out.println("char: " + charVariable);
+    System.out.println("boolean: " + booleanVariable);
+
+    // Integer array
+    int[] intArray = {1, 2, 3, 4, 5};
+
+    // Accessing array elements
+    System.out.println("First element: " + intArray[0]);
+    System.out.println("Last element: " + intArray[intArray.length - 1]);
+
+    // Iterating through the array
+    System.out.println("Iterating through the array:");
+    for (int i = 0; i &lt; intArray.length; i++) {
+        System.out.println(intArray[i]);
+    }
+
+    // Character array
+    char[] charArray = {'a', 'b', 'c', 'd', 'e'};
+
+    // Iterating through the character array
+    System.out.println("Iterating through the character array:");
+    for (char c : charArray) {
+        System.out.println(c);
+    }
+}
+</code></pre></div></td></tr></table></div>
+<p>}
+```
+</p>
+<h3 id="_6">运算符<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<p>运算符中可能仅有 <code>&gt;&gt;&gt;</code> 不常见。<code>&gt;&gt;&gt;</code> 是专门针对<strong>有符号数</strong>设计的“逻辑右移”。
+
+和 <code>&gt;&gt;</code>（算术右移）不同的是，逻辑右移在最高位补 0；而算术右移补的是符号位（即，符号位为 1 则补 1，符号位为 0 则补 0）。
+
+例如，<code>int x = -4;</code>，即 <code>11111111 11111111 11111111 11111100</code>，则：
+
+- <code>x &gt;&gt;&gt; 1</code> 为 <code>01111111 11111111 11111111 11111110</code>，即 <span class="arithmatex"><span class="MathJax_Preview">2147483646</span><script type="math/tex">2147483646</script></span>；
+- <code>x &gt;&gt; 1</code> 为 <code>11111111 11111111 11111111 11111110</code>，即 <span class="arithmatex"><span class="MathJax_Preview">-2</span><script type="math/tex">-2</script></span>。
+
+<code>java OperatorsExample.java
+package examples.introduction;
+
+public class Operators {
+    public static void main(String[] args) {
+        int a = 114;
+        int b = 514;
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b));
+        System.out.println("a * b = " + (a * b));
+
+        // int / int = int
+        System.out.println("a / b = " + (a / b));
+        // int / double = double
+        System.out.println("a / b = " + (a / (double) b));
+
+        System.out.println("a % b = " + (a % b));
+        System.out.println("a++ = " + (a++));
+        System.out.println("++a = " + (++a));
+        System.out.println("b += 100 = " + (b += 100));
+        System.out.println("a == b = " + (a == b));
+        System.out.println("a != b = " + (a != b));
+        System.out.println("a &gt; b = " + (a &gt; b));
+        System.out.println("a &gt;= b = " + (a &gt;= b));
+        System.out.println("a &amp; b = " + (a &amp; b));
+        System.out.println("a | b = " + (a | b));
+        System.out.println("a ^ b = " + (a ^ b));
+        System.out.println("~a = " + (~a));
+        System.out.println("a &lt;&lt; 2 = " + (a &lt;&lt; 2));
+
+        int x = -4;
+        // Arithmetic shift
+        System.out.println("x &gt;&gt; 2 = " + (x &gt;&gt; 1));
+        // Logical shift
+        System.out.println("x &gt;&gt;&gt; 2 = " + (x &gt;&gt;&gt; 1));
+
+        boolean c = true;
+        boolean d = false;
+        System.out.println("c &amp;&amp; d = " + (c &amp;&amp; d));
+        System.out.println("c || d = " + (c || d));
+        System.out.println("!c = " + (!c));
+        System.out.println("c ? 'T' : 'F' = " + (c ? 'T' : 'F'));
+    }
+}</code></p>
+<h3 id="_7">控制流语句<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>Java 和 C++ 的控制流语句大同小异，可以结合以下例子进行学习。</p>
+<p>```java ControlFlowExample.java
+package examples.introduction;</p>
+<p>public class ControlFlow {
+    public static void main(String[] args) {
+        // if-else example
+        int age = 18;
+        if (age &gt;= 18) {
+            System.out.println("You are an adult.");
+        } else {
+            System.out.println("You are a minor.");
+        }</p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span></pre></div></td><td class="code"><div><pre><span></span><code>    // switch example
+    int month = 3;
+    String monthName;
+    switch (month) {
+        case 1:
+            monthName = "January";
+            break;
+        case 2:
+            monthName = "February";
+            break;
+        case 3:
+            monthName = "March";
+            break;
+        default:
+            monthName = "Invalid month";
+    }
+    System.out.println("The month is " + monthName);
+
+    // for loop example
+    System.out.println("Counting from 1 to 5:");
+    for (int i = 1; i &lt;= 5; i++) {
+        System.out.println(i);
+    }
+
+    // while loop example
+    int counter = 0;
+    while (counter &lt; 3) {
+        System.out.println("Counter value: " + counter);
+        counter++;
+    }
+
+    // do-while loop example
+    int number = 5;
+    do {
+        System.out.println("Number value: " + number);
+        number--;
+    } while (number &gt; 0);
+
+    // break example
+    for (int i = 0; i &lt; 10; i++) {
+        if (i == 5) {
+            System.out.println("Breaking the loop at i = 5");
+            break;
+        }
+        System.out.println("i = " + i);
+    }
+
+    // continue example
+    for (int i = 0; i &lt; 10; i++) {
+        if (i % 2 == 0) {
+            continue;
+        }
+        System.out.println("Odd number: " + i);
+    }
+}
+</code></pre></div></td></tr></table></div>
+<p>}
+```
+</p>
+<h3 id="_8">异常处理<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<p>Java 将异常分为两大类：
+
+1. <strong>受检异常（Checked Exceptions）</strong>：
+   - 编译器会检查这些异常是否被处理或声明抛出。
+   - 如果方法可能抛出受检异常，调用者必须要么捕获该异常，要么在方法签名中声明抛出该异常。
+   - 常见的受检异常有 <code>IOException</code>、<code>SQLException</code>、<code>ClassNotFoundException</code> 等。
+2. <strong>非受检异常（Unchecked Exceptions）</strong>：
+   - 这些异常不会被编译器检查。
+   - 包括 <code>RuntimeException</code> 及其子类，如 <code>NullPointerException</code>、<code>ArrayIndexOutOfBoundsException</code>、<code>IllegalArgumentException</code> 等。
+   - 非受检异常可以不被显式捕获，也可以在方法签名中不声明抛出。
+
+对于非受检异常，Java 并不要求开发者必须显式捕获或声明抛出。这是因为非受检异常通常是由于程序逻辑错误或输入数据错误导致的，应该在代码设计和编写时就尽量避免这类异常的发生。
+
+相比之下，受检异常通常是由于外部原因（如 I/O 错误、网络异常等）导致的，开发者无法完全控制。因此，Java 要求开发者必须处理这些异常，以确保程序的健壮性和可靠性。
+
+<code>java ExceptionHandlingExample.java
+package examples.introduction;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class ExceptionHandling {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a non-negative integer n, and I will try to calculate 100 / n: ");
+        try {
+            int n = sc.nextInt();
+            int result = 100 / n; // if n = 0 then `ArithmeticException` will be thrown
+            if (n &lt; 0)
+                throw new IllegalArgumentException("Number is negative."); // custom exception
+            System.out.println("Result: " + result);
+        } catch (ArithmeticException e) { // will be executed if n = 0
+            System.out.println("Number is zero.");
+        } catch (InputMismatchException e) {
+            System.out.println("Number is not a integer.");
+        } catch (Exception e) { // will be executed if other exception occurs
+            e.printStackTrace();
+        } finally { // will be executed always
+            System.out.println("Finally block is always executed.");
+            sc.close();
+        }
+    }
+}</code></p>
+<p>不过，在程序开发过程中，即使出现了未捕获的异常导致程序发生 Runtime Error，也可以通过<strong>查看调用栈</strong>中的调试信息，来找到问题出错的根源。</p>
+<h2 id="_9">标准库<a class="headerlink" href="#_9" title="Permanent link">¶</a></h2>
+<p>正如 C++ 中的 STL 一样，Java 也有很多标准库。以下代码均包含于 <code>src/main/java/examples/datastructures</code> 中。</p>
+<h3 id="biginteger-bigdecimal"><code>BigInteger</code> 和 <code>BigDecimal</code><a class="headerlink" href="#biginteger-bigdecimal" title="Permanent link">¶</a></h3>
+<p><code>BigInteger</code> 和 <code>BigDecimal</code> 是 Java 中用于处理大数和高精度计算的两个类。它们属于 <code>java.math</code> 包。</p>
+<ul>
+<li>
+<p><strong><code>BigInteger</code></strong> 类用于表示整数值，它不受 Java 内置的 <code>int</code> 和 <code>long</code> 类型所受的固定大小限制。<code>BigInteger</code> 可以处理任意精度的整数，包括非常大的数值，例如在示例代码中展示的 <code>123456789012345678901234567890</code>。</p>
+</li>
+<li>
+<p><strong><code>BigDecimal</code></strong> 类用于表示具有精确小数位的小数值，它提供了对小数点后任意位数的精确控制。<code>BigDecimal</code> 常用于需要高精度计算的金融领域。</p>
+</li>
+</ul>
+<p>示例代码展示了 <code>BigInteger</code> 和 <code>BigDecimal</code> 的基本使用，包括创建实例、执行基本的算术操作（加、减、乘、除），以及展示 <code>BigDecimal</code> 的精度控制。</p>
+<p>```java BigIntegerAndBigDecimalExample.java
+package examples.datastructures;</p>
+<p>import java.math.BigDecimal;
+import java.math.BigInteger;</p>
+<p>public class BigIntegerAndBigDecimalExample {
+    public static void main(String[] args) {
+        // Example usage of BigInteger
+        BigInteger bigInt = new BigInteger("123456789012345678901234567890");
+        System.out.println("BigInteger: " + bigInt);</p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code>    // Arithmetic operations with BigInteger
+    BigInteger bigInt1 = new BigInteger("987654321098765432109876543210");
+    BigInteger bigInt2 = new BigInteger("100");
+    BigInteger sum = bigInt1.add(bigInt2);
+    BigInteger difference = bigInt1.subtract(bigInt2);
+    BigInteger product = bigInt1.multiply(bigInt2);
+    BigInteger quotient = bigInt1.divide(bigInt2);
+
+    System.out.println("Sum: " + sum);
+    System.out.println("Difference: " + difference);
+    System.out.println("Product: " + product);
+    System.out.println("Quotient: " + quotient);
+
+    // Example usage of BigDecimal
+    BigDecimal bigDec = new BigDecimal("1234567890.12345678901234567890");
+    System.out.println("BigDecimal: " + bigDec);
+
+    // Arithmetic operations with BigDecimal
+    BigDecimal bigDec1 = new BigDecimal("987654321.098765432109876543210");
+    BigDecimal bigDec2 = new BigDecimal("0.0012345");
+    BigDecimal sumBD = bigDec1.add(bigDec2);
+    BigDecimal differenceBD = bigDec1.subtract(bigDec2);
+    BigDecimal productBD = bigDec1.multiply(bigDec2);
+    BigDecimal quotientBD = bigDec1.divide(bigDec2, 10, BigDecimal.ROUND_HALF_UP);
+
+    System.out.println("BigDecimal Sum: " + sumBD);
+    System.out.println("BigDecimal Difference: " + differenceBD);
+    System.out.println("BigDecimal Product: " + productBD);
+    System.out.println("BigDecimal Quotient (rounded to 10 scale): " + quotientBD);
+
+    // Demonstrate precision of BigDecimal
+    BigDecimal pi = new BigDecimal(Math.PI);
+    System.out.println("Pi (to 10 scale): " + pi.setScale(10, BigDecimal.ROUND_HALF_UP));
+}
+</code></pre></div></td></tr></table></div>
+<p>}
+```
+</p>
+<h3 id="stringstringbuffer-stringbuilder"><code>String</code>、<code>StringBuffer</code> 和 <code>StringBuilder</code><a class="headerlink" href="#stringstringbuffer-stringbuilder" title="Permanent link">¶</a></h3>
+<p>Java 中的 <code>String</code> 类表示<strong>不可变字符串</strong>，这意味着对 <code>String</code> 对象的任何修改都会生成一个<strong>新的 <code>String</code> 对象</strong>。<code>StringBuffer</code> 和 <code>StringBuilder</code> 都是可变的字符串缓冲区，允许在不创建新对象的情况下修改字符串。
+
+- <strong><code>String</code></strong> 类的示例代码展示了字符串的不可变性。每次使用 <code>+</code> 操作符连接字符串时，都会创建一个新的 <code>String</code> 对象。
+
+- <strong><code>StringBuffer</code></strong> 是线程安全的，可以在多线程环境中使用。示例代码展示了如何使用 <code>append</code>、<code>insert</code> 和其他方法来修改 <code>StringBuffer</code> 的内容。
+
+- <strong><code>StringBuilder</code></strong> 与 <code>StringBuffer</code> 类似，但它不是线程安全的，因此在单线程环境中使用时通常比 <code>StringBuffer</code> 更快。示例代码演示了 <code>StringBuilder</code> 的使用，包括清空内容、追加字符串、插入字符串等操作。
+
+<code>java StringAndStringBufferAndStringBuilderExample.java
+package examples.datastructures;
+
+public class StringAndStringBufferAndStringBuilderExample {
+    public static void main(String[] args) {
+        // String array
+        String[] stringArray = {"apple", "banana", "cherry"};
+
+        // Iterating through the string array
+        System.out.println("Iterating through the string array:");
+        for (String s : stringArray) {
+            System.out.println(s);
+        }
+
+        // Demonstrating String immutability
+        String str = "Hello";
+        System.out.println("Original String: " + str);
+        str += " World"; // New String object is created
+        System.out.println("After concatenation: " + str);
+
+        // Demonstrating StringBuffer usage
+        StringBuffer stringBuffer = new StringBuffer("Initial");
+        stringBuffer.append(" String"); // Appending to StringBuffer
+        stringBuffer.insert(0, "Another "); // Inserting into StringBuffer
+        System.out.println("StringBuffer: " + stringBuffer);
+
+        // Demonstrating StringBuilder usage
+        StringBuilder stringBuilder = new StringBuilder("Initial");
+        stringBuilder.append(" String"); // Appending to StringBuilder
+        stringBuilder.insert(0, "Another "); // Inserting into StringBuilder
+        System.out.println("StringBuilder: " + stringBuilder);
+
+        // StringBuilder is generally faster than StringBuffer
+        // because it is not synchronized, making it ideal for single-threaded scenarios.
+
+        // Example of using StringBuilder for complex string manipulations
+        System.out.println("Complex StringBuilder operations:");
+        stringBuilder.setLength(0); // Clear the StringBuilder content
+        stringBuilder.append("Looping and ");
+        stringBuilder.append("building a long ");
+        stringBuilder.append("string in a ");
+        stringBuilder.append("StringBuilder.");
+        System.out.println(stringBuilder);
+
+        // Convert StringBuilder to String
+        String finalString = stringBuilder.toString();
+        System.out.println("StringBuilder converted to String: " + finalString);
+    }
+}</code></p>
+<h3 id="arrays-arraylist"><code>Arrays</code> 和 <code>ArrayList</code><a class="headerlink" href="#arrays-arraylist" title="Permanent link">¶</a></h3>
+<p><code>Arrays</code> 类提供了一系列静态方法来操作数组，而 <code>ArrayList</code> 是一个基于数组实现的可调整大小的集合。</p>
+<ul>
+<li>
+<p><strong><code>Arrays</code></strong> 类的示例代码展示了如何使用 <code>Arrays</code> 类来打印数组内容、获取数组长度、执行二分查找、复制数组、排序以及填充数组。</p>
+</li>
+<li>
+<p><strong><code>ArrayList</code></strong> 是 <code>java.util</code> 包中的一个类，提供了动态数组的功能。示例代码展示了如何向 <code>ArrayList</code> 中添加元素、检查元素是否存在、获取和设置元素、移除元素以及清空列表。</p>
+</li>
+</ul>
+<p>```java ArraysAndArrayListExample.java
+package examples.datastructures;</p>
+<p>import java.util.ArrayList;
+import java.util.Arrays;</p>
+<p>public class ArraysAndArrayListExample {
+    public static void main(String[] args) {
+        // Example usage of Arrays
+        int[] numbersArray = {1, 1, 4, 5, 1, 4};</p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span></pre></div></td><td class="code"><div><pre><span></span><code>    // Print the length of the array
+    System.out.println("numbersArray.length = " + numbersArray.length);
+
+    // Print the first element of the array
+    System.out.println("numbersArray[0] = " + numbersArray[0]);
+
+    // Use Arrays.toString to print the contents of the array
+    System.out.println("Arrays.toString(numbersArray) = " + Arrays.toString(numbersArray));
+
+    // Check if the array is equal to itself
+    System.out.println("Arrays.equals(numbersArray, numbersArray) = " + Arrays.equals(numbersArray, numbersArray));
+
+    // Use Arrays.binarySearch to perform binary search for the element 4
+    System.out.println("Arrays.binarySearch(numbersArray, 4) = " + Arrays.binarySearch(numbersArray, 4));
+
+    // Use Arrays.copyOf to create a new array containing the first 3 elements of the original array
+    System.out.println("Arrays.copyOf(numbersArray, 3) = " + Arrays.toString(Arrays.copyOf(numbersArray, 3)));
+
+    // Use Arrays.copyOfRange to create a subarray from index 1 to 3
+    System.out.println("Arrays.copyOfRange(numbersArray, 1, 3) = " + Arrays.toString(Arrays.copyOfRange(numbersArray, 1, 3)));
+
+    // Use Arrays.sort to sort the array
+    Arrays.sort(numbersArray);
+    System.out.println("Arrays.sort(numbersArray) = " + Arrays.toString(numbersArray));
+
+    // Use Arrays.fill to fill the array with zeros
+    Arrays.fill(numbersArray, 0);
+    System.out.println("Arrays.fill(numbersArray, 0) = " + Arrays.toString(numbersArray));
+
+    // Print the hash code of the array after filling with zeros
+    System.out.println("Arrays.hashCode(numbersArray) = " + Arrays.hashCode(numbersArray));
+
+    // Example usage of ArrayList
+    ArrayList&lt;String&gt; sitesList = new ArrayList&lt;&gt;();
+
+    // Add elements to the ArrayList
+    sitesList.add("Google");
+    sitesList.add("Runoob");
+    sitesList.add("Taobao");
+    sitesList.add("Weibo");
+
+    // Print all elements in the ArrayList
+    System.out.println("ArrayList&lt;String&gt; sitesList = " + sitesList);
+
+    // Example of other ArrayList operations
+    // Check if the ArrayList contains a specific element
+    System.out.println("sitesList.contains(\"Runoob\") = " + sitesList.contains("Runoob"));
+
+    // Get the size of the ArrayList
+    System.out.println("sitesList.size() = " + sitesList.size());
+
+    // Remove an element from the ArrayList
+    sitesList.remove("Taobao");
+    System.out.println("sitesList after removing \"Taobao\" = " + sitesList);
+
+    // Get an element at a specific index
+    System.out.println("sitesList.get(1) = " + sitesList.get(1));
+
+    // Set an element at a specific index
+    sitesList.set(1, "Baidu");
+    System.out.println("sitesList after setting index 1 to \"Baidu\" = " + sitesList);
+
+    // Clear all elements in the ArrayList
+    sitesList.clear();
+    System.out.println("sitesList after clear() = " + sitesList);
+}
+</code></pre></div></td></tr></table></div>
+<p>}
+```
+</p>
+<h3 id="linkedlist"><code>LinkedList</code><a class="headerlink" href="#linkedlist" title="Permanent link">¶</a></h3>
+<p><code>LinkedList</code> 是 Java 中的一个双向链表实现，允许对列表中的元素进行高效的插入、删除操作。
+
+示例代码展示了如何创建 <code>LinkedList</code> 实例、添加和删除元素、访问首尾元素、以及遍历链表。
+
+<code>java LinkedListExample.java
+package examples.datastructures;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinkedListExample {
+    public static void main(String[] args) {
+        // Create a new LinkedList instance
+        List&lt;String&gt; linkedList = new LinkedList&lt;&gt;();
+
+        // Add elements to the LinkedList
+        linkedList.add("Element 1");
+        linkedList.add("Element 2");
+        linkedList.add("Element 3");
+
+        // Print the LinkedList
+        System.out.println("Initial LinkedList: " + linkedList);
+
+        // Access the first element
+        String firstElement = linkedList.get(0);
+        System.out.println("First Element: " + firstElement);
+
+        // Access the last element
+        String lastElement = linkedList.get(linkedList.size() - 1);
+        System.out.println("Last Element: " + lastElement);
+
+        // Remove the first occurrence of an element
+        linkedList.remove("Element 2");
+        System.out.println("LinkedList after removing 'Element 2': " + linkedList);
+
+        // Add an element at the beginning
+        linkedList.addFirst("New First Element");
+        System.out.println("LinkedList after adding new first element: " + linkedList);
+
+        // Add an element at the end
+        linkedList.addLast("New Last Element");
+        System.out.println("LinkedList after adding new last element: " + linkedList);
+
+        // Remove the first element
+        linkedList.removeFirst();
+        System.out.println("LinkedList after removing the first element: " + linkedList);
+
+        // Remove the last element
+        linkedList.removeLast();
+        System.out.println("LinkedList after removing the last element: " + linkedList);
+
+        // Get the size of the LinkedList
+        int size = linkedList.size();
+        System.out.println("Size of the LinkedList: " + size);
+
+        // Check if the LinkedList is empty
+        boolean isEmpty = linkedList.isEmpty();
+        System.out.println("Is the LinkedList empty? " + isEmpty);
+
+        // Clear all elements from the LinkedList
+        linkedList.clear();
+        System.out.println("LinkedList after clear(): " + linkedList);
+
+        // Demonstrate iteration over LinkedList elements
+        System.out.println("Iterating over LinkedList elements:");
+        for (String element : linkedList) {
+            System.out.println(element);
+        }
+    }
+}</code></p>
+<h3 id="hashset"><code>HashSet</code><a class="headerlink" href="#hashset" title="Permanent link">¶</a></h3>
+<p><code>HashSet</code> 是 Java 中的一个不允许重复元素的集合实现。它基于 <code>HashMap</code> 实现，因此具有快速的查找速度。</p>
+<p>示例代码中的 <code>HashSetExample</code> 应为 <code>HashSetExample</code> 而不是 <code>HashMapExample</code>。代码应该展示如何使用 <code>HashSet</code> 来添加元素、检查元素是否存在、移除元素以及遍历集合。</p>
+<p>```java HashSetExample.java
+package examples.datastructures;</p>
+<p>import java.util.HashMap;
+import java.util.Map;</p>
+<p>public class HashMapExample {
+    public static void main(String[] args) {
+        // Create a new HashMap instance
+        Map<string, integer=""> map = new HashMap&lt;&gt;();</string,></p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span></pre></div></td><td class="code"><div><pre><span></span><code>    // Put key-value pairs into the HashMap
+    map.put("One", 1);
+    map.put("Two", 2);
+    map.put("Three", 3);
+
+    // Print the HashMap
+    System.out.println("Initial HashMap: " + map);
+
+    // Get the value associated with a key
+    Integer value = map.get("Two");
+    System.out.println("Value for key 'Two': " + value);
+
+    // Check if a key exists in the HashMap
+    boolean containsKey = map.containsKey("Three");
+    System.out.println("Does the key 'Three' exist? " + containsKey);
+
+    // Remove a key-value pair from the HashMap
+    map.remove("One");
+    System.out.println("HashMap after removing 'One': " + map);
+
+    // Get the size of the HashMap
+    int size = map.size();
+    System.out.println("Size of the HashMap: " + size);
+
+    // Check if the HashMap is empty
+    boolean isEmpty = map.isEmpty();
+    System.out.println("Is the HashMap empty? " + isEmpty);
+
+    // Clear all key-value pairs from the HashMap
+    map.clear();
+    System.out.println("HashMap after clear(): " + map);
+
+    // Demonstrate iteration over HashMap entries
+    System.out.println("Iterating over HashMap entries:");
+    for (Map.Entry&lt;String, Integer&gt; entry : map.entrySet()) {
+        System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+    }
+}
+</code></pre></div></td></tr></table></div>
+<p>}
+```
+</p>
+<h3 id="hashmap"><code>HashMap</code><a class="headerlink" href="#hashmap" title="Permanent link">¶</a></h3>
+<p><code>HashMap</code> 是 Java 中的一个键值对集合，它允许存储唯一的键和对应的值。<code>HashMap</code> 不保证元素的顺序，并且不是线程安全的。
+
+示例代码展示了如何创建 <code>HashMap</code> 实例、添加键值对、获取与键关联的值、检查键是否存在、移除键值对、获取 <code>HashMap</code> 的大小、检查 <code>HashMap</code> 是否为空以及清空 <code>HashMap</code>。
+
+<code>java HashMapExample.java
+package examples.datastructures;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapExample {
+    public static void main(String[] args) {
+        // Create a new HashMap instance
+        Map&lt;String, Integer&gt; map = new HashMap&lt;&gt;();
+
+        // Put key-value pairs into the HashMap
+        map.put("One", 1);
+        map.put("Two", 2);
+        map.put("Three", 3);
+
+        // Print the HashMap
+        System.out.println("Initial HashMap: " + map);
+
+        // Get the value associated with a key
+        Integer value = map.get("Two");
+        System.out.println("Value for key 'Two': " + value);
+
+        // Check if a key exists in the HashMap
+        boolean containsKey = map.containsKey("Three");
+        System.out.println("Does the key 'Three' exist? " + containsKey);
+
+        // Remove a key-value pair from the HashMap
+        map.remove("One");
+        System.out.println("HashMap after removing 'One': " + map);
+
+        // Get the size of the HashMap
+        int size = map.size();
+        System.out.println("Size of the HashMap: " + size);
+
+        // Check if the HashMap is empty
+        boolean isEmpty = map.isEmpty();
+        System.out.println("Is the HashMap empty? " + isEmpty);
+
+        // Clear all key-value pairs from the HashMap
+        map.clear();
+        System.out.println("HashMap after clear(): " + map);
+
+        // Demonstrate iteration over HashMap entries
+        System.out.println("Iterating over HashMap entries:");
+        for (Map.Entry&lt;String, Integer&gt; entry : map.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
+    }
+}</code></p>
+<h2 id="_10">面向对象程序设计<a class="headerlink" href="#_10" title="Permanent link">¶</a></h2>
+<p>Java 最初的设计目标之一就是成为一种纯粹的面向对象语言。所有的代码都必须包含在类（Class）中，基本上所有元素都是对象（基本数据类型除外）。它支持封装、继承和多态等面向对象的核心概念，并鼓励开发者使用这些概念构建模块化和可重用的代码。具体地说，<strong>所有的 Java 代码都需要封装在类里，每一个 <code>.java</code> 文件恰有一个与其同名的 <code>public</code> 类</strong>。</p>
+<blockquote>
+<p>面向对象编程的基本流程为：</p>
+<ol>
+<li>设计类 <code>class Car { /* ... */ }</code></li>
+<li>创建/实例化对象 <code>Car myCar = new Car();</code></li>
+<li>向对象发送消息 <code>myCar.move();</code></li>
+</ol>
+</blockquote>
+<p>Java 使用垃圾回收（Garbage Collection，GC）机制进行内存管理。开发者不需要显式地分配和释放内存，这减轻了开发负担并减少了内存泄漏和悬挂指针等常见的错误。也就是说，<strong>Java 没有指针的概念</strong>。函数传参<strong>只有传值没有传引用</strong>。</p>
+<p>Java 程序员只需要关心何时 <code>new</code> 一个对象，而不需要考虑何时 <code>delete</code> 它。</p>
+<p>Java 通过封装的概念将数据和操作封装在对象中。对象可以隐藏其内部状态和实现细节，只暴露出对外提供的接口。这种封装性可以保护数据的安全性和一致性，并提供更好的模块化和代码组织。</p>
+<p>以下代码均包含于 <code>src/main/java/examples/oop</code> 中。</p>
+<h3 id="package">Package<a class="headerlink" href="#package" title="Permanent link">¶</a></h3>
+<p>Java 通过包（package）来组织代码。</p>
+<ul>
+<li>包名使用 <code>.</code> 建立层次结构，应当与文件目录结构相同。</li>
+<li>包名通常全小写且单词之间无分隔。</li>
+</ul>
+<p>```java package1/package2/PackageExample.java
+package examples.oop.package1.package2;</p>
+<p>public class PackageExample {
+    public static void main(String[] args) {
+        System.out.println("This is a package example");
+    }
+}
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>以上代码在目录中的组织结构为：
+</code></pre></div></td></tr></table></div>
+examples
+    |
+    |-- oop
+         |
+         |-- package1
+                |
+                |-- package2
+                       |
+                       |-- PackageExample.java
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code>### `class`
+
+Java 中的 `class` 和 C++ 中的 `class` 比较类似。
+
+#### 类修饰符：`public`、`protected` 和 `private`
+
+与 C++ 中相同，Java 中也有 `public`、`protected` 和 `private` 修饰符。
+
+#### 构造函数
+
+Java 中**构造函数**的声明与 C++ 相同。
+
+```java
+class Test {
+    private int variable_1;
+    private String variable_2;
+
+    public Test(int variable_1, String variable) { // 构造函数
+        this.variable = variable_1; // 与参数同名，则需要显式写出 this
+        variable_2 = variable; // 不同名，则不需要显式写出 this
+    }
+}
+</code></pre></div></td></tr></table></div></p>
+<h4 id="_11">析构函数<a class="headerlink" href="#_11" title="Permanent link">¶</a></h4>
+<p>Java 语言本身并没有像 C++ 中那样明确定义的<strong>析构函数</strong>。Java 采用的是垃圾回收机制（Garbage Collection，GC）来自动管理内存，因此不需要程序员手动释放对象占用的内存。</p>
+<p>虽然 Java 中也有类似于析构函数的 <code>finalize()</code> 语句，但它并不被推荐使用，具体的原因也不在这里多做介绍。感兴趣的同学可以查找 <code>finalize()</code> 方法、<code>try-with-resource</code> 语句和 <code>AutoClosable</code> 接口等相关资料。</p>
+<h4 id="static"><code>static</code><a class="headerlink" href="#static" title="Permanent link">¶</a></h4>
+<p><code>static</code> 是 Java 编程语言中的一个关键字，用于表示某个成员（变量或方法）属于类本身，而不是类的某个特定对象（实例）。这意味着使用 <code>static</code> 修饰的成员可以在不创建类实例的情况下被访问和使用。</p>
+<p><strong>主要特点</strong></p>
+<ol>
+<li><strong>类级别的属性</strong>：<code>static</code> 变量是类的所有实例共享的，称为类变量或静态变量。</li>
+<li><strong>无需实例化</strong>：可以直接通过类名访问 <code>static</code> 方法和变量，无需创建类的实例。</li>
+<li><strong>存储位置</strong>：<code>static</code> 变量存储在 Java 堆内存的方法区，而非某个具体对象的内存空间。</li>
+<li><strong>生命周期</strong>：<code>static</code> 变量和方法的生命周期与类加载和卸载的过程相关联。</li>
+<li><strong>不变性</strong>：<code>static</code> 方法不能访问类的非静态成员变量和方法，因为它们与任何具体对象的状态无关。</li>
+</ol>
+<p><strong>代码示例</strong></p>
+<p>在下面这份代码中，在 <code>Car</code> 这个类里，<code>counter</code> 是一个静态变量。</p>
+<ul>
+<li><strong>静态变量作为计数器</strong>：<code>counter</code> 作为静态变量，用于跟踪创建的 <code>Car</code> 实例数量。每次创建 <code>Car</code> 实例时，<code>counter</code> 都会递增。这说明，静态变量在实例化过程中具有“共享”的特性。</li>
+<li><strong>无需实例化访问</strong>：直接使用类名 <code>Car</code>，可以访问静态变量 <code>counter</code>。即使没有创建类的实例，也可以访问和操作静态成员。</li>
+</ul>
+<p>```java StaticExample.java
+package examples.oop;</p>
+<p>public class StaticExample {
+    static class Car {
+        static int counter = 0;
+        String name;</p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>    Car(String name) {
+        this.name = name;
+        counter++;
+    }
+}
+public static void main(String[] args) {
+    Car a = new Car("Benz");
+    System.out.println("First car: " + a + ". Total car count: " + Car.counter);
+    Car b = new Car("Honda");
+    System.out.println("Second car: " + b + ". Total car count: " + Car.counter);
+    Car c = new Car("Volkswagen");
+    System.out.println("Third car: " + c + ". Total car count: " + Car.counter);
+}
+</code></pre></div></td></tr></table></div>
+<p>}
+```
+</p>
+<h4 id="_12">实例初始化块<a class="headerlink" href="#_12" title="Permanent link">¶</a></h4>
+<p>在类中直接使用 <code>{}</code> 扩起来的部分称为实例初始化块，它会在任何构造器运行之前运行。
+
+<code>java
+class Test {
+    { System.out.println("This is an Instance Initialization Block."); }
+    public Test() {
+        System.out.println("This is a constructor.");
+    }
+}</code></p>
+<p>当实例化一个 <code>Test</code> 类型的对象时，运行结果将会是</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>This is an Instance Initialization Block.
+This is a constructor.
+</code></pre></div></td></tr></table></div>
+<h4 id="final"><code>final</code><a class="headerlink" href="#final" title="Permanent link">¶</a></h4>
+<p><code>final</code> 修饰的成员变量是<strong>常量</strong>，因此除了声明赋值、构造函数、实例初始化块之外，不允许对其进行其他修改。</p>
+<p>通常使用 <code>static final</code> 来定义<strong>静态常量</strong>。一般使用 SCREAMING_SNAKE_CASE（全字母大写，用下划线分隔）来命名。例如：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Wordle</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ALPHABET_SIZE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">26</span><span class="p">;</span><span class="w">            </span><span class="c1">// The size of the alphabet</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">WORD_LENGTH</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w">               </span><span class="c1">// The length of words</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">TOTAL_CHANCES</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span><span class="w">             </span><span class="c1">// The chances in total</span>
+<span class="w">    </span><span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_13">组合与继承<a class="headerlink" href="#_13" title="Permanent link">¶</a></h3>
+<h4 id="_14">组合<a class="headerlink" href="#_14" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>概念</strong>：组合是一种对象包含其他对象的关系，展示了“has-a”关系。例如，一个汽车对象可能包含引擎和轮胎对象。</li>
+<li><strong>实现</strong>：通过在类中创建其他类的实例作为成员变量来实现。</li>
+<li><strong>优点</strong>：提供了更大的灵活性，因为组合的对象可以独立于组合类存在，并且可以在运行时动态地替换或修改。</li>
+</ul>
+<p><strong>代码示例</strong></p>
+<p>在这份代码中，一个汽车对象包含了一个引擎对象和一个轮胎对象。每个类（<code>Engine</code>、<code>Tyre</code> 和 <code>Car</code>）都封装了自己的属性和行为，提供了一个清晰的接口来与外部世界交互。</p>
+<p>```java CompositionExample.java
+package examples.oop;</p>
+<p>public class CompositionExample {
+    static class Engine {
+        int typeCode;</p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span></pre></div></td><td class="code"><div><pre><span></span><code>    Engine(int typeCode) {
+        this.typeCode = typeCode;
+    }
+    @Override
+    public String toString() {
+        return "Engine [typeCode=" + typeCode + "]";
+    }
+}
+static class Tyre {
+    int radius;
+
+    Tyre(int radius) {
+        this.radius = radius;
+    }
+    @Override
+    public String toString() {
+        return "Tyre [radius=" + radius + "]";
+    }
+}
+static class Car {
+    Engine engine;
+    Tyre tyre;
+
+    Car(int engineTypeCode, int tyreRadius) {
+        this.engine = new Engine(engineTypeCode);
+        this.tyre = new Tyre(tyreRadius);
+    }
+    @Override
+    public String toString() {
+        return "Car {" + engine + ", " + tyre + "}";
+    }
+}
+public static void main(String[] args) {
+    Car car = new Car(3, 5);
+    System.out.println(car);
+}
+</code></pre></div></td></tr></table></div>
+<p>}
+```
+</p>
+<h4 id="_15">继承<a class="headerlink" href="#_15" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>概念</strong>：继承是一种类与类之间的层级关系，展示了“is-a”关系。例如，狗类和猫类可以继承动物类的特性。</li>
+<li><strong>实现</strong>：通过使用 <code>extends</code> 关键字来实现基类（父类）的继承。</li>
+<li><strong>优点</strong>：支持代码复用，允许新类自动拥有基类的属性和方法。
+
+<strong>代码示例</strong>
+
+以下代码展示了 <code>Dog</code> 类和 <code>Cat</code> 类对于 <code>Animal</code> 类的继承关系。
+</li>
+<li><strong><code>Animal</code> 类</strong>：这是一个父类，代表动物，有两个属性 <code>age</code> 和 <code>weight</code>，以及一个 <code>makeSound()</code> 方法，该方法在被调用时打印 "Make sound"。</li>
+<li><strong><code>Dog</code> 类</strong>：这个类继承自 <code>Animal</code> 类，是子类。它添加了一个新属性 <code>color</code>，并在其构造函数中调用了父类的构造函数 <code>super(age, weight)</code> 来初始化继承的属性。它还重写了 <code>makeSound()</code> 方法，以打印 "Bark bark."。</li>
+<li><strong><code>Cat</code> 类</strong>：与 <code>Dog</code> 类似，<code>Cat</code> 类也继承自 <code>Animal</code> 类，添加了新属性 <code>name</code>。它同样调用了父类的构造函数来初始化继承的属性，并重写了 <code>makeSound()</code> 方法，以打印 "Meow meow."。
+
+<code>java InheritanceExample.java
+package examples.oop;
+
+public class InheritanceExample {
+    static class Animal {
+        int age, weight;
+
+        public Animal(int age, int weight) {
+            this.age = age;
+            this.weight = weight;
+        }
+        void makeSound() {
+            System.out.println("Make sound");
+        }
+    }
+    static class Dog extends Animal {
+        String color;
+
+        Dog(int age, int weight, String color) {
+            super(age, weight);
+            this.color = color;
+        }
+        @Override
+        void makeSound() {
+            System.out.println("Bark bark.");
+        }
+    }
+    static class Cat extends Animal {
+        String name;
+
+        Cat(int age, int weight, String name) {
+            super(age, weight);
+            this.name = name;
+        }
+        @Override
+        void makeSound() {
+            System.out.println("Meow meow.");
+        }
+    }
+    public static void main(String[] args) {
+        Dog dog = new Dog(3, 25, "White");
+        Cat cat = new Cat(4, 4, "Kitty");
+        dog.makeSound();
+        cat.makeSound();
+    }
+}</code></li>
+</ul>
+<h3 id="_16">抽象类<a class="headerlink" href="#_16" title="Permanent link">¶</a></h3>
+<p>事实上，在“继承”的代码示例中，我们会发现，<code>Animal</code> 类的 <code>makeSound()</code> 方法并没有被调用；这个方法被所有继承 <code>Animal</code> 类的子类都重载了。我们还会发现一个逻辑上的问题——世界上不存在一个仅仅是“动物”的对象。它可以是“狗”、可以是“猫”，但它不能仅仅是“动物”。</p>
+<p>因此，我们应该将 <code>Animal</code> 类实现为一个<strong>抽象类</strong>。抽象类是一种<strong>不能被实例化</strong>的类，它通常被用作其他类的基类。抽象类可以包含抽象方法，这些方法没有具体的实现，就像 C++ 中的纯虚函数一样。</p>
+<p>而 <code>Animal</code> 类中的 <code>makeSound()</code> 方法就是一个抽象方法。它只需要被声明，而不需要被定义。</p>
+<p>更改后的代码如下：</p>
+<p>```java AbstractClassExample.java
+package examples.oop;</p>
+<p>public class AbstractClassExample {
+    abstract static class Animal {
+        int age, weight;</p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span></pre></div></td><td class="code"><div><pre><span></span><code>    public Animal(int age, int weight) {
+        this.age = age;
+        this.weight = weight;
+    }
+    abstract void makeSound();
+}
+static class Dog extends Animal {
+    String color;
+
+    Dog(int age, int weight, String color) {
+        super(age, weight);
+        this.color = color;
+    }
+    @Override
+    void makeSound() {
+        System.out.println("Bark bark.");
+    }
+}
+static class Cat extends Animal {
+    String name;
+
+    Cat(int age, int weight, String name) {
+        super(age, weight);
+        this.name = name;
+    }
+    @Override
+    void makeSound() {
+        System.out.println("Meow meow.");
+    }
+}
+public static void main(String[] args) {
+    Dog dog = new Dog(3, 25, "White");
+    Cat cat = new Cat(4, 4, "Kitty");
+    dog.makeSound();
+    cat.makeSound();
+    // Animal animal = new Animal(1, 2); // This is prohibited
+}
+</code></pre></div></td></tr></table></div>
+<p>}
+```
+</p>
+<h3 id="_17">多重继承与接口<a class="headerlink" href="#_17" title="Permanent link">¶</a></h3>
+<h4 id="_18">多重继承<a class="headerlink" href="#_18" title="Permanent link">¶</a></h4>
+<p>多重继承是指一个类可以同时继承多个父类。然而，在 Java 中，类的多重继承是不被支持的，这意味着 Java 类不能直接从多个类继承。这是因为多重继承可能导致所谓的“菱形问题”（Diamond Problem）。
+
+假设其中继承的两个父类可能都定义了相同的方法，那么应该从哪个接口中继承该方法呢？这没有办法确定。
+</p>
+<h4 id="_19">接口<a class="headerlink" href="#_19" title="Permanent link">¶</a></h4>
+<p>由于 Java 不支持类的多重继承，接口提供了一种替代方案来实现类似多重继承的特性。接口是一组抽象方法的集合，它可以被任何类实现，而不受这个类继承体系的限制。
+
+<del>如果你学过 Rust，那么你会发现，这类似于 Rust 里的 <code>trait</code>。</del>
+<code>java InterfaceExample.java
+package examples.oop;
+
+public class InterfaceExample {
+    interface Flyable {
+        void fly();
+    }
+
+    interface Drivable {
+        void drive();
+    }
+
+    static class Vehicle implements Flyable, Drivable {
+        @Override
+        public void fly() {
+            System.out.println("Flying");
+        }
+
+        @Override
+        public void drive() {
+            System.out.println("Driving");
+        }
+    }
+    public static void main(String[] args) {
+        Vehicle vehicle = new Vehicle();
+        vehicle.fly();
+        vehicle.drive();
+    }
+}</code></p>
+<h3 id="javalangobject"><code>java.lang.Object</code><a class="headerlink" href="#javalangobject" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>所有对象都是它的对象。</p>
+</blockquote>
+<p>在 Java 中，<code>java.lang.Object</code> 是所有类的根类，它位于类继承层次结构的顶端。每个 Java 类（除了 <code>Object</code> 本身）都隐式地继承自 <code>Object</code> 类。<code>Object</code> 类提供了一些基本方法，这些方法必须在子类中正确实现，以确保正确处理“判断两个对象是否相等”这一问题。</p>
+<h4 id="tostring">对象的字符串描述：<code>toString()</code><a class="headerlink" href="#tostring" title="Permanent link">¶</a></h4>
+<ul>
+<li>
+<p><code>toString()</code> 方法默认返回 <code>&lt;类型名&gt;@&lt;哈希码的十六进制表示&gt;</code> 的形式，例如 <code>Student@68be2bc2</code>。这种默认实现通常没有实际用途。</p>
+</li>
+<li>
+<p>为了提供更有用的字符串描述，通常需要重写 <code>toString()</code> 方法。例如</p>
+</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@Override</span>
+<span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">toString</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">"Person [name="</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">", age="</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">"]"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="equals">比较二者是否相等：<code>equals()</code><a class="headerlink" href="#equals" title="Permanent link">¶</a></h4>
+<p><code>equals()</code> 方法用于比较两个对象的<strong>内容是否相等</strong>，而不是它们的内存地址。</p>
+<ul>
+<li><strong>自反性</strong>：<code>x.equals(x)</code> 应返回 <code>true</code>。</li>
+<li><strong>对称性</strong>：<code>x.equals(y)</code> 应与 <code>y.equals(x)</code> 相等。</li>
+<li><strong>传递性</strong>：如果 <code>x.equals(y)</code> 和 <code>y.equals(z)</code> 都返回 <code>true</code>，则 <code>x.equals(z)</code> 也应返回 <code>true</code>。</li>
+<li><strong>一致性</strong>：多次调用 <code>equals()</code> 方法的结果应保持一致。</li>
+<li><strong>非空性</strong>：<code>x.equals(null)</code> 应返回 <code>false</code>。</li>
+</ul>
+<p>推荐的 <code>equals()</code> 的重载方法如下：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@Override</span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">equals</span><span class="p">(</span><span class="n">Object</span><span class="w"> </span><span class="n">o</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">o</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// 如果两个对象引用相同，那内容一定相同</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">o</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">getClass</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">o</span><span class="p">.</span><span class="na">getClass</span><span class="p">())</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// 如果不是这个类的对象，那么一定不相同</span>
+<span class="w">    </span><span class="n">Student</span><span class="w"> </span><span class="n">student</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Student</span><span class="p">)</span><span class="w"> </span><span class="n">o</span><span class="p">;</span><span class="w"> </span><span class="c1">// 强制转换为此类对象</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">studentID</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">student</span><span class="p">.</span><span class="na">studentID</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// 依次比较各个域</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">student</span><span class="p">.</span><span class="na">age</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// 依次比较各个域</span>
+<span class="w">    </span><span class="c1">// ...</span>
+<span class="w">    </span><span class="c1">// 依次比较各个域</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="hashcode">哈希码：<code>hashCode()</code><a class="headerlink" href="#hashcode" title="Permanent link">¶</a></h4>
+<p>哈希码是用于哈希表（如 <code>HashMap</code> 和 <code>HashSet</code>）中快速查找对象的关键。正确实现哈希码对于这些数据结构的性能至关重要。</p>
+<ul>
+<li><strong>一致性</strong>：如果两个对象通过 <code>equals()</code> 方法比较相等，则它们的哈希码也必须相等。</li>
+<li><strong>不同对象的哈希码应尽可能不同</strong>：这有助于减少哈希冲突。</li>
+</ul>
+<p>为了减轻程序员设计哈希函数的负担，<code>Objects.hash()</code> 已经提供了一种哈希函数：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@Override</span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">hashCode</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Objects</span><span class="p">.</span><span class="na">hash</span><span class="p">(</span><span class="w"> </span><span class="cm">/* 填入各个成员域 */</span><span class="w"> </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="_20">代码示例<a class="headerlink" href="#_20" title="Permanent link">¶</a></h4>
+<p>```java ObjectExample.java
+package examples.oop;</p>
+<p>import java.util.Objects;</p>
+<p>public class ObjectExample {
+    static abstract class Person {
+        String name;
+        int age;</p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span></pre></div></td><td class="code"><div><pre><span></span><code>    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", age=" + age + "]";
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        if (age != person.age) return false;
+        return Objects.equals(name, person.name);
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
+    }
+}
+static class Student extends Person {
+    int studentID;
+
+    public Student(String name, int age, int studentID) {
+        super(name, age);
+        this.studentID = studentID;
+    }
+    @Override
+    public String toString() {
+        return "Student [name=" + name + ", age=" + age + ", studentID=" + studentID + "]";
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        if (studentID != student.studentID) return false;
+        if (age != student.age) return false;
+        return Objects.equals(name, student.name);
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, studentID);
+    }
+}
+static class Teacher extends Person {
+    int teacherID;
+
+    public Teacher(String name, int age, int teacherID) {
+        super(name, age);
+        this.teacherID = teacherID;
+    }
+    @Override
+    public String toString() {
+        return "Teacher [name=" + name + ", age=" + age + ", teacherID=" + teacherID + "]";
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Teacher teacher = (Teacher) o;
+        if (teacherID != teacher.teacherID) return false;
+        if (age != teacher.age) return false;
+        return Objects.equals(name, teacher.name);
+    }
+}
+public static void main(String[] args) {
+    Student student_1 = new Student("Alice", 18, 2023000000);
+    Teacher teacher_1 = new Teacher("Bob", 50, 2000000000);
+    Teacher teacher_2 = new Teacher("Carol", 45, 2000000001);
+    Teacher teacher_3 = new Teacher("Bob", 50, 2000000000);
+    System.out.println("student_1 = " + student_1);
+    System.out.println("teacher_1 = " + teacher_1);
+    System.out.println("teacher_2 = " + teacher_2);
+    System.out.println("student_1 == teacher_1 ? " + student_1.equals(teacher_1));
+    System.out.println("teacher_1 == teacher_2 ? " + teacher_1.equals(teacher_2));
+    System.out.println("teacher_1 == teacher_3 ? " + teacher_1.equals(teacher_3));
+}
+</code></pre></div></td></tr></table></div>
+<p>}
+```
+</p>
+<h3 id="_21">包装类<a class="headerlink" href="#_21" title="Permanent link">¶</a></h3>
+<p>在 Java 中，基本数据类型是预定义的，它们是原始类型，直接存储在内存中，而不是对象。Java 提供了一种特殊的类，称为<strong>包装类</strong>（Wrapper Class），用于将基本类型包装为对象。
+
+以下是 Java 中的基本类型及其对应的包装类：
+
+| 基本类型  |   包装类    |
+| :-------: | :---------: |
+|   <code>int</code>   |  <code>Integer</code>  |
+| <code>double</code>  |  <code>Double</code>   |
+|  <code>float</code>  |   <code>Float</code>   |
+|  <code>char</code>   | <code>Character</code> |
+|  <code>byte</code>   |   <code>Byte</code>    |
+|  <code>short</code>  |   <code>Short</code>   |
+|  <code>long</code>   |   <code>Long</code>    |
+| <code>boolean</code> |  <code>Boolean</code>  |
+
+基本类型不能直接参与面向对象的编程，但包装类可以。这些包装类允许基本类型参与到面向对象的编程中，例如在集合框架中使用。这意味着，<code>HashSet&lt;int&gt;</code> 其实是不合法的，你应写 <code>HashSet&lt;Integer&gt;</code>。
+</p>
+<h4 id="integer">举例：<code>Integer</code> 类<a class="headerlink" href="#integer" title="Permanent link">¶</a></h4>
+<p><code>Integer</code> 类是 <code>int</code> 类型的包装类。以下是一些常用的 <code>Integer</code> 类方法：
+
+- <strong><code>parseInt(String s)</code></strong>：将字符串解析为整数。
+- <strong><code>toString(int i)</code></strong>：将整数转换为字符串。
+- <strong><code>valueOf(String s)</code></strong>：将字符串转换为 <code>Integer</code> 对象。
+- <strong><code>compare(int x, int y)</code></strong>：比较两个整数的大小。
+- <strong><code>max(int a, int b)</code></strong> 和 <strong><code>min(int a, int b)</code></strong>：返回两个整数中的最大值或最小值。
+</p>
+<h4 id="_22">其他包装类<a class="headerlink" href="#_22" title="Permanent link">¶</a></h4>
+<p>其他包装类如 <code>Double</code>、<code>Float</code>、<code>Character</code> 等也提供了类似的功能。例如：
+
+- <strong><code>Double.parseDouble(String s)</code></strong>：将字符串解析为双精度浮点数。
+- <strong><code>Character.isDigit(char ch)</code></strong>：检查字符是否为数字。
+- <strong><code>Byte.parseByte(String s, int radix)</code></strong>：将字符串解析为 <code>byte</code> 类型的整数。
+</p>
+<h4 id="_23">自动装箱和拆箱<a class="headerlink" href="#_23" title="Permanent link">¶</a></h4>
+<p>Java 5 引入了自动装箱（Autoboxing）和拆箱（Unboxing）的概念，使得基本类型和其对应的包装类之间的转换更加方便：
+
+- <strong>自动装箱</strong>：将基本类型自动转换为相应的包装类对象。
+
+  <code>java
+  int i = 5;
+  Integer iObject = i; // 自动装箱</code>
+
+- <strong>自动拆箱</strong>：将包装类对象自动转换为基本类型。
+
+  <code>java
+  Integer iObject = new Integer(5);
+  int i = iObject; // 自动拆箱</code>
+
+虽然自动装箱和拆箱使得代码更简洁，但过度使用可能会导致性能问题，尤其是在循环中。此外，包装类也有缓存机制，例如 <code>Integer.valueOf(int i)</code> 方法在 <code>-128</code> 到 <code>127</code> 范围内的值会被缓存。
+</p>
+<h3 id="_24">枚举类<a class="headerlink" href="#_24" title="Permanent link">¶</a></h3>
+<p>Java 中的枚举类型是一种特殊的类，它允许定义<strong>一组固定的常量</strong>。枚举类型提供了一种方式来定义一个类型安全的枚举，并且可以包含字段、方法和构造函数。
+</p>
+<h4 id="_25">常见方法<a class="headerlink" href="#_25" title="Permanent link">¶</a></h4>
+<p>枚举类中有以下常见方法：
+
+- <strong><code>values()</code></strong>：返回枚举类型的所有枚举常量的数组。
+- <strong><code>toString()</code></strong>：返回枚举常量的字符串表示形式。默认情况下，它返回枚举常量的名称。
+- <strong><code>hashCode()</code></strong>：返回枚举常量的哈希码。
+- <strong><code>ordinal()</code></strong>：返回枚举常量在枚举声明中的顺序，从零开始。
+
+对于枚举类中更多的方法，详情请见 <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Enum.html#hashCode()">Enum (Java SE 21 &amp; JDK 21)</a>。
+</p>
+<h4 id="_26">特点<a class="headerlink" href="#_26" title="Permanent link">¶</a></h4>
+<p>枚举类型在需要一组固定的常量时非常有用，例如星期、月份、颜色、方向等，枚举类能使得代码更加清晰和易于维护。
+
+- 枚举类型是<strong>单例的</strong>，每个枚举项都是唯一的实例。
+- 枚举可以包含字段、方法和构造函数，但<strong>构造函数不能是公开的</strong>。
+- 枚举类型默认继承自 <code>java.lang.Enum</code> 类。
+</p>
+<h4 id="_27">代码示例<a class="headerlink" href="#_27" title="Permanent link">¶</a></h4>
+<p><code>java EnumExample.java
+package examples.oop;
+
+public class EnumExample {
+    public enum Color {
+        RED, GREEN, YELLOW, BLACK, WHITE
+    }
+    public enum ColorWithAbbr {
+        RED("R"), GREEN("G"), YELLOW("Y"), BLACK("B"), WHITE("W");
+
+        private final String abbr;
+        ColorWithAbbr(String abbr) { // equivalent to `private ColorWithAbbr(...)`
+            this.abbr = abbr;
+        }
+        public String getAbbr() {
+            return abbr;
+        }
+    }
+    public static void main(String[] args) {
+        Color[] colors = Color.values();
+        for (Color color : colors) {
+            System.out.println(color + " toString() = " + color.toString());
+            System.out.println(color + " hashCode() = " + color.hashCode());
+            System.out.println(color + " ordinal() = " + color.ordinal());
+        }
+
+        ColorWithAbbr[] colorsWithAbbr = ColorWithAbbr.values();
+        for (ColorWithAbbr color : colorsWithAbbr) {
+            System.out.println(color + " getAbbr() = " + color.getAbbr());
+            System.out.println(color + " toString() = " + color);
+            System.out.println(color + " hashCode() = " + color.hashCode());
+            System.out.println(color + " ordinal() = " + color.ordinal());
+        }
+    }
+}</code></p>
+<h2 id="_28">参考资料<a class="headerlink" href="#_28" title="Permanent link">¶</a></h2>
+<ul>
+<li>感谢 <a href="https://github.com/Clancy-Zhu/">Clancy</a> 在 2023 年暑期培训中的 <a href="https://summer23.net9.org/frontend/java/">Java 部分的讲义</a>。</li>
+<li>感谢 <a href="https://github.com/xsun2001/">xsun2001</a> 的 <a href="https://github.com/xsun2001/tour-of-java">tour-of-java</a>。</li>
+<li>感谢<a href="https://www.runoob.com/java/">菜鸟教程 - Java</a>，提供了一份详尽但略显复杂的讲义框架。</li>
+</ul>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="最后更新">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年7月23日</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年7月24日</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="贡献者">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.536 5.536 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13v-1.75M0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20H0m24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9V20Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"></path></svg>
 </span>
 <nav>
+<a href="mailto:506503360@qq.com">LeverImmy</a>
 </nav>
 </span>
 </aside>
@@ -757,7 +3253,7 @@
 </script>
 <div class="md-source-date">
 <small>
-                作者: <span class="git-page-authors git-authors"></span>
+                作者: <span class="git-page-authors git-authors"><a href="mailto:506503360@qq.com">LeverImmy</a></span>
 </small>
 </div>
 </article>
