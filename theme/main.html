@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{%- block site_nav %}
+{% block scripts %}
     {{ super() }}
     <script type="text/javascript">
         document.querySelectorAll('a[href^="http"]').forEach(link => {
@@ -8,7 +8,7 @@
             link.setAttribute('target', '_blank');
         });
     </script>
-{%- endblock %}
+{% endblock %}
 
 {% block content %}
     {{ super() }}
