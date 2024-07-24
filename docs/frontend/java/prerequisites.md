@@ -44,7 +44,7 @@ sudo apt install oracle-java21-installer --install-recommends
 
 本教程将使用 JDK21 这一版本。请使用 `java -version` 命令来确认 JDK 是否安装完成（以下输出仅供参考）：
 
-```bash
+```
 java version "21.0.3" 2024-04-16 LTS
 Java(TM) SE Runtime Environment (build 21.0.3+7-LTS-152)
 Java HotSpot(TM) 64-Bit Server VM (build 21.0.3+7-LTS-152, mixed mode, sharing)
@@ -68,7 +68,7 @@ java YourProgram.java   # 编译 & 运行
 
 IDEA 会自动生成一个 demo 代码，代码内容如下：
 
-```java Main.java
+```java title="Main.java"
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -86,9 +86,9 @@ public class Main {
 
 至此，课前准备环节结束。
 
-> 另外，中的代码使用的是 Gradle 构建的，并且带有单元测试。具体而言，可以按照以下方式创建：
+> 另外，[sast-summer-training-2024/sast2024-java](https://github.com/sast-summer-training-2024/sast2024-java) 中的代码使用的是 Gradle 构建的，并且带有单元测试。具体而言，可以按照以下方式创建：
 >
 > ![创建带有测试的代码结构](/images/java/create-with-tests.png)
 >
-> 你也可以尝试运行 demo 代码。你可能会发现，输出十分冗长，但是其中确实应该也是有 `Hello world!` 的。
+> 你也可以尝试运行 demo 代码。你可能会发现，输出十分冗长，但是其中应该也是有 `Hello world!` 的。
 

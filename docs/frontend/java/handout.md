@@ -4,7 +4,7 @@ Java 的基础语法与 C++ 较为类似。以下代码均包含于 `src/main/ja
 
 ### 输入输出
 
-```java IOExample.java
+```java title="IOExample.java"
 package examples.introduction;
 
 import java.util.Scanner;
@@ -64,7 +64,7 @@ float doubleVariable = 3.1415;
 
 #### 代码示例
 
-```java VariablesExample.java
+```java title="VariablesExample.java"
 package examples.introduction;
 
 public class Variables {
@@ -131,7 +131,7 @@ public class Variables {
 - `x >>> 1` 为 `01111111 11111111 11111111 11111110`，即 $2147483646$；
 - `x >> 1` 为 `11111111 11111111 11111111 11111110`，即 $-2$。
 
-```java OperatorsExample.java
+```java title="OperatorsExample.java"
 package examples.introduction;
 
 public class Operators {
@@ -181,7 +181,7 @@ public class Operators {
 
 Java 和 C++ 的控制流语句大同小异，可以结合以下例子进行学习。
 
-```java ControlFlowExample.java
+```java title="ControlFlowExample.java"
 package examples.introduction;
 
 public class ControlFlow {
@@ -269,7 +269,7 @@ Java 将异常分为两大类：
 
 相比之下，受检异常通常是由于外部原因（如 I/O 错误、网络异常等）导致的，开发者无法完全控制。因此，Java 要求开发者必须处理这些异常，以确保程序的健壮性和可靠性。
 
-```java ExceptionHandlingExample.java
+```java title="ExceptionHandlingExample.java"
 package examples.introduction;
 
 import java.util.InputMismatchException;
@@ -315,7 +315,7 @@ public class ExceptionHandling {
 
 示例代码展示了 `BigInteger` 和 `BigDecimal` 的基本使用，包括创建实例、执行基本的算术操作（加、减、乘、除），以及展示 `BigDecimal` 的精度控制。
 
-```java BigIntegerAndBigDecimalExample.java
+```java title="BigIntegerAndBigDecimalExample.java"
 package examples.datastructures;
 
 import java.math.BigDecimal;
@@ -374,7 +374,7 @@ Java 中的 `String` 类表示**不可变字符串**，这意味着对 `String` 
 
 - **`StringBuilder`** 与 `StringBuffer` 类似，但它不是线程安全的，因此在单线程环境中使用时通常比 `StringBuffer` 更快。示例代码演示了 `StringBuilder` 的使用，包括清空内容、追加字符串、插入字符串等操作。
 
-```java StringAndStringBufferAndStringBuilderExample.java
+```java title="StringAndStringBufferAndStringBuilderExample.java"
 package examples.datastructures;
 
 public class StringAndStringBufferAndStringBuilderExample {
@@ -433,7 +433,7 @@ public class StringAndStringBufferAndStringBuilderExample {
 
 - **`ArrayList`** 是 `java.util` 包中的一个类，提供了动态数组的功能。示例代码展示了如何向 `ArrayList` 中添加元素、检查元素是否存在、获取和设置元素、移除元素以及清空列表。
 
-```java ArraysAndArrayListExample.java
+```java title="ArraysAndArrayListExample.java"
 package examples.datastructures;
 
 import java.util.ArrayList;
@@ -519,7 +519,7 @@ public class ArraysAndArrayListExample {
 
 示例代码展示了如何创建 `LinkedList` 实例、添加和删除元素、访问首尾元素、以及遍历链表。
 
-```java LinkedListExample.java
+```java title="LinkedListExample.java"
 package examples.datastructures;
 
 import java.util.LinkedList;
@@ -593,7 +593,7 @@ public class LinkedListExample {
 
 示例代码中的 `HashSetExample` 应为 `HashSetExample` 而不是 `HashMapExample`。代码应该展示如何使用 `HashSet` 来添加元素、检查元素是否存在、移除元素以及遍历集合。
 
-```java HashSetExample.java
+```java title="HashSetExample.java"
 package examples.datastructures;
 
 import java.util.HashMap;
@@ -651,7 +651,7 @@ public class HashMapExample {
 
 示例代码展示了如何创建 `HashMap` 实例、添加键值对、获取与键关联的值、检查键是否存在、移除键值对、获取 `HashMap` 的大小、检查 `HashMap` 是否为空以及清空 `HashMap`。
 
-```java HashMapExample.java
+```java title="HashMapExample.java"
 package examples.datastructures;
 
 import java.util.HashMap;
@@ -728,7 +728,7 @@ Java 通过包（package）来组织代码。
 - 包名使用 `.` 建立层次结构，应当与文件目录结构相同。
 - 包名通常全小写且单词之间无分隔。
 
-```java package1/package2/PackageExample.java
+```java title="package1/package2/PackageExample.java"
 package examples.oop.package1.package2;
 
 public class PackageExample {
@@ -742,14 +742,14 @@ public class PackageExample {
 
 ```
 examples
-    |
-    |-- oop
-         |
-         |-- package1
-                |
-                |-- package2
-                       |
-                       |-- PackageExample.java
+│
+└───oop
+    │
+    └───package1
+        │
+        └───package2
+            │
+            └───PackageExample.java
 ```
 
 ### `class`
@@ -801,7 +801,7 @@ Java 语言本身并没有像 C++ 中那样明确定义的**析构函数**。Jav
 - **静态变量作为计数器**：`counter` 作为静态变量，用于跟踪创建的 `Car` 实例数量。每次创建 `Car` 实例时，`counter` 都会递增。这说明，静态变量在实例化过程中具有“共享”的特性。
 - **无需实例化访问**：直接使用类名 `Car`，可以访问静态变量 `counter`。即使没有创建类的实例，也可以访问和操作静态成员。
 
-```java StaticExample.java
+```java title="StaticExample.java"
 package examples.oop;
 
 public class StaticExample {
@@ -872,7 +872,7 @@ public class Wordle {
 
 在这份代码中，一个汽车对象包含了一个引擎对象和一个轮胎对象。每个类（`Engine`、`Tyre` 和 `Car`）都封装了自己的属性和行为，提供了一个清晰的接口来与外部世界交互。
 
-```java CompositionExample.java
+```java title="CompositionExample.java"
 package examples.oop;
 
 public class CompositionExample {
@@ -932,7 +932,7 @@ public class CompositionExample {
 2. **`Dog` 类**：这个类继承自 `Animal` 类，是子类。它添加了一个新属性 `color`，并在其构造函数中调用了父类的构造函数 `super(age, weight)` 来初始化继承的属性。它还重写了 `makeSound()` 方法，以打印 "Bark bark."。
 3. **`Cat` 类**：与 `Dog` 类似，`Cat` 类也继承自 `Animal` 类，添加了新属性 `name`。它同样调用了父类的构造函数来初始化继承的属性，并重写了 `makeSound()` 方法，以打印 "Meow meow."。
 
-```java InheritanceExample.java
+```java title="InheritanceExample.java"
 package examples.oop;
 
 public class InheritanceExample {
@@ -990,7 +990,7 @@ public class InheritanceExample {
 
 更改后的代码如下：
 
-```java AbstractClassExample.java
+```java title="AbstractClassExample.java"
 package examples.oop;
 
 public class AbstractClassExample {
@@ -1051,7 +1051,7 @@ public class AbstractClassExample {
 
 ~~如果你学过 Rust，那么你会发现，这类似于 Rust 里的 `trait`。~~
 
-```java InterfaceExample.java
+```java title="InterfaceExample.java"
 package examples.oop;
 
 public class InterfaceExample {
@@ -1145,7 +1145,7 @@ public int hashCode() {
 
 #### 代码示例
 
-```java ObjectExample.java
+```java title="ObjectExample.java"
 package examples.oop;
 
 import java.util.Objects;
@@ -1319,7 +1319,7 @@ Java 中的枚举类型是一种特殊的类，它允许定义**一组固定的�
 
 #### 代码示例
 
-```java EnumExample.java
+```java title="EnumExample.java"
 package examples.oop;
 
 public class EnumExample {
