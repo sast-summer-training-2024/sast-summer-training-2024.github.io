@@ -119,6 +119,7 @@ nav:
       - 课前准备: frontend/JSTS/Pre-requisite.md
       - 讲义: frontend/JSTS/handout.md
       - 课程回放: https://www.bilibili.com/video/BV1R4421U7Sn/?share_source=copy_web&vd_source=a80492aa87f464b5346dca18c3a9e9b3
+      - 作业: https://github.com/sast-summer-training-2024/sast2024-jsts
     - React:
       - 课前准备: frontend/react/Pre-requisite.md
       - 讲义: frontend/react/handout.md

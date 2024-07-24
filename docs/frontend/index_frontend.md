@@ -31,7 +31,7 @@
 [JSTS](https://summer24.net9.org/frontend/JSTS/handout/)
 
 ### 课程作业
-
+[JSTS 作业](https://github.com/sast-summer-training-2024/sast2024-jsts)
 
 ### 课程回放
 [JSTS(1) 课程回放](https://www.bilibili.com/video/BV1R4421U7Sn/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
