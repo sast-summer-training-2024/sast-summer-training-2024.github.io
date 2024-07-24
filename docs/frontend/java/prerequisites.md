@@ -88,7 +88,7 @@ public class Main {
 
 至此，课前准备环节结束。
 
-> 另外，[sast-summer-training-2024/sast2024-java](https://github.com/sast-summer-training-2024/sast2024-java) 中的代码使用的是 Gradle 构建的，并且带有单元测试。具体而言，可以按照以下方式创建：
+> 另外，[sast-summer-training-2024/sast2024-java](https://github.com/sast-summer-training-2024/sast2024-java) 中的代码是使用 Gradle 构建的，并且带有单元测试。具体而言，使用 Gradle 构建的代码结构可以按照以下方式创建：
 >
 > ![创建带有测试的代码结构](https://img.picgo.net/2024/07/24/create-with-tests09feaa6ac3eea616.jpeg)
 >
