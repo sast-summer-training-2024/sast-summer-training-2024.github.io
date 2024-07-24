@@ -124,6 +124,7 @@ nav:
       - 讲义: frontend/java/handout.md
       - 课后作业: frontend/java/homework.md
   - 后端:
+    - backend/index_backend.md
     - 爬虫入门:
       - 讲义: backend/crawler/slide.pdf
       - 代码: https://github.com/UbeCc/sast-2024-crawler
