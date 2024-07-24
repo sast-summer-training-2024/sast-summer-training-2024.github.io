@@ -78,7 +78,7 @@ public class Main {
 
 点击右上角的“编译并运行”按钮。
 
-![编译并运行后的输出界面](/images/java/complie-and-run.png)
+![编译并运行后的输出界面](/images/java/compile-and-run.png)
 
 如果你的程序输出：`Hello world!`，那么，你已经能够成功编译并运行 Java 程序了！
 
