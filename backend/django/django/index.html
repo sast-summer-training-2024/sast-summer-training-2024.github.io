@@ -1905,6 +1905,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据库的一致性
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2251,6 +2260,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据库的一致性
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2585,6 +2603,19 @@ Migrations<span class="w"> </span><span class="k">for</span><span class="w"> </s
 <p>在 <code>a4a230b57bccf7994b572664024f5434f7ead06f</code> 中, 我非常智障地发现我的 <code>Student</code> model 没有与 Django Session 的 User 做绑定. 因此就有了 <code>0002_remove_student_name_student_user.py</code> 这个文件, 我把 <code>name</code> 字段替换成了指向 <code>django.contrib.auth.models.User</code> 的 <code>ForeignKey</code> 字段.</p>
 <p>在进行 migration 时, 由于一个是 name: CharField, 一个是 user: ForeignKey, 这两个没法直接迁移, user 也不能凭空生成, 所以 django 提示你需要手动指定一个值. 由于是测试环境, 我偷懒直接指定了 <code>None</code> (当时数据库里面啥也没有); 如果在生产环境中, 你就需要手动编辑 Migration 文件, 从 User 表里面找到合适的 (User 的 name 与 Student 的 name 相同) 的 User, 然后指定这个 User 作为 ForeignKey 的值.</p>
 <p>通过 Migration, Django 提供了一种机制, 使得在项目开发的过程中, 数据库结构的变更能正确应用到生产环境的数据库中而不损坏数据. 这也是为什么 <strong>你不应该把 migrations 文件夹加入 .gitignore</strong>.</p>
+<h3 id="_5">数据库的一致性<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>在 Django 中, 除了部分操作 (create / update / delete) 之外, 对 object 的修改必须通过调用 <code>save()</code> 来保存; 而以上的操作都是实时写入 DB 的 (Auto-Commit).</p>
+<p>数据库有关的操作都不可避免地存在可能的异常, 不管是由于网络问题, 由于自身的数据校验问题, 或者并发问题. 如果在部分操作已经写入数据库时出现异常, 则可能导致数据库的不一致问题.</p>
+<p>因此, 期望的数据库操作应该是 <strong>原子的</strong> (Atomic), 即要么全部成功, 要么全部失败. 可以通过我们自己写 Revert 逻辑, 也可以通过 Django 提供的 <a href="https://docs.djangoproject.com/en/5.0/topics/db/transactions/"><code>transaction.atomic</code></a> 来实现.</p>
+<p>在 <code>atomic</code> 块中的所有数据库操作要么全部成功; 要么全部失败. 如果在 <code>atomic</code> 块中的某个地方抛出异常, 数据库会回滚到 <code>atomic</code> 块开始的状态. 这有效解决了因为奇怪问题导致的数据库不一致错误.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># All operations in this block are atomic</span>
+<span class="k">with</span> <span class="n">transaction</span><span class="o">.</span><span class="n">atomic</span><span class="p">():</span>
+    <span class="n">u</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s1">&#39;john&#39;</span><span class="p">)</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">Profile</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">u</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="admin">Admin 管理面板<a class="headerlink" href="#admin" title="Permanent link">&para;</a></h2>
 <p>Django 提供了一个内建的管理面板以方便管理数据库中的数据.</p>
 <p>通过一两句话</p>
