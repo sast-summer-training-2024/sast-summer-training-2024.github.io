@@ -1926,6 +1926,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Routing 路由">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL 参数 / Body 参数的路由
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2257,6 +2272,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Routing 路由">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL 参数 / Body 参数的路由
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2491,7 +2521,7 @@ Migrations<span class="w"> </span><span class="k">for</span><span class="w"> </s
     <span class="n">time</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <p>其中的 <code>CharField</code> 代表一个变长字符串, <code>max_length</code> 是这个字符串的最大长度, <code>primary_key=True</code> 代表着这是数据库的主键且具有唯一性. 在实际的数据库中, 这个字段会被存储为 <code>VARCHAR(max_length)</code>.</p>
-<p><strong>但是</strong>: 在 SQLite 中, 虽然 <code>id</code> max_length 是 10, 你依然可以存一个长度大于 10 的字符串进去而不引发错误. 但这并不代表着在 <em>任意</em> DB Backend 中都可以这样! 换句话说, Django 可能并不能完整校验你的数据, 导致你的代码在不同的数据库后端中可能会有不同的行为. 所以 <strong>你需要在代码中显式校验你的数据</strong></p>
+<p><strong>但是</strong>: 在 SQLite 中, 虽然 <code>id</code> max<em>length 是 10, 你依然可以存一个长度大于 10 的字符串进去而不引发错误. 但这并不代表着在 </em>任意_ DB Backend 中都可以这样! 换句话说, Django 可能并不能完整校验你的数据, 导致你的代码在不同的数据库后端中可能会有不同的行为. 所以 <strong>你需要在代码中显式校验你的数据</strong></p>
 <p><img alt="varchar(10) ID" src="../varchar-10-id.png" /></p>
 <p><code>ManyToManyField</code> 代表一个多对多关系, <code>related_name</code> 是这个关系在另一个 Model 中对应的字段名. 这是由于 Python 具有十分 <del>(狗屎)</del> 灵活的对象机制, 以至于你可以在运行时动态地给对象插入一些属性. Django 还会对插入的属性做动态检查, 以确保不会有两个同名属性出现.</p>
 <p>对于 Django 里面究竟有多少乱七八糟的字段, 请参阅 <a href="https://docs.djangoproject.com/en/5.0/ref/models/fields/">Django Model Field Reference</a>.</p>
@@ -2637,6 +2667,16 @@ Migrations<span class="w"> </span><span class="k">for</span><span class="w"> </s
 <li><code>path('api/', include('course.urls'))</code> 定义了访问 <code>/api/</code> 时, Django 会调用 <code>course.urls</code>.</li>
 <li><code>re_path('.*?', notFound)</code> 定义了访问其他路径时, Django 会调用 <code>notFound</code> 这个视图, 展示 404 页面.</li>
 </ol>
+<h3 id="url-body">URL 参数 / Body 参数的路由<a class="headerlink" href="#url-body" title="Permanent link">&para;</a></h3>
+<p>我们的小作业中并没有涉及太多的 URL 参数和 Body 参数. 但是实际项目中这还是挺常见的.</p>
+<p>Django 支持两种 URL 传参, 一种是通过 URL 的路径来传参, 一种是通过 URL 的查询参数来传参. 比如如果我希望管理员能单独查看每一个用户的选课情况:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">path</span><span class="p">(</span><span class="s1">&#39;/admin/student/&lt;str:student_id&gt;/&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">studentCourseDetail</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>其中的 <code>&lt;str:student_id&gt;</code> 代表着这个位置的参数会被 <em>按 keyword</em> 传递给 <code>views.studentCourseDetail</code> 函数. 你可以在函数中通过 <code>student_id</code> 参数来获取这个参数.</p>
+<p>而对于查询参数 (Query String), Django 会将查询参数解析为一个字典放在 <code>request.GET</code> 中. <strong>注意! 就算是 POST 请求, 查询参数也在 <code>request.GET</code> 中</strong>.</p>
+<p><strong>对于 POST 请求</strong>, Django 会根据 <code>Content-Type</code> 头来解析请求体. 对于 <code>application/x-www-form-urlencoded</code> 和 <code>multipart/form-data</code> 类型的请求, Django 会将请求体解析为一个字典放在 <code>request.POST</code> 中; 而对于其它类型的请求, Django (应该) 不会做处理.</p>
+<p>对于 PATCH / PUT / DELETE 请求, Django <strong>不会自动处理</strong> 请求体.</p>
+<p>还有几个需要注意的地方, 首先是 Django 不会自动处理 Options 请求, 你需要自己处理; 然后是当你 <em>第一次</em> 访问 <code>request.POST</code> 时, Django 才会自动解析请求体 (也就是说, 这是一个懒加载的过程), 且如果自动解析失败, Django <strong>会抛出异常</strong>.</p>
 <h2 id="view">View 视图<a class="headerlink" href="#view" title="Permanent link">&para;</a></h2>
 <p>视图函数接受 <code>HttpRequest</code> 对象作为第一个参数, 可选地接受在 URL pattern 中的参数, 并返回一个 <code>HttpResponse</code> 对象.</p>
 <p>但作为一个前后端分离的后端, 我们的每一个 Request 和 Response 都由 API 规范, 因此每一个函数都有大量的相同部分. 如, 处理 OPTIONS 请求; 校验登录的 User; 解析请求体中的 JSON 数据并验证格式; 将返回的错误信息和状态码返回给前端等等. 对于 <strong>Class</strong> 类型的视图, 我们通过创建 <strong>基类</strong> 来封装这些相同的部分; 而对于 <strong>Function</strong> 类型的视图, 我们通过创建 <strong>装饰器</strong> 来封装这些相同的部分.</p>
@@ -2737,7 +2777,7 @@ Migrations<span class="w"> </span><span class="k">for</span><span class="w"> </s
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年7月19日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年7月25日</span>
   </span>
 
     
