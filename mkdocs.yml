@@ -122,6 +122,10 @@ nav:
       - 课前准备: frontend/java/prerequisites.md
       - 讲义: frontend/java/handout.md
       - 课后作业: frontend/java/homework.md
+    - Android:
+      - 课前准备: frontend/android/prerequisites.md
+      - 讲义: frontend/android/handout.md
+      - 课后作业: frontend/android/homework.md
   - 后端:
     - backend/index_backend.md
     - 爬虫入门:
