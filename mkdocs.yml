@@ -137,6 +137,9 @@ nav:
       - 后端架构: backend/django/backend.md
       - Django: backend/django/django.md
       - 作业 (也是课件): https://github.com/sast-summer-training-2024/sast2024-django-hw
+    - docker:
+      - 课前准备: backend/docker/prerequisites.md
+      - 讲义: backend/docker/handout.md
   - AI:
     - ai/index_ai.md
     - 神经网络: ai/neural-network/network.md
