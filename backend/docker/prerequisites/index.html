@@ -2385,12 +2385,20 @@
 此外，macOS 也可以通过 <a href="https://brew.sh/">HomeBrew</a> 安装 Docker Desktop   <br />
 <code>brew install --cask docker</code></p>
 <h3 id="linux">linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
-<p>有三种方法进行安装：
-- 运行 <code>curl -fsSL https://get.docker.com/ | sudo sh</code>，利用官方提供的安装脚本进行安装，之后用 <code>sudo usermod -aG docker $USER</code> 把用户添加到 Docker 用户组  <br />
-- 按 <a href="https://docs.docker.com/engine/install/ubuntu/">官方文档</a> 上指导安装
-- 下载 Docker Desktop linux 版  <br />
-启动 Docker: <code>sudo systemctl start Docker</code> 或者 <code>sudo service Docker start</code>
-此外，如果是 Windows+WSL2 双系统的话，推荐还是安装 Docker Desktop Windows版方便统一管理，而且如果是 WSL2 未配置代理，可以规避掉最近国内镜像源接连关闭导致需要从外网拉 Docker 镜像的情况，详情见<a href="https://docs.docker.com/desktop/wsl/">官方文档</a></p>
+<p>有三种方法进行安装：</p>
+<ul>
+<li>
+<p>运行 <code>curl -fsSL https://get.docker.com/ | sudo sh</code>，利用官方提供的安装脚本进行安装，之后用 <code>sudo usermod -aG docker $USER</code> 把用户添加到 Docker 用户组</p>
+</li>
+<li>
+<p>按 <a href="https://docs.docker.com/engine/install/ubuntu/">官方文档</a> 上指导安装</p>
+</li>
+<li>
+<p>下载 Docker Desktop linux 版</p>
+</li>
+</ul>
+<p>启动 Docker: <code>sudo systemctl start Docker</code> 或者 <code>sudo service Docker start</code></p>
+<p>此外，如果是 Windows+WSL2 双系统的话，推荐还是安装 Docker Desktop Windows版方便统一管理，而且如果是 WSL2 未配置代理，可以规避掉最近国内镜像源接连关闭导致需要从外网拉 Docker 镜像的情况，详情见<a href="https://docs.docker.com/desktop/wsl/">官方文档</a></p>
 <h2 id="_4">测试环境<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>运行命令 <code>docker run --rm hello-world</code> 如果看到 "Hello From Docker" 的输出，说明环境基本配置成功    </p>
 <h2 id="_5">备注<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
