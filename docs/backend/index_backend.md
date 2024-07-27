@@ -41,7 +41,7 @@
 ### 课程回放
 [爬虫 课程回放](https://www.bilibili.com/video/BV1cb421J7u9/?share_source=copy_web&vd_source=a80492aa87f464b5346dca18c3a9e9b3)
 
-## 🎸 7月25日 简单而又不简单的Python后端框架-Django
+## 🎸 7月25日 简单而又不简单的 Python 后端框架 - Django
 
 ![logo](../images/logo/django.png)
 
@@ -59,3 +59,20 @@
 
 ### 课程作业
 [django 作业](https://github.com/sast-summer-training-2024/sast2024-django-hw)
+
+## 🐋 7月27日 docker 入门与实战
+
+![logo](../images/logo/Docker.jpg)
+
+>你是否遇到过环境的挑战但是觉得配虚拟机太麻烦？是否想要更进一步了解虚拟化技术的应用？如果这样，那一起进入 Docker 的小世界吧 ~
+>
+>Docker 是一种容器化技术，利用操作系统层面的虚拟化技术可以将软件打包进容器中派发给使用者，从而可以解决一些运行环境等问题。
+>
+>具体来说，在实际环境中，你可能会接触到一些古早代码，其中又涉及一些古早依赖项，而在你的环境下不适合运行，抑或是你不想因为一次性运行的程序而在自己的机子上安装一大堆依赖项，这些问题都可能可以通过起一个适当环境的docker来解决。此外，在 GitHub 上面很多成熟的开源软件都会提供DockerFile,有类似于一键部署应用的奇怪触感
+>
+>通过学习本课程，你将能够利用 Docker 这一强大的工具来解决环境配置问题，并方便快速地分发你的应用。
+
+讲师: 于新雨
+
+# 课程讲义
+[docker 讲义](https://summer24.net9.org/backend/docker/handout/)
