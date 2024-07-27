@@ -8,10 +8,15 @@
 `brew install --cask docker`
 ### linux
 有三种方法进行安装：
-- 运行 `curl -fsSL https://get.docker.com/ | sudo sh`，利用官方提供的安装脚本进行安装，之后用 `sudo usermod -aG docker $USER` 把用户添加到 Docker 用户组    
+
+- 运行 `curl -fsSL https://get.docker.com/ | sudo sh`，利用官方提供的安装脚本进行安装，之后用 `sudo usermod -aG docker $USER` 把用户添加到 Docker 用户组
+
 - 按 [官方文档](https://docs.docker.com/engine/install/ubuntu/) 上指导安装
-- 下载 Docker Desktop linux 版    
+
+- 下载 Docker Desktop linux 版
+
 启动 Docker: `sudo systemctl start Docker` 或者 `sudo service Docker start`
+
 此外，如果是 Windows+WSL2 双系统的话，推荐还是安装 Docker Desktop Windows版方便统一管理，而且如果是 WSL2 未配置代理，可以规避掉最近国内镜像源接连关闭导致需要从外网拉 Docker 镜像的情况，详情见[官方文档](https://docs.docker.com/desktop/wsl/)
 ## 测试环境
 运行命令 `docker run --rm hello-world` 如果看到 "Hello From Docker" 的输出，说明环境基本配置成功    
