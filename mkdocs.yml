@@ -140,6 +140,9 @@ nav:
     - docker:
       - 课前准备: backend/docker/prerequisites.md
       - 讲义: backend/docker/handout.md
+    - Rust:
+      - 课前准备: backend/rust/Pre-requisite.md
+      - 讲义: backend/rust/handout.md
   - AI:
     - ai/index_ai.md
     - 神经网络: ai/neural-network/network.md
