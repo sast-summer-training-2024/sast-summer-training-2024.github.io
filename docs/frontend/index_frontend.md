@@ -50,3 +50,21 @@
 
 ### 课程回放
 [React 课程回放](https://www.bilibili.com/video/BV1Kx4y147mZ/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
+
+## ☕ 7月29日 Java基础入门
+
+![logo](../images/logo/Java.svg)
+
+>Java 是什么？除了“安装 Minecraft 时需要安装 Java”之外，你还应当至少知道这些！
+>
+>Java 是一种成熟且广泛使用的高级编程语言，以其跨平台能力、面向对象的特性、健壮性、和多线程支持而闻名。Java 代码可以在任何安装了 Java 虚拟机（JVM）的设备上运行，实现了“一次编写，到处运行”的便利性。Java 语言广泛应用于企业级应用、Android 应用开发、大数据技术、物联网（IoT）、以及科学计算等领域。
+>
+>本课程将从 Java 的基础语法开始，逐步引导你探索 Java 的高级特性和最佳实践。通过本课程的学习，你将能够使用 Java 解决实际问题，并为成为一名专业的软件开发者迈出坚实的一步。
+
+讲师：熊泽恩
+
+### 课程讲义
+[Java](https://summer24.net9.org/frontend/java/handout/)
+
+### 课程作业
+[Java](https://summer24.net9.org/frontend/java/homework/)
