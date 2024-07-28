@@ -32,6 +32,7 @@
 
 ### 课程回放
 [JSTS(1) 课程回放](https://www.bilibili.com/video/BV1R4421U7Sn/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
+[JSTS(2) 课程回放](https://www.bilibili.com/video/BV1Cb421J78e/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
 
 ## ⚛️ 7月26日 React
 
@@ -43,3 +44,9 @@
 
 ### 课程讲义
 [React](https://summer24.net9.org/frontend/react/handout/)
+
+### 课程作业
+[React 作业](https://summer24.net9.org/frontend/react/handout/#_1)
+
+### 课程回放
+[React 课程回放](https://www.bilibili.com/video/BV1Kx4y147mZ/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)

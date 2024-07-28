@@ -76,3 +76,6 @@
 
 ### 课程讲义
 [docker 讲义](https://summer24.net9.org/backend/docker/handout/)
+
+### 课程回放
+[docker 课程回放](https://www.bilibili.com/video/BV1qS411w7Dt/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
