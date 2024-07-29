@@ -79,3 +79,15 @@
 
 ### 课程回放
 [docker 课程回放](https://www.bilibili.com/video/BV1qS411w7Dt/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
+
+## 🦀 7月30日 & 8月1日 Rust
+
+![logo](../images/logo/Rust.png)
+
+>Rust 是一门赋予每个人构建可靠且高效软件能力的语言。Rust 可以带给你：在人智导、软件工程、操作系统等多个专业核心课上多一个选项，尤其是操作系统课程中，基本大潮流都是使用 Rust 语言 掌握一门近年非常热门的高效、安全的编程语言，摆脱 C++ 的冗余规则 获得全新的编程设计理念，开阔视野 在暑培的 Rust 入门课程中，你将： 学习 Rust 的基本语法（其实和 C++ 区别不大），所有权、泛型规则、标准库用法等内容 与已经学到的 C++ 内容进行对比，从而了解到 Rust 的特有设计理念 在我们给出的 Rust 应用框架上面进行必要的补全，之后可以得到一个可视化的 Rust 应用实现，从而加深自己的学习理解。
+
+讲师：张瀚宸
+
+### 课程讲义
+[Rust 讲义](https://summer24.net9.org/backend/rust/handout/)
+
