@@ -2533,7 +2533,7 @@
 <h2 id="java">Java 简介<a class="headerlink" href="#java" title="Permanent link">&para;</a></h2>
 <p>Java 是一种广泛使用的计算机编程语言，于 1995 年由 Sun Microsystems 公司推出。它是一种面向对象的编程语言，旨在减少编程中可能出现的错误，并易于理解和维护。</p>
 <p>尽管近年来面临一些新兴语言的挑战，Java 由于它的跨平台性、良好的安全性、前向兼容性以及不算差的性能，仍是一门历史地位和业界地位都极其崇高的语言。庞大的 Java 社区和海量的 Java 项目，使得对任何想要接触业界的贵系同学来说，你也许可以不精通它，但至少应当对这门简单、强大、通用的语言有一些了解。</p>
-<p><img alt="编程语言排名" src="https://img.picgo.net/2024/07/24/rank3f7238361e89b876.jpeg" /></p>
+<p><img alt="编程语言排名" src="https://leverimmy.top/gallery/Introduction-to-Java/rank.png" /></p>
 <h3 id="_1">发展历史<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>Java 发明于 20 世纪 90 年代初，由 Sun Microsystems（后来被 Oracle 收购）的工程师团队开发。最初的目标是创建一种用于家电设备的编程语言。1995 年，Java 1.0 正式发布，带来了跨平台的能力，也就是“Write Once, Run Anywhere”（一次编写，随处运行）。这一特性是通过将 Java 代码编译为中间表示形式（字节码）实现的，然后在任何支持 Java 虚拟机（JVM）的平台上运行。</p>
 <p>随着时间的推移，Java 不仅仅成为一种用于嵌入式系统的语言，它还发展成为一种强大的服务器端、企业级应用、Web 和移动应用的开发语言。</p>
@@ -2579,7 +2579,7 @@ java<span class="w"> </span>YourProgram.java<span class="w">   </span><span clas
 <p>同时，本教程将使用，也强烈推荐使用 <a href="https://www.jetbrains.com.cn/idea/">IntelliJ IDEA</a> 作为 IDE 来辅助开发。如果你就读于清华大学，建议使用 <code>&lt;你的邮箱名&gt;@mail.thu.edu.cn</code> 来获取<a href="https://www.jetbrains.com.cn/community/education/#students">面向学生和教师的个人许可证</a>，以获得“Ultimate Experience”（类似于 Professional 版本）。</p>
 <h3 id="hello-world">Hello world!<a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h3>
 <p>在 IntelliJ IDEA 中，点击 File-New-New Project... 新建一个新的项目，项目名为 <code>hello-world</code>：</p>
-<p><img alt="新建一个新的项目" src="https://img.picgo.net/2024/07/24/create-new-projecta43ca141ce16cc4e.jpeg" /></p>
+<p><img alt="新建一个新的项目" src="https://leverimmy.top/gallery/Introduction-to-Java/create-new-project.png" /></p>
 <p>IDEA 会自动生成一个 demo 代码，代码内容如下：</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Main.java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -2592,13 +2592,13 @@ java<span class="w"> </span>YourProgram.java<span class="w">   </span><span clas
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p>点击右上角的“编译并运行”按钮。</p>
-<p><img alt="编译并运行后的输出界面" src="https://img.picgo.net/2024/07/24/compile-and-run55c1c0b56df66150.jpeg" /></p>
+<p><img alt="编译并运行后的输出界面" src="https://leverimmy.top/gallery/Introduction-to-Java/compile-and-run.png" /></p>
 <p>如果你的程序输出：<code>Hello world!</code>，那么，你已经能够成功编译并运行 Java 程序了！</p>
 <p>最后，请在 GitHub 上 fork <a href="https://github.com/sast-summer-training-2024/sast2024-java">sast-summer-training-2024/sast2024-java</a> 至自己的账户，并使用 Git 将<strong>自己账号</strong>下的仓库 clone 至本地。</p>
 <p>至此，课前准备环节结束。</p>
 <blockquote>
 <p>另外，<a href="https://github.com/sast-summer-training-2024/sast2024-java">sast-summer-training-2024/sast2024-java</a> 中的代码是使用 Gradle 构建的，并且带有单元测试。具体而言，使用 Gradle 构建的代码结构可以按照以下方式创建：</p>
-<p><img alt="创建带有测试的代码结构" src="https://img.picgo.net/2024/07/24/create-with-tests09feaa6ac3eea616.jpeg" /></p>
+<p><img alt="创建带有测试的代码结构" src="https://leverimmy.top/gallery/Introduction-to-Java/create-with-tests.png" /></p>
 <p>你也可以尝试运行 demo 代码。你可能会发现，输出十分冗长，但是其中应该也是有 <code>Hello world!</code> 的。</p>
 </blockquote>
 
@@ -2621,7 +2621,7 @@ java<span class="w"> </span>YourProgram.java<span class="w">   </span><span clas
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年7月24日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年7月29日</span>
   </span>
 
     
@@ -2690,7 +2690,7 @@ java<span class="w"> </span>YourProgram.java<span class="w">   </span><span clas
     
         <div class="md-source-date">
             <small>
-                作者: <span class='git-page-authors git-authors'><a href='mailto:leverimmy@gmail.com'>leverimmy</a> (2.11%), <a href='mailto:506503360@qq.com'>LeverImmy</a> (97.89%)</span>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:leverimmy@gmail.com'>leverimmy</a> (6.32%), <a href='mailto:506503360@qq.com'>LeverImmy</a> (93.68%)</span>
             </small>
         </div>
     
