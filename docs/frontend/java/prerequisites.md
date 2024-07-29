@@ -6,7 +6,7 @@ Java 是一种广泛使用的计算机编程语言，于 1995 年由 Sun Microsy
 
 尽管近年来面临一些新兴语言的挑战，Java 由于它的跨平台性、良好的安全性、前向兼容性以及不算差的性能，仍是一门历史地位和业界地位都极其崇高的语言。庞大的 Java 社区和海量的 Java 项目，使得对任何想要接触业界的贵系同学来说，你也许可以不精通它，但至少应当对这门简单、强大、通用的语言有一些了解。
 
-![编程语言排名](https://img.picgo.net/2024/07/24/rank3f7238361e89b876.jpeg)
+![编程语言排名](https://leverimmy.top/gallery/Introduction-to-Java/rank.png)
 
 ### 发展历史
 
@@ -66,7 +66,7 @@ java YourProgram.java   # 编译 & 运行
 
 在 IntelliJ IDEA 中，点击 File-New-New Project... 新建一个新的项目，项目名为 `hello-world`：
 
-![新建一个新的项目](https://img.picgo.net/2024/07/24/create-new-projecta43ca141ce16cc4e.jpeg)
+![新建一个新的项目](https://leverimmy.top/gallery/Introduction-to-Java/create-new-project.png)
 
 IDEA 会自动生成一个 demo 代码，代码内容如下：
 
@@ -80,7 +80,7 @@ public class Main {
 
 点击右上角的“编译并运行”按钮。
 
-![编译并运行后的输出界面](https://img.picgo.net/2024/07/24/compile-and-run55c1c0b56df66150.jpeg)
+![编译并运行后的输出界面](https://leverimmy.top/gallery/Introduction-to-Java/compile-and-run.png)
 
 如果你的程序输出：`Hello world!`，那么，你已经能够成功编译并运行 Java 程序了！
 
@@ -90,6 +90,6 @@ public class Main {
 
 > 另外，[sast-summer-training-2024/sast2024-java](https://github.com/sast-summer-training-2024/sast2024-java) 中的代码是使用 Gradle 构建的，并且带有单元测试。具体而言，使用 Gradle 构建的代码结构可以按照以下方式创建：
 >
-> ![创建带有测试的代码结构](https://img.picgo.net/2024/07/24/create-with-tests09feaa6ac3eea616.jpeg)
+> ![创建带有测试的代码结构](https://leverimmy.top/gallery/Introduction-to-Java/create-with-tests.png)
 >
 > 你也可以尝试运行 demo 代码。你可能会发现，输出十分冗长，但是其中应该也是有 `Hello world!` 的。

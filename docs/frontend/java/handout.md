@@ -291,7 +291,7 @@ public class ExceptionHandling {
         } catch (ArithmeticException e) { // will be executed if n = 0
             System.out.println("Number is zero.");
         } catch (InputMismatchException e) {
-            System.out.println("Number is not a integer.");
+            System.out.println("Number is not an integer.");
         } catch (Exception e) { // will be executed if other exception occurs
             e.printStackTrace();
         } finally { // will be executed always
@@ -594,56 +594,55 @@ public class LinkedListExample {
 
 `HashSet` 是 Java 中的一个不允许重复元素的集合实现。它基于 `HashMap` 实现，因此具有快速的查找速度。
 
-示例代码中的 `HashSetExample` 应为 `HashSetExample` 而不是 `HashMapExample`。代码应该展示如何使用 `HashSet` 来添加元素、检查元素是否存在、移除元素以及遍历集合。
-
 ```java title="HashSetExample.java"
 package examples.datastructures;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
-public class HashMapExample {
+public class HashSetExample {
     public static void main(String[] args) {
-        // Create a new HashMap instance
-        Map<String, Integer> map = new HashMap<>();
+        // Create a new HashSet instance
+        Set<String> set = new HashSet<>();
 
-        // Put key-value pairs into the HashMap
-        map.put("One", 1);
-        map.put("Two", 2);
-        map.put("Three", 3);
+        // Add elements to the HashSet
+        set.add("Apple");
+        set.add("Banana");
+        set.add("Cherry");
 
-        // Print the HashMap
-        System.out.println("Initial HashMap: " + map);
+        // Print the HashSet
+        System.out.println("Initial HashSet: " + set);
 
-        // Get the value associated with a key
-        Integer value = map.get("Two");
-        System.out.println("Value for key 'Two': " + value);
+        // Check if the HashSet contains an element
+        boolean contains = set.contains("Banana");
+        System.out.println("Does the HashSet contain 'Banana'? " + contains);
 
-        // Check if a key exists in the HashMap
-        boolean containsKey = map.containsKey("Three");
-        System.out.println("Does the key 'Three' exist? " + containsKey);
+        // Remove an element from the HashSet
+        set.remove("Apple");
+        System.out.println("HashSet after removing 'Apple': " + set);
 
-        // Remove a key-value pair from the HashMap
-        map.remove("One");
-        System.out.println("HashMap after removing 'One': " + map);
+        // Get the size of the HashSet
+        int size = set.size();
+        System.out.println("Size of the HashSet: " + size);
 
-        // Get the size of the HashMap
-        int size = map.size();
-        System.out.println("Size of the HashMap: " + size);
+        // Check if the HashSet is empty
+        boolean isEmpty = set.isEmpty();
+        System.out.println("Is the HashSet empty? " + isEmpty);
 
-        // Check if the HashMap is empty
-        boolean isEmpty = map.isEmpty();
-        System.out.println("Is the HashMap empty? " + isEmpty);
+        // Clear all elements from the HashSet
+        set.clear();
+        System.out.println("HashSet after clear(): " + set);
 
-        // Clear all key-value pairs from the HashMap
-        map.clear();
-        System.out.println("HashMap after clear(): " + map);
-
-        // Demonstrate iteration over HashMap entries
-        System.out.println("Iterating over HashMap entries:");
-        for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        // Demonstrate iteration over HashSet elements
+        System.out.println("Iterating over HashSet elements:");
+        for (String fruit : set) {
+            System.out.println(fruit);
         }
+
+        // Add elements back to the HashSet and demonstrate uniqueness
+        set.add("Apple"); // Duplicate element
+        set.add("Apple"); // Attempt to add duplicate
+        System.out.println("HashSet with duplicate 'Apple': " + set);
     }
 }
 ```
@@ -736,7 +735,7 @@ package examples.oop.package1.package2;
 
 public class PackageExample {
     public static void main(String[] args) {
-        System.out.println("This is a package example");
+        System.out.println("This is a package example.");
     }
 }
 ```
@@ -773,7 +772,7 @@ class Test {
     private String variable_2;
     
     public Test(int variable_1, String variable) { // 构造函数
-        this.variable = variable_1; // 与参数同名，则需要显式写出 this
+        this.variable_1 = variable_1; // 与参数同名，则需要显式写出 this
         variable_2 = variable; // 不同名，则不需要显式写出 this
     }
 }
@@ -815,6 +814,10 @@ public class StaticExample {
         Car(String name) {
             this.name = name;
             counter++;
+        }
+        @Override
+        public String toString() {
+            return "Car [name=" + name + "]";
         }
     }
     public static void main(String[] args) {
@@ -1333,7 +1336,7 @@ public class EnumExample {
         RED("R"), GREEN("G"), YELLOW("Y"), BLACK("B"), WHITE("W");
 
         private final String abbr;
-        ColorWithAbbr(String abbr) { // equivalent to `private ColorWithAbbr(...)`
+        ColorWithAbbr(String abbr) {
             this.abbr = abbr;
         }
         public String getAbbr() {
@@ -1344,6 +1347,7 @@ public class EnumExample {
         Color[] colors = Color.values();
         for (Color color : colors) {
             System.out.println(color + " toString() = " + color.toString());
+            System.out.println(color + " name() = " + color.name());
             System.out.println(color + " hashCode() = " + color.hashCode());
             System.out.println(color + " ordinal() = " + color.ordinal());
         }
@@ -1352,6 +1356,7 @@ public class EnumExample {
         for (ColorWithAbbr color : colorsWithAbbr) {
             System.out.println(color + " getAbbr() = " + color.getAbbr());
             System.out.println(color + " toString() = " + color);
+            System.out.println(color + " name() = " + color.name());
             System.out.println(color + " hashCode() = " + color.hashCode());
             System.out.println(color + " ordinal() = " + color.ordinal());
         }
