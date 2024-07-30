@@ -8,16 +8,16 @@ Android 是一个基于 Linux 内核的开源操作系统，主要用于移动�
 >
 > 1. **Android 1.5** - Cupcake
 > 2. **Android 1.6** - Donut
-> 3. **Android 2.0/2.1** - Eclair
-> 4. **Android 2.2/2.3** - Froyo
+> 3. **Android 2.0 / 2.1** - Eclair
+> 4. **Android 2.2 / 2.3** - Froyo
 > 5. **Android 3.0** - Gingerbread
 > 6. **Android 4.0** - Ice Cream Sandwich
-> 7. **Android 4.1/4.2/4.3** - Jelly Bean
+> 7. **Android 4.1 / 4.2 / 4.3** - Jelly Bean
 > 8. **Android 4.4** - KitKat
-> 9. **Android 5.0/5.1** - Lollipop
+> 9. **Android 5.0 / 5.1** - Lollipop
 > 10. **Android 6.0** - Marshmallow
-> 11. **Android 7.0/7.1** - Nougat
-> 12. **Android 8.0/8.1** - Oreo
+> 11. **Android 7.0 / 7.1** - Nougat
+> 12. **Android 8.0 / 8.1** - Oreo
 > 13. **Android 9** - Pie
 >
 > 从 Android 10 开始，Google 决定不再使用甜品昵称来命名新版本，而是直接使用数字表示。
