@@ -2,94 +2,192 @@
 
 ## Android 简介
 
-Java 是一种广泛使用的计算机编程语言，于 1995 年由 Sun Microsystems 公司推出。它是一种面向对象的编程语言，旨在减少编程中可能出现的错误，并易于理解和维护。
+Android 是一个基于 Linux 内核的开源操作系统，主要用于移动设备，如智能手机和平板电脑。它由 Google 领导开发，并由开放手机联盟（Open Handset Alliance）支持。自 2008 年首次发布以来，Android 已经成为全球最受欢迎的移动操作系统之一。
 
-尽管近年来面临一些新兴语言的挑战，Java 由于它的跨平台性、良好的安全性、前向兼容性以及不算差的性能，仍是一门历史地位和业界地位都极其崇高的语言。庞大的 Java 社区和海量的 Java 项目，使得对任何想要接触业界的贵系同学来说，你也许可以不精通它，但至少应当对这门简单、强大、通用的语言有一些了解。
+> Android 操作系统的每个主要版本通常会有一个版本号和一个以甜品为主题的昵称。以下是一些主要的 Android 版本号和对应的昵称：
+>
+> 1. **Android 1.5** - Cupcake
+> 2. **Android 1.6** - Donut
+> 3. **Android 2.0/2.1** - Eclair
+> 4. **Android 2.2/2.3** - Froyo
+> 5. **Android 3.0** - Gingerbread
+> 6. **Android 4.0** - Ice Cream Sandwich
+> 7. **Android 4.1/4.2/4.3** - Jelly Bean
+> 8. **Android 4.4** - KitKat
+> 9. **Android 5.0/5.1** - Lollipop
+> 10. **Android 6.0** - Marshmallow
+> 11. **Android 7.0/7.1** - Nougat
+> 12. **Android 8.0/8.1** - Oreo
+> 13. **Android 9** - Pie
+>
+> 从 Android 10 开始，Google 决定不再使用甜品昵称来命名新版本，而是直接使用数字表示。
 
-![编程语言排名](https://img.picgo.net/2024/07/24/rank3f7238361e89b876.jpeg)
+### 发展历程
 
-### 发展历史
+1. **2008年**：Google 宣布 Android 操作系统，并成立开放手机联盟。
+2. **2009年**：HTC Dream（也称为 T-Mobile G1）成为第一款商用 Android 设备。
+3. **2010年**：Android 2.2（Froyo）发布，引入了对 Adobe Flash 的支持。
+4. **2011年**：Android 4.0（Ice Cream Sandwich）发布，带来了全新的用户界面和改进的多任务处理能力。
+5. **2014年**：Android 5.0（Lollipop）发布，引入了 Material Design 设计语言。
+6. **2019年**：Android 10 引入了更严格的隐私保护措施和改进的用户体验。
+7. **2021年**：Android 12 带来了全新的设计语言 Material You，以及更强大的隐私控制。
 
-Java 发明于 20 世纪 90 年代初，由 Sun Microsystems（后来被 Oracle 收购）的工程师团队开发。最初的目标是创建一种用于家电设备的编程语言。1995 年，Java 1.0 正式发布，带来了跨平台的能力，也就是“Write Once, Run Anywhere”（一次编写，随处运行）。这一特性是通过将 Java 代码编译为中间表示形式（字节码）实现的，然后在任何支持 Java 虚拟机（JVM）的平台上运行。
+### 开发工具
 
-随着时间的推移，Java 不仅仅成为一种用于嵌入式系统的语言，它还发展成为一种强大的服务器端、企业级应用、Web 和移动应用的开发语言。
+1. **Android Studio**：官方集成开发环境（IDE），支持 Android 应用开发。
+2. **Android SDK**：包含开发 Android 应用所需的工具和库。
+3. **Android Virtual Device（AVD）**：模拟器，用于测试应用在不同设备和配置上的表现。
+4. **Gradle**：构建系统，用于编译和管理 Android 应用的依赖。
 
-### 优势与不足
-
-#### 优势
-
-1. **跨平台性**：Java 采用“一次编写，到处运行”的理念，代码可以在不同操作系统（Windows、macOS、Linux 等）上运行，无需重新编写。这得益于 Java 虚拟机（Java Virtual Machine，JVM）的设计。
-2. **面向对象**：Java 是一种**纯粹的面向对象编程语言**，支持封装、继承和多态等 OOP 特性，有利于代码的复用和维护。
-3. **安全性**：Java 具有强大的安全机制，如垃圾回收机制（Garbage Collection，GC）、异常处理等，可以有效地防范程序运行过程中的安全隐患。
-4. **丰富的标准库**：Java 附带了大量的标准库，涵盖了网络、图形界面、数据库等各个方面，开发者可以直接调用这些库（而无需重复造轮子），提高开发效率。
-5. **广泛的应用领域**：Java 可用于开发桌面应用程序、Web 应用程序、移动应用程序、大数据处理、机器学习等各种类型的软件。
-
-#### 不足
-
-1. **性能**：与编译成本地机器代码的语言（例如 C、C++）相比，Java 的性能通常较低。这是因为 Java 程序需要在 JVM 上运行，这增加了额外的抽象层。
-2. **内存消耗**：Java 应用程序通常比其他编程语言的应用程序消耗更多的内存。这是由于其“面向对象”导向的设计和垃圾回收机制。
-3. **冗长的代码**：与一些现代编程语言（例如 Rust）相比，Java 的代码可能显得冗长和繁琐，这也可能会使开发过程变得复杂和耗时。
-
-尽管存在这些不足，Java 仍然是世界上最受欢迎和广泛使用的编程语言之一。它在企业级应用程序、移动应用程序（尤其是 Android）和大型系统中得到了广泛应用。
+通过这些工具，开发者可以高效地开发、测试和发布 Android 应用。
 
 ## 课前准备
 
 ### 环境配置
 
-要运行 Java 程序，你需要先安装 Java Developer Kit（JDK）。Windows 或 Mac 用户建议直接在 Oracle 官网[下载 JDK21](https://www.oracle.com/java/technologies/downloads/#java21)；而 Linux 用户（这里以 Ubuntu 为例，其余平台请自行百度 / Google）则可以使用如下命令：
+#### 下载 Android Studio
 
-```bash
-sudo add-apt-repository ppa:linuxuprising/java
-sudo apt update
-sudo apt install oracle-java21-installer --install-recommends
-```
+> **注意**：目前不支持采用 ARM CPU 的 Windows/Linux 计算机。
 
-本教程将使用 JDK21 这一版本。请使用 `java -version` 命令来确认 JDK 是否安装完成（以下输出仅供参考）：
+请从官网上下载并安装 Android Studio。官方文档 [安装 Android Studio](https://developer.android.google.cn/studio/install?hl=zh-cn) 给出了一个详尽的（甚至包含视频演示）下载并安装 Android Studio 的方法。
 
-```
-java version "21.0.3" 2024-04-16 LTS
-Java(TM) SE Runtime Environment (build 21.0.3+7-LTS-152)
-Java HotSpot(TM) 64-Bit Server VM (build 21.0.3+7-LTS-152, mixed mode, sharing)
-```
+安装时请务必安装 Android Virtual Device。
 
-你可以使用如下命令编译运行 Java 程序：
+![安装 Android Virtual Device](https://leverimmy.top/gallery/Introduction-to-Android/install-avd.png)
 
-```bash
-javac YourProgram.java	# 编译
-java YourProgram        # 运行
-java YourProgram.java   # 编译 & 运行
-```
+#### 安装 SDK
 
-同时，本教程将使用，也强烈推荐使用 [IntelliJ IDEA](https://www.jetbrains.com.cn/idea/) 作为 IDE 来辅助开发。如果你就读于清华大学，建议使用 `<你的邮箱名>@mail.thu.edu.cn` 来获取[面向学生和教师的个人许可证](https://www.jetbrains.com.cn/community/education/#students)，以获得“Ultimate Experience”（类似于 Professional 版本）。
+大概率你的电脑上并没有 Android SDK。在安装完 Android Studio 并打开后，它有可能会提示你“Missing SDK”。
+
+![未找到 SDK](https://leverimmy.top/gallery/Introduction-to-Android/missing-sdk.png)
+
+此时你应该跟随安装程序，继续安装 SDK。将红色框内所有能选的选项均选中（你的界面可能与我的不同，多的也都选上）。
+
+![安装 SDK](https://leverimmy.top/gallery/Introduction-to-Android/install-sdk.png)
+
+然后进行漫长的等待即可。
+
+![下载 SDK](https://leverimmy.top/gallery/Introduction-to-Android/download-sdk.png)
 
 ### Hello world!
 
-在 IntelliJ IDEA 中，点击 File-New-New Project... 新建一个新的项目，项目名为 `hello-world`：
+#### 新建项目
 
-![新建一个新的项目](https://img.picgo.net/2024/07/24/create-new-projecta43ca141ce16cc4e.jpeg)
+我们在 Android Studio 里新建一个项目，模板我这里选用的是 Bottom Navigation Views Activity，大家也可以多多尝试，看这些模板有什么不同。
 
-IDEA 会自动生成一个 demo 代码，代码内容如下：
+![新建项目模板](https://leverimmy.top/gallery/Introduction-to-Android/new-project-template.png)
 
-```java title="Main.java"
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+然后选择**编程语言**、**最低 SDK 版本**和**构建语言**。我分别选择的是 **Java**、**API 25** 和 **Kotlin DSL**。
+
+![新建项目配置](https://leverimmy.top/gallery/Introduction-to-Android/new-project-config.png)
+
+完成之后 Gradle 会进行一次构建。如果不出意外的话，构建应该会**失败**。这是因为项目的部分包（package）需要联网获取；而在国内，由于某些原因，对那些网络资源的访问不够顺畅。因此我们需要修改配置，将其换为国内镜像。
+
+#### 修改配置
+
+首先，修改 `gradle/wrapper/gradle-wrapper.properties`，将 Gradle 镜像改为腾讯镜像，同时将版本设置为 8.9。
+
+**`gradle-wrapper.properties` 原文件（节选）**
+
+```properties gradle-wrapper.properties
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.7-bin.zip
+```
+
+**`gradle-wrapper.properties` 修改后的文件（节选）**
+
+```properties gradle-wrapper.properties
+distributionUrl=https\://mirrors.cloud.tencent.com/gradle/gradle-8.9-all.zip
+```
+
+其次，修改 `settings.gradle.kts`，将 Maven 镜像改为阿里云镜像。
+
+**`settings.gradle.kts` 原文件（节选）**
+
+```kotlin settings.gradle.kts
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
     }
 }
 ```
 
-点击右上角的“编译并运行”按钮。
+**`settings.gradle.kts` 修改后的文件（节选）**
 
-![编译并运行后的输出界面](https://img.picgo.net/2024/07/24/compile-and-run55c1c0b56df66150.jpeg)
+```kotlin settings.gradle.kts
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
 
-如果你的程序输出：`Hello world!`，那么，你已经能够成功编译并运行 Java 程序了！
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { url = uri("https://maven.aliyun.com/repository/google") }
+        maven { url = uri("https://maven.aliyun.com/repository/jcenter") }
+        maven { url = uri("https://maven.aliyun.com/repository/public") }
+        mavenLocal()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { url = uri("https://maven.aliyun.com/repository/google") }
+        maven { url = uri("https://maven.aliyun.com/repository/jcenter") }
+        maven { url = uri("https://maven.aliyun.com/repository/public") }
+        mavenLocal()
+        mavenCentral()
+    }
+}
+```
 
-最后，请在 GitHub 上 fork [sast-summer-training-2024/sast2024-java](https://github.com/sast-summer-training-2024/sast2024-java) 至自己的账户，并使用 Git 将**自己账号**下的仓库 clone 至本地。
+至此，配置已修改完毕。
 
-至此，课前准备环节结束。
+重新进行 Gradle Project Sync 即可完成 Gradle 构建。如果下方出现 `BUILD SUCCESSFUL in **s` 的字样，这说明你的第一个 Android 应用程序就已经构建完成了！
 
-> 另外，[sast-summer-training-2024/sast2024-java](https://github.com/sast-summer-training-2024/sast2024-java) 中的代码是使用 Gradle 构建的，并且带有单元测试。具体而言，使用 Gradle 构建的代码结构可以按照以下方式创建：
->
-> ![创建带有测试的代码结构](https://img.picgo.net/2024/07/24/create-with-tests09feaa6ac3eea616.jpeg)
->
-> 你也可以尝试运行 demo 代码。你可能会发现，输出十分冗长，但是其中应该也是有 `Hello world!` 的。
+![Gradle 重新构建](https://leverimmy.top/gallery/Introduction-to-Android/gradle-sync.png)
+
+#### 新建虚拟机
+
+通过 Device Manager 添加一台新的虚拟机。
+
+![Device Manager](https://leverimmy.top/gallery/Introduction-to-Android/device-manager.png)
+
+选择机型，我选择的是 Pixel 8。
+
+![Select Hardware](https://leverimmy.top/gallery/Introduction-to-Android/select-hardware.png)
+
+选择虚拟机上 SDK 版本。我选择的是 API 25。如果你还记得的话，我们在新建项目时设置了最低 SDK 版本。也就是说，我们的程序在 API 小于 25 的机器上均不能运行。所以这里至少需要选择 API 25。
+
+![System Image](https://leverimmy.top/gallery/Introduction-to-Android/system-image.png)
+
+#### 构建并将应用安装到虚拟机上
+
+点击“运行”按钮即可。
+
+![Run App](https://leverimmy.top/gallery/Introduction-to-Android/run-app.png)
+
+最后在虚拟机上的运行结果应当如下：
+
+![Virtual Device](https://leverimmy.top/gallery/Introduction-to-Android/virtual-device.png)
