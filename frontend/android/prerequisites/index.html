@@ -2691,28 +2691,48 @@ distributionUrl=https\://mirrors.cloud.tencent.com/gradle/gradle-8.9-all.zip
 </code></pre></div></td></tr></table></div></p>
 <p>其次，修改 <code>settings.gradle.kts</code>，将 Maven 镜像改为阿里云镜像。</p>
 <p><strong><code>settings.gradle.kts</code> 原文件（节选）</strong></p>
-<p>```kotlin settings.gradle.kts
-pluginManagement {
-    repositories {
-        google {
-            content {
-                includeGroupByRegex("com\.android.<em>")
-                includeGroupByRegex("com\.google.</em>")
-                includeGroupByRegex("androidx.*")
-            }
-        }
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">settings.gradle.kts</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">pluginManagement</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">repositories</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">google</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">content</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">includeGroupByRegex</span><span class="p">(</span><span class="s">&quot;com\\.android.*&quot;</span><span class="p">)</span>
+<span class="w">                </span><span class="n">includeGroupByRegex</span><span class="p">(</span><span class="s">&quot;com\\.google.*&quot;</span><span class="p">)</span>
+<span class="w">                </span><span class="n">includeGroupByRegex</span><span class="p">(</span><span class="s">&quot;androidx.*&quot;</span><span class="p">)</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="n">mavenCentral</span><span class="p">()</span>
+<span class="w">        </span><span class="n">gradlePluginPortal</span><span class="p">()</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="n">dependencyResolutionManagement</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">repositoriesMode</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">RepositoriesMode</span><span class="p">.</span><span class="na">FAIL_ON_PROJECT_REPOS</span><span class="p">)</span>
+<span class="w">    </span><span class="n">repositories</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">google</span><span class="p">()</span>
+<span class="w">        </span><span class="n">mavenCentral</span><span class="p">()</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p><strong><code>settings.gradle.kts</code> 修改后的文件（节选）</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">settings.gradle.kts</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2742,44 +2762,38 @@ dependencyResolutionManagement {
 <span class="normal">28</span>
 <span class="normal">29</span>
 <span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code>**`settings.gradle.kts` 修改后的文件（节选）**
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">pluginManagement</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">repositories</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">google</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">content</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">includeGroupByRegex</span><span class="p">(</span><span class="s">&quot;com\\.android.*&quot;</span><span class="p">)</span>
+<span class="w">                </span><span class="n">includeGroupByRegex</span><span class="p">(</span><span class="s">&quot;com\\.google.*&quot;</span><span class="p">)</span>
+<span class="w">                </span><span class="n">includeGroupByRegex</span><span class="p">(</span><span class="s">&quot;androidx.*&quot;</span><span class="p">)</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
 
-```kotlin settings.gradle.kts
-pluginManagement {
-    repositories {
-        google {
-            content {
-                includeGroupByRegex(&quot;com\\.android.*&quot;)
-                includeGroupByRegex(&quot;com\\.google.*&quot;)
-                includeGroupByRegex(&quot;androidx.*&quot;)
-            }
-        }
-
-        maven { url = uri(&quot;https://maven.aliyun.com/repository/gradle-plugin&quot;) }
-        maven { url = uri(&quot;https://maven.aliyun.com/repository/google&quot;) }
-        maven { url = uri(&quot;https://maven.aliyun.com/repository/jcenter&quot;) }
-        maven { url = uri(&quot;https://maven.aliyun.com/repository/public&quot;) }
-        mavenLocal()
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        maven { url = uri(&quot;https://maven.aliyun.com/repository/gradle-plugin&quot;) }
-        maven { url = uri(&quot;https://maven.aliyun.com/repository/google&quot;) }
-        maven { url = uri(&quot;https://maven.aliyun.com/repository/jcenter&quot;) }
-        maven { url = uri(&quot;https://maven.aliyun.com/repository/public&quot;) }
-        mavenLocal()
-        mavenCentral()
-    }
-}
-</code></pre></div></td></tr></table></div></p>
+<span class="w">        </span><span class="n">maven</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">uri</span><span class="p">(</span><span class="s">&quot;https://maven.aliyun.com/repository/gradle-plugin&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="n">maven</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">uri</span><span class="p">(</span><span class="s">&quot;https://maven.aliyun.com/repository/google&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="n">maven</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">uri</span><span class="p">(</span><span class="s">&quot;https://maven.aliyun.com/repository/jcenter&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="n">maven</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">uri</span><span class="p">(</span><span class="s">&quot;https://maven.aliyun.com/repository/public&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="n">mavenLocal</span><span class="p">()</span>
+<span class="w">        </span><span class="n">mavenCentral</span><span class="p">()</span>
+<span class="w">        </span><span class="n">gradlePluginPortal</span><span class="p">()</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="n">dependencyResolutionManagement</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">repositoriesMode</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">RepositoriesMode</span><span class="p">.</span><span class="na">FAIL_ON_PROJECT_REPOS</span><span class="p">)</span>
+<span class="w">    </span><span class="n">repositories</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">google</span><span class="p">()</span>
+<span class="w">        </span><span class="n">maven</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">uri</span><span class="p">(</span><span class="s">&quot;https://maven.aliyun.com/repository/gradle-plugin&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="n">maven</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">uri</span><span class="p">(</span><span class="s">&quot;https://maven.aliyun.com/repository/google&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="n">maven</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">uri</span><span class="p">(</span><span class="s">&quot;https://maven.aliyun.com/repository/jcenter&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="n">maven</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">uri</span><span class="p">(</span><span class="s">&quot;https://maven.aliyun.com/repository/public&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="n">mavenLocal</span><span class="p">()</span>
+<span class="w">        </span><span class="n">mavenCentral</span><span class="p">()</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <p>至此，配置已修改完毕。</p>
 <p>重新进行 Gradle Project Sync 即可完成 Gradle 构建。如果下方出现 <code>BUILD SUCCESSFUL in **s</code> 的字样，这说明你的第一个 Android 应用程序就已经构建完成了！</p>
 <p><img alt="Gradle 重新构建" src="https://leverimmy.top/gallery/Introduction-to-Android/gradle-sync.png" /></p>
@@ -2815,7 +2829,7 @@ dependencyResolutionManagement {
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年7月30日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年7月31日</span>
   </span>
 
     
