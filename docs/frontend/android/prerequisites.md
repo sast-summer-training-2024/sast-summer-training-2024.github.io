@@ -103,7 +103,7 @@ distributionUrl=https\://mirrors.cloud.tencent.com/gradle/gradle-8.9-all.zip
 
 **`settings.gradle.kts` 原文件（节选）**
 
-```kotlin settings.gradle.kts
+```kotlin title="settings.gradle.kts"
 pluginManagement {
     repositories {
         google {
@@ -128,7 +128,7 @@ dependencyResolutionManagement {
 
 **`settings.gradle.kts` 修改后的文件（节选）**
 
-```kotlin settings.gradle.kts
+```kotlin title="settings.gradle.kts"
 pluginManagement {
     repositories {
         google {
