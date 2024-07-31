@@ -68,3 +68,9 @@
 
 ### 课程作业
 [Java 作业](https://summer24.net9.org/frontend/java/homework/)
+
+### 课程回放
+[Java 课程回放](https://www.bilibili.com/video/BV1Vx4y1s7br/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
+
+### 课程作业
+[Java 课程作业](https://summer24.net9.org/frontend/java/homework/)
