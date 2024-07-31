@@ -74,3 +74,23 @@
 
 ### 课程作业
 [Java 课程作业](https://summer24.net9.org/frontend/java/homework/)
+
+## 🤖 7月31日 Android 应用开发入门
+
+![logo](../images/logo/Android.svg)
+
+>“编写一个能在自己（安卓）手机上运行的应用程序”听起来是不是很酷？利用所学的 Java 知识，来写一个可以运行在你的（安卓）手机上的应用程序吧！
+>
+>Android 是一个基于 Linux 内核的开源操作系统，主要被设计用于触屏移动设备，如智能手机和平板电脑。Android 开发涉及使用 Java 或 Kotlin 等编程语言，结合 Android SDK 提供的工具和框架，来创建交互式的移动应用程序。
+>
+>在移动互联网时代，Android 占据了全球智能手机市场的大部分份额，因此，掌握 Android 开发技能对于软件开发者来说具有极高的市场需求和职业发展潜力。学习 Android 开发不仅能够帮助你理解移动应用的工作原理，还能够让你参与到快速增长的移动应用经济中。此外，Android 开发的技能也可以迁移到其他移动平台，增强你的技术栈和就业竞争力。
+>
+>本课程将引导你从 Android 开发的基础知识入手，逐步深入到应用的设计、开发、测试和发布全流程。通过本课程的学习，你将能够将创意转化为现实，开发出能够服务于亿万用户的移动应用。
+
+讲师：熊泽恩
+
+### 课程讲义
+[Android 课程讲义](https://summer24.net9.org/frontend/android/handout/)
+
+### 课程作业
+[Android 课程作业](https://summer24.net9.org/frontend/android/homework/)
