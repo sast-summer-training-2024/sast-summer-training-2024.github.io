@@ -143,6 +143,8 @@ nav:
     - Rust:
       - 课前准备: backend/rust/Pre-requisite.md
       - 讲义: backend/rust/handout.md
+  - 游戏:
+    - unity/index_unity.md
   - AI:
     - ai/index_ai.md
     - 神经网络: ai/neural-network/network.md
