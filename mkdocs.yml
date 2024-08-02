@@ -145,6 +145,9 @@ nav:
       - 讲义: backend/rust/handout.md
   - 游戏:
     - unity/index_unity.md
+    - Unity 入门:
+      - 课前准备: unity/Pre-requisite.md
+      - 讲义: unity/unity_basic/Unity_basic.pptx
   - AI:
     - ai/index_ai.md
     - 神经网络: ai/neural-network/network.md
