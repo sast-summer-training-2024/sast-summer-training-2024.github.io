@@ -94,3 +94,6 @@
 
 ### 课程作业
 [Android 课程作业](https://summer24.net9.org/frontend/android/homework/)
+
+### 课程回放
+[Android 课程回放](https://www.bilibili.com/video/BV1vdvhebEBz/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
