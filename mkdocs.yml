@@ -89,6 +89,8 @@ nav:
     - 基础 Track: basic/index_basic.md
     - 前端 Track: frontend/index_frontend.md
     - 后端 Track: backend/index_backend.md
+    - 游戏 Track: unity/index_unity.md
+    - AI Track: ai/index_ai.md
   - 基础:
     - basic/index_basic.md
     - Linux & Git:
