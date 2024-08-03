@@ -91,3 +91,5 @@
 ### 课程讲义
 [Rust 讲义](https://summer24.net9.org/backend/rust/handout/)
 
+### 课程回放
+[Rust 课程回放](playback.md)
