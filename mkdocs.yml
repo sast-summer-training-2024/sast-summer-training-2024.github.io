@@ -120,14 +120,17 @@ nav:
     - React:
       - 课前准备: frontend/react/Pre-requisite.md
       - 讲义: frontend/react/handout.md
+      - 课程回放: https://www.bilibili.com/video/BV1Kx4y147mZ/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
     - Java:
       - 课前准备: frontend/java/prerequisites.md
       - 讲义: frontend/java/handout.md
       - 课后作业: frontend/java/homework.md
+      - 课程回放: https://www.bilibili.com/video/BV1Vx4y1s7br/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
     - Android:
       - 课前准备: frontend/android/prerequisites.md
       - 讲义: frontend/android/handout.md
       - 课后作业: frontend/android/homework.md
+      - 课程回放: https://www.bilibili.com/video/BV1vdvhebEBz/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
   - 后端:
     - backend/index_backend.md
     - 爬虫入门:
@@ -139,18 +142,23 @@ nav:
       - 后端架构: backend/django/backend.md
       - Django: backend/django/django.md
       - 作业 (也是课件): https://github.com/sast-summer-training-2024/sast2024-django-hw
+      - 课程回放: https://www.bilibili.com/video/BV1em42137P7/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
     - docker:
       - 课前准备: backend/docker/prerequisites.md
       - 讲义: backend/docker/handout.md
+      - 课程回放: https://www.bilibili.com/video/BV1qS411w7Dt/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
     - Rust:
       - 课前准备: backend/rust/Pre-requisite.md
       - 讲义: backend/rust/handout.md
+      - 课程回放: backend/rust/playback.md
   - 游戏:
     - unity/index_unity.md
     - Unity 入门:
       - 课前准备: unity/unity_basic/Pre-requisite.md
       - 讲义: unity/unity_basic/Unity_basic.pptx
+      - 课程回放: https://www.bilibili.com/video/BV1GjvQe2ER3/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
   - AI:
     - ai/index_ai.md
     - 神经网络: ai/neural-network/network.md
+      - 课程回放: https://www.bilibili.com/video/BV11SvDeNEbY/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
     - 数据处理可视化与pytorch: ai/dp-and-pytorch/readme.md
