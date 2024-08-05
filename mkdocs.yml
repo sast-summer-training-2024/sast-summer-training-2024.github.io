@@ -153,6 +153,7 @@ nav:
       - 课程回放: backend/rust/playback.md
   - 游戏:
     - unity/index_unity.md
+    - Unity脚本基础与场景: unity/unity2.pdf
     - Unity 入门:
       - 课前准备: unity/unity_basic/Pre-requisite.md
       - 讲义: unity/unity_basic/Unity_basic.pptx
