@@ -7,3 +7,6 @@
 [submodule "docs/backend/django"]
 	path = docs/backend/django
 	url = git@github.com:sast-summer-training-2024/sast2024-django.git
+[submodule "docs/ai/sast2024-optimization"]
+	path = docs/ai/sast2024-optimization
+	url = https://github.com/sast-summer-training-2024/sast2024-optimization
