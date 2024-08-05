@@ -21,12 +21,17 @@
 
 🎓 讲师：俞鹤扬
 
-## 课程讲义
+### 课程讲义
 
 [Unity 入门 课程讲义](unity_basic/handout.md)
+
+### 课程回放
+
+[Unity 入门 课程回放](https://www.bilibili.com/video/BV1GjvQe2ER3/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
 
 ## 🖱 8 Unity脚本基础与场景
 
 🎓 讲师：谢语桐
 
+### 课程讲义
 [Unity脚本基础与场景 讲义](unity2.pdf)
