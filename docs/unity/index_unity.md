@@ -24,3 +24,9 @@
 ## 课程讲义
 
 [Unity 入门 课程讲义](unity_basic/handout.md)
+
+## 🖱 8 Unity脚本基础与场景
+
+🎓 讲师：谢语桐
+
+[Unity脚本基础与场景 讲义](unity2.pdf)
