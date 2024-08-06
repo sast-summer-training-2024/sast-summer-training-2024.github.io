@@ -20,3 +20,7 @@
 ### 课程讲义
 
 [神经网络 课程讲义](https://summer24.net9.org/ai/neural-network/network/)
+
+### 课程回放
+
+[神经网络 课程讲义](https://www.bilibili.com/video/BV11SvDeNEbY/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
