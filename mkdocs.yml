@@ -163,6 +163,8 @@ nav:
     - 神经网络: 
       - 讲义: ai/neural-network/network.md
       - 课程回放: https://www.bilibili.com/video/BV11SvDeNEbY/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
-    - 机器学习中的优化方法: ai/sast2024-optimization/test.md
+    - 机器学习中的优化方法: 
+      - ai/sast2024-optimization/test.md
+      - 作业: https://github.com/sast-summer-training-2024/sast2024-optimization/blob/db76dd97daed72c1dc69d1ce236ae0631ea59e01/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95_%E4%BD%9C%E4%B8%9A.pdf
     - 数据处理可视化与pytorch: ai/dp-and-pytorch/readme.md
 
