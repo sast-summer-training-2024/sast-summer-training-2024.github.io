@@ -44,4 +44,4 @@
 
 ### 课程讲义
 
-[机器学习中的优化方法 课程讲义](https://summer24.net9.org/ai/sast2024-optimization/test/)
+[机器学习中的优化方法 课程讲义](https://github.com/sast-summer-training-2024/sast2024-optimization/blob/db76dd97daed72c1dc69d1ce236ae0631ea59e01/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95_slides.pdf)
