@@ -49,3 +49,15 @@
 ### 课程回放
 
 [机器学习中的优化方法 课程回放](https://www.bilibili.com/video/BV1oNakeHEzo/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
+
+## 🧰 8月9日 Python数据处理与可视化基础与PyTorch
+
+![logo](../images/logo/Numpy&Pytorch.png)
+
+>本次课程主要介绍python中的三个常用库：Numpy，Matplotlib.pyplot，PyTorch，同时会简要介绍 SciPy 库的部分功能。经过本课程的学习，同学应当能够了解如何使用 Numpy 进行数据处理和线性代数操作，并使用 Matplotlib 进行数据的可视化以及在 SciPy 库辅助下进行简单数据分析。此外，还应该掌握如何使用 PyTorch 实现一个完整的神经网络训练流程。本课程的 PyTorch 部分要求先修神经网络课程。本课程对《人工智能导论》课程的大作业开发有帮助。
+
+🎓 讲师：王思图
+
+### 课程讲义
+
+[数据处理与可视化基础与PyTorch 课程讲义](https://summer24.net9.org/ai/dp-and-pytorch/readme/)
