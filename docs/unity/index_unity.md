@@ -34,4 +34,9 @@
 🎓 讲师：谢语桐
 
 ### 课程讲义
+
 [Unity脚本基础与场景 讲义](unity2.pdf)
+
+### 课程回放
+
+[Unity脚本基础与场景 课程回放](https://www.bilibili.com/video/BV19iYKeEEVu/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
