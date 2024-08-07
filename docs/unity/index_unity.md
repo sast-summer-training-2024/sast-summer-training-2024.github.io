@@ -40,3 +40,7 @@
 ### 课程回放
 
 [Unity脚本基础与场景 课程回放](https://www.bilibili.com/video/BV19iYKeEEVu/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
+
+### 👾 8月8日 动画基础与VFX素材应用
+
+🎓 讲师：张翔宇
