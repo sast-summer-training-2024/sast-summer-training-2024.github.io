@@ -47,4 +47,4 @@
 
 ### 课程讲义
 
-[动画基础与VFX素材应用 课程讲义](unity3.pptx)
+[动画基础与VFX素材应用 课程讲义](unity3/unity3.pptx)
