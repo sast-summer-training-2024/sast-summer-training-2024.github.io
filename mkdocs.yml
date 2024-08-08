@@ -158,6 +158,9 @@ nav:
       - 讲义: unity/unity_basic/Unity_basic.pptx
       - 课程回放: https://www.bilibili.com/video/BV1GjvQe2ER3/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
     - Unity脚本基础与场景: unity/unity2.pdf
+    - 动画基础与VFX素材应用: 
+      - 课前准备: unity/unity3/Pre-requisite.md
+      - 讲义: unity/unity3/unity3.pdf
   - AI:
     - ai/index_ai.md
     - 神经网络: 
