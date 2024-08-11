@@ -61,3 +61,7 @@
 ### 课程讲义
 
 [数据处理与可视化基础与PyTorch 课程讲义](https://summer24.net9.org/ai/dp-and-pytorch/readme/)
+
+### 课程回放
+
+[数据处理与可视化基础与PyTorch 课程回放](https://www.bilibili.com/video/BV1FSYueTEWw/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
