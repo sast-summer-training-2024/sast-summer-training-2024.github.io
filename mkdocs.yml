@@ -163,6 +163,8 @@ nav:
       - 讲义: unity/unity3/unity3.pptx
     - Unity UI 与材质:
       - 讲义: unity/unity4.pdf
+    - Unity项目结构与项目管理:
+      - 讲义: unity/unity5.pdf
   - AI:
     - ai/index_ai.md
     - 神经网络: 

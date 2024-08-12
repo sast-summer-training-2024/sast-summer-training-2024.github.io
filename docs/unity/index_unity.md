@@ -61,4 +61,14 @@
 
 [Unity UI 与材质 课程讲义](unity4.pdf)
 
+### 课程回放
+
 [Unity UI 与材质 课程回放](https://www.bilibili.com/video/BV1a3YZe4Et7/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
+
+### 📂 8月14日 Unity项目结构与项目管理
+
+🎓 讲师：谢语桐
+
+### 课程讲义
+
+[Unity项目结构与项目管理](unity5.pdf)
