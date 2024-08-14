@@ -80,6 +80,10 @@
 
 [NLP🤗 课程讲义](🤗🤗🤗课程讲稿.pdf)
 
+### 课程回放
+
+[NLP🤗 课程回放](https://www.bilibili.com/video/BV1bBYiebEqG)
+
 ## 📉 8月15日 现代概率机器学习初步
 
 ![logo](../images/logo/统计机器学习.png)
