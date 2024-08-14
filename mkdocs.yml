@@ -177,4 +177,7 @@ nav:
     - 数据处理可视化与pytorch: ai/dp-and-pytorch/readme.md
     - NLP:
       - 讲义: ai/🤗🤗🤗课程讲稿.pdf
+    - 现代概率机器学习初步:
+      - 讲义: ai/现代概率机器学习初步_讲义.pdf
+      - 作业: https://github.com/sast-summer-training-2024/sast2024-diffusion
 
