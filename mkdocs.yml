@@ -1,4 +1,4 @@
-site_name: 酒井科协暑培 2024
+site_name: 酒井科协 & 算协联合暑培 2024
 repo_url: https://github.com/sast-summer-training-2024/sast-summer-training-2024.github.io
 repo_name: SAST Summer Training 2024
 
@@ -91,6 +91,7 @@ nav:
     - 后端 Track: backend/index_backend.md
     - 游戏 Track: unity/index_unity.md
     - AI Track: ai/index_ai.md
+    - 算法 Track: algorithm/index_algorithm.md
   - 基础:
     - basic/index_basic.md
     - Linux & Git:
@@ -180,4 +181,13 @@ nav:
     - 现代概率机器学习初步:
       - 讲义: ai/现代概率机器学习初步_讲义.pdf
       - 作业: https://github.com/sast-summer-training-2024/sast2024-diffusion
-
+  - 算法:
+    - algorithm/index_algorithm.md
+    - 简单线性 & 树形算法入门:
+      - 讲义: algorithm/简单线性 & 树形算法入门.pdf
+    - 树状数组与线段树入门:
+      - 讲义: algorithm/树状数组与线段树入门.pptx
+    - 图论初步与树上问题:
+      - 讲义: algorithm/图论初步与树上问题.pptx
+    - 搜索 & NPC:
+      - 讲义: algorithm/搜索 & NPC.pdf
