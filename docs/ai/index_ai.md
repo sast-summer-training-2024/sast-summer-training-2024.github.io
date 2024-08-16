@@ -101,3 +101,7 @@
 ### 课程作业
 
 [现代概率机器学习初步 课程作业](https://github.com/sast-summer-training-2024/sast2024-diffusion)
+
+### 课程回放
+
+[现代概率机器学习初步 课程回放](https://www.bilibili.com/video/BV1YieGeiE3F/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)
