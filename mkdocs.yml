@@ -191,3 +191,17 @@ nav:
       - 讲义: algorithm/图论初步与树上问题.pptx
     - 搜索 & NPC:
       - 讲义: algorithm/搜索 & NPC.pdf
+    - 动态规划:
+      - 讲义: algorithm/动态规划.pptx
+    - 无向图和有向图的连通性:
+      - 讲义: algorithm/无向图和有向图的连通性.pdf
+    - 数论入门:
+      - 讲义: algorithm/数论入门.pdf
+    - 矩阵相关:
+      - 讲义: algorithm/矩阵相关.pptx
+    - HASH+TRIE+KMP:
+      - 讲义: algorithm/hash&trie&kmp.pdf
+    - AC自动机+MANACHER:
+      - 讲义: algorithm/AC自动机&Manacher.pdf
+    - 计数原理+容斥与反演:
+      - 讲义: algorithm/计数原理+容斥与反演.pdf
